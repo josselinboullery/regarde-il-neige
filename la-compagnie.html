@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- ============================================================
+       REGARDE IL NEIGE — La compagnie
+       ============================================================ -->
+
+  <script>
+    /* ============================================================
+       IMAGES — Modifiez ces variables pour changer les images
+       ============================================================ */
+    const PAGE_HERO_IMAGE = "assets/images/hero-compagnie-a-remplacer.jpg";
+    const PAGE_HERO_ALT   = "Gaëlle Hispard et Mathieu Gerhardt — Compagnie Regarde il neige";
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La compagnie — Regarde il neige</title>
+  <meta name="description" content="Fondée en 2014 par Gaëlle Hispard et Mathieu Gerhardt, la compagnie Regarde il neige développe un théâtre musical et poétique, humaniste et ouvert sur l'autre.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo" aria-label="Regarde il neige — accueil">
+        Regarde il neige
+        <span>Compagnie de théâtre musical</span>
+      </a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="la-compagnie.html" class="active">La compagnie</a>
+        <div class="nav-dropdown">
+          <a href="index.html#spectacles" aria-haspopup="true">Spectacles</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="le-conte-d-hiver.html" role="menuitem">Le Conte d'hiver</a>
+            <a href="mathis-andersen.html" role="menuitem">Mathis Andersen - Monde monde</a>
+            <a href="robinson.html" role="menuitem">Robinson Crusoé et Zoé Liberté</a>
+            <a href="aurore.html" role="menuitem">Aurore</a>
+            <a href="alice.html" role="menuitem">Alice au pays des miroirs</a>
+            <a href="remi-do-et-gagaboum.html" role="menuitem">Rémi Do et Gagaboum</a>
+            <a href="ambroisie.html" role="menuitem">Ambroisie</a>
+          </div>
+        </div>
+        <a href="actions.html">Actions</a>
+        <a href="equipe.html">Équipe</a>
+      </nav>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <span class="mobile-nav-label">Navigation</span>
+    <a href="la-compagnie.html">La compagnie</a>
+    <span class="mobile-nav-label">Spectacles</span>
+    <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+    <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
+    <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+    <a href="aurore.html">Aurore</a>
+    <a href="alice.html">Alice au pays des miroirs</a>
+    <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+    <a href="ambroisie.html">Ambroisie</a>
+    <span class="mobile-nav-label">Découvrir</span>
+    <a href="actions.html">Actions culturelles</a>
+    <a href="equipe.html">L'équipe</a>
+  </nav>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="page-hero page-hero--short" aria-labelledby="page-title">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-pretitle">Présentation</span>
+        <h1 class="hero-title" id="page-title">La compagnie</h1>
+        <p class="hero-subtitle">Un théâtre musical et poétique, humaniste et ouvert sur l'autre.</p>
+      </div>
+    </section>
+
+    <!-- ==================== MANIFESTE ==================== -->
+    <section class="section" aria-labelledby="manifeste-title">
+      <div class="container--narrow">
+        <span class="section-label">Notre démarche</span>
+        <p class="intro-text">
+          À travers nos créations, nous explorons les récits qui traversent notre imaginaire collectif — contes, mythes classiques ou contemporains — pour interroger ce qu'ils disent de notre monde actuel.
+        </p>
+        <div class="divider"></div>
+        <div class="body-text">
+          <p>La compagnie Regarde il neige, dirigée par <strong>Gaëlle Hispard et Mathieu Gerhardt</strong>, développe un théâtre musical et poétique, humaniste et ouvert sur l'autre.</p>
+          <p>Quels élans nous animent dans notre rapport à l'autre ? Qu'est-ce qui nous change ? Comment pouvons-nous transformer le réel ?</p>
+          <p>Nous défendons un théâtre <strong>sensible et sincère</strong>, capable de toucher sans renoncer à la complexité des émotions et des questions qu'il soulève. L'exigence dramaturgique, au cœur de notre travail, sert un théâtre accessible à toutes et à tous, qui invite autant à la réflexion qu'à l'émerveillement, sans renier le divertissement.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MUSIQUE ==================== -->
+    <section class="section section--alt" aria-labelledby="musique-title">
+      <div class="container--narrow">
+        <span class="section-label">Signatures artistiques</span>
+        <h2 id="musique-title">La musique au cœur</h2>
+        <div class="divider"></div>
+        <div class="body-text">
+          <p>Au centre de chacun de nos spectacles, il y a une <strong>création musicale</strong> : les musiques et chansons originales interprétées par les comédien·nes-chanteur·euses et musicien·nes au plateau viennent rythmer, nuancer et contraster le propos, et représentent autant de fenêtres ouvertes sur la vie intérieure des personnages.</p>
+          <p>En miroir, une bande-son immersive et cinématographique vient dessiner et suggérer des espaces extérieurs et intérieurs, réels ou imaginaires.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LANGUES & ACCESSIBILITÉ ==================== -->
+    <section class="section" aria-labelledby="diversite-title">
+      <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+        <div>
+          <span class="section-label">Langues & pluralité</span>
+          <h2 id="diversite-title">Faire dialoguer les langues</h2>
+          <div class="divider"></div>
+          <p>Pour raconter la pluralité des rapports au monde, nous aimons faire dialoguer les langues. Les faire se croiser, se répondre, s'entrechoquer nous permet d'explorer autant de formes et de mises en résonance possibles, et d'inscrire nos histoires dans un espace partagé qui échappe à la contingence des frontières.</p>
+        </div>
+        <div>
+          <span class="section-label">Accessibilité</span>
+          <h2>Deux formats de diffusion</h2>
+          <div class="divider"></div>
+          <p>Dans la volonté de partager nos spectacles avec une grande diversité de publics, nous pensons nos créations en <strong>deux versions</strong> : une première pour les théâtres, une deuxième pensée pour le plein air et facilement adaptable dans des lieux non-théâtraux.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CHRONOLOGIE ==================== -->
+    <section class="section section--alt" aria-labelledby="historique-title">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start;">
+          <div>
+            <span class="section-label">Parcours</span>
+            <h2 id="historique-title">La compagnie depuis 2014</h2>
+            <div class="divider"></div>
+            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.7;">Une décennie de créations jeune public, de tournées en France et à l'international, et de projets de transmission dans les écoles.</p>
+            <div class="mt-md">
+              <a href="equipe.html" class="btn btn--outline-dark">Voir l'équipe</a>
+            </div>
+          </div>
+          <div>
+            <div class="timeline" role="list" aria-label="Chronologie de la compagnie">
+
+              <div class="timeline-item" role="listitem">
+                <span class="timeline-year">2014</span>
+                <p class="timeline-text"><strong>Création de la compagnie</strong> par Gaëlle Hispard, metteure en scène, autrice-compositrice, musicienne et comédienne, et Mathieu Gerhardt, auteur-compositeur, musicien, comédien et dramaturge.</p>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <span class="timeline-year">2014</span>
+                <p class="timeline-text"><strong>Premiers ateliers</strong> théâtre et contes dans les écoles élémentaires, autour de la création d'Ambroisie.</p>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <span class="timeline-year">2015</span>
+                <p class="timeline-text"><strong>Ambroisie</strong>, premier spectacle musical jeune public — l'histoire d'une petite fille en quête d'identité qui rencontre les personnages de Perrault.</p>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <span class="timeline-year">2016</span>
+                <p class="timeline-text"><strong>Aurore — La Belle au bois ne s'endort pas</strong>, réécriture de La Belle au bois dormant.</p>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <span class="timeline-year">2018</span>
+                <p class="timeline-text"><strong>Alice au pays des miroirs</strong>, spectacle musical jeune public librement inspiré de Lewis Carroll.</p>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <span class="timeline-year">2019</span>
+                <p class="timeline-text"><strong>Rémi Do et Gagaboum — Le La des villes et le La des champs</strong>, spectacle musical très jeune public, librement inspiré de La Fontaine.</p>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <span class="timeline-year">2019</span>
+                <p class="timeline-text">Premier stage de création théâtrale <strong>Les visages de l'Emprise</strong> à l'Acerma.</p>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <span class="timeline-year">2021</span>
+                <p class="timeline-text"><strong>Dessine-moi une chanson</strong>, projet participatif mettant en scène les personnages Rémi Do et Gagaboum.</p>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <span class="timeline-year">2022</span>
+                <p class="timeline-text"><strong>Robinson Crusoé et Zoé Liberté</strong>, spectacle musical jeune public revisitant l'œuvre de Daniel Defoe.</p>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <span class="timeline-year">2024</span>
+                <p class="timeline-text"><strong>Mathis Andersen — Monde monde</strong>, concert théâtralisé multilingue.</p>
+              </div>
+
+              <div class="timeline-item" role="listitem">
+                <span class="timeline-year">2026–27</span>
+                <p class="timeline-text">Création du <strong>Conte d'Hiver</strong> de Shakespeare — prochaine grande production.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA SPECTACLES ==================== -->
+    <section class="section" aria-label="Navigation spectacles">
+      <div class="container--narrow" style="text-align: center;">
+        <span class="section-label">À découvrir</span>
+        <h2>Nos spectacles</h2>
+        <div class="divider" style="margin: var(--space-md) auto;"></div>
+        <div class="btn-group" style="justify-content: center;">
+          <a href="robinson.html" class="btn btn--primary">Robinson Crusoé et Zoé Liberté</a>
+          <a href="aurore.html" class="btn btn--outline-dark">Aurore</a>
+          <a href="alice.html" class="btn btn--outline-dark">Alice</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">Regarde il neige</p>
+        <p class="footer-tagline">Compagnie de théâtre musical et poétique, humaniste et ouvert sur l'autre. Gaëlle Hispard & Mathieu Gerhardt, fondateurs.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Spectacles</p>
+        <nav class="footer-nav">
+          <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+          <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
+          <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+          <a href="aurore.html">Aurore</a>
+          <a href="alice.html">Alice au pays des miroirs</a>
+          <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+          <a href="ambroisie.html">Ambroisie</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer-col-title">La compagnie</p>
+        <nav class="footer-nav">
+          <a href="la-compagnie.html">Présentation</a>
+          <a href="equipe.html">L'équipe</a>
+          <a href="actions.html">Actions culturelles</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Compagnie Regarde il neige</span>
+      <span>Théâtre musical · Jeune public</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

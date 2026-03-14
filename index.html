@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <!-- ============================================================
+       REGARDE IL NEIGE — Page d'accueil
+       ============================================================ -->
+
+  <script>
+    /* ============================================================
+       IMAGES — Modifiez ces variables pour changer les images
+       ============================================================ */
+    const PAGE_HERO_IMAGE = "assets/images/index.avif";
+    const PAGE_HERO_ALT = "Compagnie Regarde il neige — spectacle en scène";
+
+    /* Images des cartes spectacles */
+    const CARD_IMG_ROBINSON = "assets/images/Robinson_Crusoe_et_Zoe_Liberte.avif";
+    const CARD_IMG_MATHIS   = "assets/images/mathis_andersen.avif";
+    const CARD_IMG_HIVER    = "assets/images/hero-hiver-a-remplacer.jpg";
+    const CARD_IMG_AURORE   = "assets/images/Aurore.avif";
+    const CARD_IMG_ALICE = "assets/images/alice_au_pays_des_miroirs.avif";
+    const CARD_IMG_REMI = "assets/images/Remi_Do_et_Gaga_Boum.avif";
+    const CARD_IMG_AMBROISIE = "assets/images/card-ambroisie-a-remplacer.jpg"; /* pas encore disponible */
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regarde il neige — Compagnie de théâtre musical</title>
+  <meta name="description"
+    content="La compagnie Regarde il neige développe un théâtre musical et poétique, humaniste et ouvert sur l'autre, pour les petits et les grands, depuis 2014.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+
+      <a href="index.html" class="site-logo" aria-label="Regarde il neige — accueil">
+        Regarde il neige
+        <span>Compagnie de théâtre musical</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="la-compagnie.html">La compagnie</a>
+        <div class="nav-dropdown">
+          <a href="#spectacles" aria-haspopup="true">Spectacles</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="le-conte-d-hiver.html" role="menuitem">Le Conte d'hiver</a>
+            <a href="mathis-andersen.html" role="menuitem">Mathis Andersen - Monde monde</a>
+            <a href="robinson.html" role="menuitem">Robinson Crusoé et Zoé Liberté</a>
+            <a href="aurore.html" role="menuitem">Aurore</a>
+            <a href="alice.html" role="menuitem">Alice au pays des miroirs</a>
+            <a href="remi-do-et-gagaboum.html" role="menuitem">Rémi Do et Gagaboum</a>
+            <a href="ambroisie.html" role="menuitem">Ambroisie</a>
+          </div>
+        </div>
+        <a href="actions.html">Actions</a>
+        <a href="equipe.html">Équipe</a>
+      </nav>
+
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <span class="mobile-nav-label">Navigation</span>
+    <a href="la-compagnie.html">La compagnie</a>
+    <span class="mobile-nav-label">Spectacles</span>
+    <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+    <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
+    <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+    <a href="aurore.html">Aurore</a>
+    <a href="alice.html">Alice au pays des miroirs</a>
+    <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+    <a href="ambroisie.html">Ambroisie</a>
+    <span class="mobile-nav-label">Découvrir</span>
+    <a href="actions.html">Actions culturelles</a>
+    <a href="equipe.html">L'équipe</a>
+  </nav>
+
+  <main>
+
+    <!-- ==================== HERO ACCUEIL ==================== -->
+    <section class="home-hero" aria-labelledby="home-hero-title">
+      <div class="hero-bg" role="img" aria-label="Compagnie Regarde il neige"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="home-hero-content">
+        <span class="home-hero-label">Compagnie de théâtre musical — depuis 2014</span>
+        <h1 class="home-hero-title" id="home-hero-title">Regarde<br>il neige</h1>
+        <p class="home-hero-subtitle">Un théâtre poétique et humaniste, pour les petits et les grands — des histoires
+          qui traversent notre imaginaire collectif.</p>
+        <div class="btn-group" style="justify-content: center;">
+          <a href="#spectacles" class="btn btn--outline">Découvrir les spectacles</a>
+          <a href="la-compagnie.html" class="btn btn--primary">La compagnie</a>
+        </div>
+      </div>
+
+      <div class="home-hero-scroll" aria-hidden="true">Défiler</div>
+    </section>
+
+    <!-- ==================== INTRO ÉDITORIALE ==================== -->
+    <section class="section" aria-label="Présentation">
+      <div class="container--narrow">
+        <span class="section-label">Notre démarche</span>
+        <p class="intro-text">
+          À travers nos créations, nous explorons les récits qui traversent notre imaginaire collectif — contes, mythes
+          classiques ou contemporains — pour interroger ce qu'ils disent de notre monde actuel.
+        </p>
+        <div class="divider"></div>
+        <div class="body-text" style="columns: 2; column-gap: 3rem;">
+          <p>La compagnie Regarde il neige, dirigée par <strong>Gaëlle Hispard et Mathieu Gerhardt</strong>, défend un
+            théâtre sensible et sincère, capable de toucher sans renoncer à la complexité des émotions.</p>
+          <p>Au centre de chacun de nos spectacles, une création musicale : musiques et chansons originales interprétées
+            en live viennent rythmer, nuancer et contraster le propos.</p>
+        </div>
+        <div class="mt-md">
+          <a href="la-compagnie.html" class="btn btn--outline-dark">En savoir plus sur la compagnie</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SPECTACLES ==================== -->
+    <section class="section section--alt" id="spectacles" aria-labelledby="spectacles-title">
+      <div class="container">
+        <div
+          style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: var(--space-md); flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span class="section-label">En tournée</span>
+            <h2 id="spectacles-title">Nos spectacles</h2>
+          </div>
+        </div>
+
+        <div class="spectacles-grid">
+
+          <!-- Mathis Andersen -->
+          <article class="spectacle-card">
+            <div class="spectacle-card-img">
+              <img id="img-mathis" src="" alt="Mathis Andersen - Monde monde">
+              <div class="spectacle-card-img-placeholder"><span>◊</span></div>
+            </div>
+            <div class="spectacle-card-body">
+              <span class="spectacle-card-age">Tout public · 90 min · Solo/Duo/Trio</span>
+              <h3 class="spectacle-card-title">Mathis Andersen — Monde monde</h3>
+              <p class="spectacle-card-desc">Un concert humaniste et poétique, voyage sonore singulier où chaque note interroge notre rapport à l'imaginaire.</p>
+              <div class="spectacle-card-footer">
+                <a href="mathis-andersen.html" class="spectacle-card-link" aria-label="Voir Mathis Andersen">Découvrir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Robinson -->
+          <article class="spectacle-card">
+            <div class="spectacle-card-img">
+              <img id="img-robinson" src="" alt="Robinson Crusoé et Zoé Liberté" loading="lazy">
+              <div class="spectacle-card-img-placeholder"><span>◊</span></div>
+            </div>
+            <div class="spectacle-card-body">
+              <span class="spectacle-card-age">À partir de 5 ans · 55 min · 2 comédien·nes</span>
+              <h3 class="spectacle-card-title">Robinson Crusoé et Zoé Liberté</h3>
+              <p class="spectacle-card-desc">Robinson échoue sur la plage d'une île… Sauront-ils unir leurs forces pour
+                affronter les pirates ? Une réécriture malicieuse de Defoe, ode à la liberté et au respect du vivant.
+              </p>
+              <div class="spectacle-card-footer">
+                <a href="robinson.html" class="spectacle-card-link"
+                  aria-label="Voir Robinson Crusoé et Zoé Liberté">Découvrir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Aurore -->
+          <article class="spectacle-card">
+            <div class="spectacle-card-img">
+              <img id="img-aurore" src="" alt="Aurore - La Belle au bois ne s'endort pas" loading="lazy">
+              <div class="spectacle-card-img-placeholder"><span>◊</span></div>
+            </div>
+            <div class="spectacle-card-body">
+              <span class="spectacle-card-age">À partir de 4 ans · 55 min · 4 comédien·nes</span>
+              <h3 class="spectacle-card-title">Aurore — La Belle au bois ne s'endort pas</h3>
+              <p class="spectacle-card-desc">Relecture moderne de La Belle au bois dormant, épopée initiatique sur la
+                découverte de l'amour et du libre arbitre. Rock, humour et poésie.</p>
+              <div class="spectacle-card-footer">
+                <a href="aurore.html" class="spectacle-card-link" aria-label="Voir Aurore">Découvrir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Alice -->
+          <article class="spectacle-card">
+            <div class="spectacle-card-img">
+              <img id="img-alice" src="" alt="Alice au pays des miroirs" loading="lazy">
+              <div class="spectacle-card-img-placeholder"><span>◊</span></div>
+            </div>
+            <div class="spectacle-card-body">
+              <span class="spectacle-card-age">À partir de 4 ans · 55 min · 4 comédien·nes</span>
+              <h3 class="spectacle-card-title">Alice au pays des miroirs</h3>
+              <p class="spectacle-card-desc">Alors qu'Alice se regarde dans son miroir, son reflet lui parle et puis
+                s'enfuit ! Un hymne à l'imagination librement inspiré de Lewis Carroll.</p>
+              <div class="spectacle-card-footer">
+                <a href="alice.html" class="spectacle-card-link"
+                  aria-label="Voir Alice au pays des miroirs">Découvrir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Rémi Do -->
+          <article class="spectacle-card">
+            <div class="spectacle-card-img">
+              <img id="img-remi" src="" alt="Rémi Do et Gagaboum" loading="lazy">
+              <div class="spectacle-card-img-placeholder"><span>◊</span></div>
+            </div>
+            <div class="spectacle-card-body">
+              <span class="spectacle-card-age">À partir de 2 ans · 35 min · 2 comédien·nes</span>
+              <h3 class="spectacle-card-title">Rémi Do et Gagaboum</h3>
+              <p class="spectacle-card-desc">Rémi Do aime les mélodies, Gagaboum les bruits. Inspiré de La Fontaine, un
+                duo détonant mêlant chansons originales et explorations sonores.</p>
+              <div class="spectacle-card-footer">
+                <a href="remi-do-et-gagaboum.html" class="spectacle-card-link"
+                  aria-label="Voir Rémi Do et Gagaboum">Découvrir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Ambroisie -->
+          <article class="spectacle-card">
+            <div class="spectacle-card-img">
+              <img id="img-ambroisie" src="" alt="Ambroisie" loading="lazy">
+              <div class="spectacle-card-img-placeholder"><span>◊</span></div>
+            </div>
+            <div class="spectacle-card-body">
+              <span class="spectacle-card-age">À partir de 5 ans · 55 min · 4 comédien·nes</span>
+              <h3 class="spectacle-card-title">Ambroisie</h3>
+              <p class="spectacle-card-desc">Ambroisie, 9 ans, découvre que ses parents doivent l'envoyer en Argentine
+                chez un mystérieux inconnu… Les personnages de Perrault s'invitent dans sa chambre.</p>
+              <div class="spectacle-card-footer">
+                <a href="ambroisie.html" class="spectacle-card-link" aria-label="Voir Ambroisie">Découvrir</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Le Conte d'hiver -->
+          <article class="spectacle-card">
+            <div class="spectacle-card-img">
+              <img id="img-hiver" src="" alt="Le Conte d'hiver" loading="lazy">
+              <div class="spectacle-card-img-placeholder"><span>◊</span></div>
+            </div>
+            <div class="spectacle-card-body">
+              <span class="spectacle-card-age">Tout public · 90 min · 6 interprètes</span>
+              <h3 class="spectacle-card-title">Le Conte d'hiver</h3>
+              <p class="spectacle-card-desc">D'après William Shakespeare. Une création mêlant tragédie et espoir printanier, servie par une mise en scène poétique et musicale.</p>
+              <div class="spectacle-card-footer">
+                <a href="le-conte-d-hiver.html" class="spectacle-card-link" aria-label="Voir Le Conte d'hiver">Découvrir</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACTIONS ==================== -->
+    <section class="section" aria-labelledby="actions-home-title">
+      <div class="container--narrow">
+        <span class="section-label">Actions culturelles</span>
+        <h2 id="actions-home-title">Ateliers & transmissions</h2>
+        <div class="divider"></div>
+        <p style="font-size: 1rem; line-height: 1.8; color: var(--color-text-muted); margin-bottom: var(--space-md);">
+          Depuis les débuts de la compagnie, nous animons des ateliers et stages dans les écoles et les associations :
+          initiation au théâtre, à la musique, création de spectacles, stages thématiques…
+        </p>
+        <a href="actions.html" class="btn btn--outline-dark">Découvrir nos actions</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">Regarde il neige</p>
+        <p class="footer-tagline">Compagnie de théâtre musical et poétique, humaniste et ouvert sur l'autre. Gaëlle
+          Hispard & Mathieu Gerhardt, fondateurs.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Spectacles</p>
+        <nav class="footer-nav" aria-label="Navigation spectacles">
+          <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+          <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
+          <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+          <a href="aurore.html">Aurore</a>
+          <a href="alice.html">Alice au pays des miroirs</a>
+          <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+          <a href="ambroisie.html">Ambroisie</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer-col-title">La compagnie</p>
+        <nav class="footer-nav" aria-label="Navigation compagnie">
+          <a href="la-compagnie.html">Présentation</a>
+          <a href="equipe.html">L'équipe</a>
+          <a href="actions.html">Actions culturelles</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Compagnie Regarde il neige</span>
+      <span>Théâtre musical · Jeune public</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    /* Injection des images cartes spectacles */
+    document.addEventListener('DOMContentLoaded', function () {
+      const cards = [
+        { id: 'img-mathis',   src: CARD_IMG_MATHIS },
+        { id: 'img-hiver',    src: CARD_IMG_HIVER },
+        { id: 'img-robinson', src: CARD_IMG_ROBINSON },
+        { id: 'img-aurore', src: CARD_IMG_AURORE },
+        { id: 'img-alice', src: CARD_IMG_ALICE },
+        { id: 'img-remi', src: CARD_IMG_REMI },
+        { id: 'img-ambroisie', src: CARD_IMG_AMBROISIE },
+      ];
+      cards.forEach(({ id, src }) => {
+        const el = document.getElementById(id);
+        if (el && src) {
+          el.src = src;
+          el.style.display = 'block';
+          const wrap = el.closest('.spectacle-card-img');
+          if (wrap) {
+            const ph = wrap.querySelector('.spectacle-card-img-placeholder');
+            if (ph) ph.style.display = 'none';
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

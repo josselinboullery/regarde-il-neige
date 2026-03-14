@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script>
+    /* ============================================================
+       IMAGES — Modifiez ces variables pour changer les images
+       ============================================================ */
+    const PAGE_HERO_IMAGE = "assets/images/hero-actions-a-remplacer.jpg";
+    const PAGE_HERO_ALT   = "Actions culturelles — ateliers de la compagnie Regarde il neige";
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actions culturelles — Ateliers & stages · Regarde il neige</title>
+  <meta name="description" content="La compagnie Regarde il neige propose des ateliers de théâtre et musique dans les écoles, des stages thématiques et des accompagnements de création pour amateurs et professionnels.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Regarde il neige<span>Compagnie de théâtre musical</span></a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="la-compagnie.html">La compagnie</a>
+        <div class="nav-dropdown">
+          <a href="index.html#spectacles" aria-haspopup="true">Spectacles</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="le-conte-d-hiver.html" role="menuitem">Le Conte d'hiver</a>
+            <a href="mathis-andersen.html" role="menuitem">Mathis Andersen - Monde monde</a>
+            <a href="robinson.html" role="menuitem">Robinson Crusoé et Zoé Liberté</a>
+            <a href="aurore.html" role="menuitem">Aurore</a>
+            <a href="alice.html" role="menuitem">Alice au pays des miroirs</a>
+            <a href="remi-do-et-gagaboum.html" role="menuitem">Rémi Do et Gagaboum</a>
+            <a href="ambroisie.html" role="menuitem">Ambroisie</a>
+          </div>
+        </div>
+        <a href="actions.html" class="active">Actions</a>
+        <a href="equipe.html">Équipe</a>
+      </nav>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <span class="mobile-nav-label">Navigation</span>
+    <a href="la-compagnie.html">La compagnie</a>
+    <span class="mobile-nav-label">Spectacles</span>
+    <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+    <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
+    <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+    <a href="aurore.html">Aurore</a>
+    <a href="alice.html">Alice au pays des miroirs</a>
+    <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+    <a href="ambroisie.html">Ambroisie</a>
+    <span class="mobile-nav-label">Découvrir</span>
+    <a href="actions.html">Actions culturelles</a>
+    <a href="equipe.html">L'équipe</a>
+  </nav>
+
+  <main>
+
+    <section class="page-hero page-hero--short" aria-labelledby="page-title">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-pretitle">Transmission & pédagogie</span>
+        <h1 class="hero-title" id="page-title">Actions culturelles</h1>
+        <p class="hero-subtitle">Ateliers, stages et accompagnements de création — depuis 2014</p>
+      </div>
+    </section>
+
+    <!-- ==================== INTRO ==================== -->
+    <section class="section">
+      <div class="container--narrow">
+        <span class="section-label">Notre démarche</span>
+        <p class="intro-text">Depuis les débuts de la compagnie, nous animons des ateliers et stages dans les écoles et les associations. C'est à la fois l'occasion de partager, d'enseigner et de transmettre, mais aussi une formidable source d'inspiration qui nourrit notre travail.</p>
+      </div>
+    </section>
+
+    <!-- ==================== ATELIERS CRÉATION ==================== -->
+    <section class="section section--alt" aria-labelledby="creation-title">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start;">
+          <div>
+            <span class="section-label">Accompagnement artistique</span>
+            <h2 id="creation-title">Ateliers création de spectacle</h2>
+            <div class="divider"></div>
+            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.7;">Animés par des artistes de la compagnie, ces ateliers de création s'adressent aussi bien à des groupes amateurs que professionnels.</p>
+          </div>
+          <div>
+            <ul class="actions-list" role="list" aria-label="Types d'ateliers création">
+              <li>Mise en scène d'un groupe amateur ou professionnel</li>
+              <li>Création musicale pour un groupe amateur ou professionnel</li>
+              <li>Atelier d'écriture de chanson</li>
+              <li>Coaching de groupe de musique</li>
+            </ul>
+
+            <div class="actions-example mt-md">
+              <p><strong>Exemple :</strong> En 2022, la compagnie a réalisé pour la Compagnie Vacarisas une création musicale accompagnant le spectacle <em>Jeanne et le feu</em> de Matei Visniec. En 2025, Gaëlle Hispard a mis en scène <em>Taïga</em> d'Aurianne Abécassis pour la même compagnie.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ATELIERS ÉCOLES ==================== -->
+    <section class="section" aria-labelledby="ecoles-title">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start;">
+          <div>
+            <span class="section-label">Jeune public</span>
+            <h2 id="ecoles-title">Ateliers théâtre & musique dans les écoles</h2>
+            <div class="divider"></div>
+            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.7;">La compagnie propose des ateliers dans les écoles accompagnant la représentation de ses spectacles.</p>
+          </div>
+          <div>
+            <ul class="actions-list" role="list" aria-label="Types d'ateliers scolaires">
+              <li>Initiation au théâtre</li>
+              <li>Initiation à la musique</li>
+              <li>Travail de scène</li>
+              <li>Atelier d'écriture</li>
+              <li>Projet pédagogique sur mesure pour les écoles</li>
+            </ul>
+
+            <div class="actions-example mt-md">
+              <p><strong>Exemple :</strong> Avec l'école Alain Mouty de Guyane française, la compagnie a monté un projet de théâtre à Paris — un parcours théâtral complet et la création d'un spectacle collectif, en lien avec <em>Robinson Crusoé… et Zoé Liberté !</em> et <em>Aurore — La belle au bois ne s'endort pas</em>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STAGES ==================== -->
+    <section class="section section--alt" aria-labelledby="stages-title">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start;">
+          <div>
+            <span class="section-label">Formation</span>
+            <h2 id="stages-title">Stages théâtre & musique</h2>
+            <div class="divider"></div>
+            <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.7;">De manière plus ponctuelle, la compagnie propose des stages thématiques à destination d'enfants, adolescents, étudiants, adultes, amateurs et/ou professionnel·les.</p>
+          </div>
+          <div>
+            <ul class="actions-list" role="list">
+              <li>Stages de formation théâtre</li>
+              <li>Créations de mises en scène</li>
+              <li>Travail de prise de parole</li>
+            </ul>
+            <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-top: var(--space-sm); line-height: 1.7;">Le temps d'un week-end, durant les vacances scolaires ou à l'occasion d'une prochaine création de la compagnie.</p>
+
+            <div class="actions-example mt-md">
+              <p><strong>Exemple :</strong> La compagnie a créé différents spectacles sous forme de stages pour l'Association Acerma sur la thématique des emprises dans la société : <em>Les visages de l'emprise</em> (2025, avec Gaëlle Hispard et Mathieu Gerhardt) et <em>Emprise(s)</em> (2026, avec Gaëlle Hispard et Clément Ballet).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA ==================== -->
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container--narrow" style="text-align: center;">
+        <span class="section-label">Nous contacter</span>
+        <h2 id="contact-title">Un projet en tête ?</h2>
+        <div class="divider" style="margin: var(--space-md) auto;"></div>
+        <p style="color: var(--color-text-muted); max-width: 460px; margin: 0 auto var(--space-md); font-size: 0.95rem; line-height: 1.8;">La compagnie est disponible pour toute demande d'atelier, de stage ou d'accompagnement artistique. Chaque projet est une collaboration unique.</p>
+        <a href="la-compagnie.html" class="btn btn--primary">Découvrir la compagnie</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div><p class="footer-brand">Regarde il neige</p><p class="footer-tagline">Compagnie de théâtre musical et poétique, humaniste et ouvert sur l'autre.</p></div>
+      <div>
+        <p class="footer-col-title">Spectacles</p>
+        <nav class="footer-nav">
+          <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+          <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
+          <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+          <a href="aurore.html">Aurore</a>
+          <a href="alice.html">Alice au pays des miroirs</a>
+          <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+          <a href="ambroisie.html">Ambroisie</a>
+        </nav>
+      </div>
+      <div><p class="footer-col-title">La compagnie</p><nav class="footer-nav"><a href="la-compagnie.html">Présentation</a><a href="equipe.html">L'équipe</a><a href="actions.html">Actions culturelles</a></nav></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Compagnie Regarde il neige</span><span>Théâtre musical · Jeune public</span></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <script>
+    /* ============================================================
+       IMAGES — Modifiez ces variables pour changer les images
+       ============================================================ */
+    const PAGE_HERO_IMAGE = "assets/images/mathis_andersen.avif";
+    const PAGE_HERO_ALT = "Mathis Andersen - Monde monde";
+
+    /* Photos membres — pour la distribution */
+    const PHOTO_CLEMENT = "assets/images/clement-ballet.avif";
+    const PHOTO_JONATHAN = "assets/images/jonathan-fried.avif";
+    const PHOTO_ARMANCE = "assets/images/armance-galpin.avif";
+    const PHOTO_MATHIEU = "assets/images/mathieu-gerhardt.avif";
+    const PHOTO_AURELIEN = "assets/images/aurelien-houver.avif";
+    const PHOTO_ARIANE = "assets/images/ariane-louis.avif";
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathis Andersen - Monde monde — Regarde il neige</title>
+  <meta name="description"
+    content="Découvrez 'Monde monde', le concert de Mathis Andersen. Un voyage musical en solo, duo ou trio, mis en scène par Gaëlle Hispard.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Regarde il neige<span>Compagnie de théâtre musical</span></a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="la-compagnie.html">La compagnie</a>
+        <div class="nav-dropdown">
+          <a href="index.html#spectacles" aria-haspopup="true" class="active">Spectacles</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="le-conte-d-hiver.html" role="menuitem">Le Conte d'hiver</a>
+            <a href="mathis-andersen.html" role="menuitem">Mathis Andersen - Monde monde</a>
+            <a href="robinson.html" role="menuitem">Robinson Crusoé et Zoé Liberté</a>
+            <a href="aurore.html" role="menuitem">Aurore</a>
+            <a href="alice.html" role="menuitem">Alice au pays des miroirs</a>
+            <a href="remi-do-et-gagaboum.html" role="menuitem">Rémi Do et Gagaboum</a>
+            <a href="ambroisie.html" role="menuitem">Ambroisie</a>
+          </div>
+        </div>
+        <a href="actions.html">Actions</a>
+        <a href="equipe.html">Équipe</a>
+      </nav>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <span class="mobile-nav-label">Navigation</span>
+    <a href="la-compagnie.html">La compagnie</a>
+    <span class="mobile-nav-label">Spectacles</span>
+    <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+    <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
+    <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+    <a href="aurore.html">Aurore</a>
+    <a href="alice.html">Alice au pays des miroirs</a>
+    <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+    <a href="ambroisie.html">Ambroisie</a>
+    <span class="mobile-nav-label">Découvrir</span>
+    <a href="actions.html">Actions culturelles</a>
+    <a href="equipe.html">L'équipe</a>
+  </nav>
+
+  <main>
+
+    <section class="page-hero" aria-labelledby="spectacle-title">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-pretitle">Concert</span>
+        <h1 class="hero-title" id="spectacle-title">Mathis Andersen<br>Monde monde</h1>
+        <p class="hero-subtitle">Un voyage sonore singulier — sonorités humanistes et poétiques</p>
+        <div class="hero-meta">
+          <span class="hero-meta-item"><strong>Âge</strong> Tout public</span>
+          <span class="hero-meta-item"><strong>Durée</strong> 90 minutes</span>
+          <span class="hero-meta-item"><strong>Format</strong> Solo / Duo / Trio</span>
+        </div>
+        <div class="btn-group">
+          <a href="#" class="btn btn--primary">Télécharger le dossier</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INFOS STRIP ==================== -->
+    <div class="spectacle-strip" role="complementary">
+      <div class="spectacle-strip-inner">
+        <div class="strip-item"><span class="strip-item-label">Type</span><span class="strip-item-value">Concert</span></div>
+        <div class="strip-item"><span class="strip-item-label">Âge</span><span class="strip-item-value">Tout public</span></div>
+        <div class="strip-item"><span class="strip-item-label">Durée</span><span class="strip-item-value">90 minutes</span></div>
+        <div class="strip-item"><span class="strip-item-label">Format</span><span class="strip-item-value">Solo / Duo / Trio</span></div>
+      </div>
+    </div>
+
+    <!-- ==================== CONTENU ==================== -->
+    <section class="section">
+      <div class="container--narrow">
+        <span class="section-label">Le spectacle</span>
+        <h2 class="section-title">Un voyage musical</h2>
+        <div class="body-text">
+          <p>Mathis Andersen nous invite à travers "Monde monde" dans un univers musical singulier. Ce concert, qui peut être interprété en solo, duo ou trio, explore des sonorités humanistes et poétiques, chères à la compagnie Regarde il neige.</p>
+          <p>Sous le regard complice de Gaëlle Hispard à la mise en scène, Mathis déploie un récit sonore où chaque note interroge notre rapport au monde et à l'imaginaire.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ÉQUIPE ARTISTIQUE ==================== -->
+    <section class="section section--alt">
+      <div class="container">
+        <span class="section-label">En coulisses</span>
+        <h2 class="section-title">Équipe de création</h2>
+        <div class="equipe-spectacle" style="max-width: 640px;">
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Mise en scène</div><div class="equipe-spectacle-value">Gaëlle Hispard</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Adaptation & Dramaturgie</div><div class="equipe-spectacle-value">Gaëlle Hispard & Mathieu Gerhardt</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Création musicale</div><div class="equipe-spectacle-value">Mathieu Gerhardt</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Conseil artistique</div><div class="equipe-spectacle-value">Marc Beaudin</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Conseil dramaturgique</div><div class="equipe-spectacle-value">Jonathan Fried</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Création sonore</div><div class="equipe-spectacle-value">Simon Poupard</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DISTRIBUTION ==================== -->
+    <section class="section">
+      <div class="container">
+        <span class="section-label">Sur scène</span>
+        <h2 class="section-title">Distribution</h2>
+
+        <div class="equipe-grid--photos">
+
+          <article class="equipe-card--photo">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-clement" src="" alt="Clément Ballet">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Clément Ballet</p>
+              <p class="equipe-card-photo-role">Léonte / Le Berger</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-jonathan" src="" alt="Jonathan Fried">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Jonathan Fried</p>
+              <p class="equipe-card-photo-role">Camillo / Antigonus / Des Seigneurs</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-armance" src="" alt="Armance Galpin">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Armance Galpin</p>
+              <p class="equipe-card-photo-role">Paulina / Mamillius / Florizel</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-mathieu" src="" alt="Mathieu Gerhardt">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Mathieu Gerhardt</p>
+              <p class="equipe-card-photo-role">Le Temps / Le Clown / Des Seigneurs</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-aurelien" src="" alt="Aurélien Houver">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Aurélien Houver</p>
+              <p class="equipe-card-photo-role">Polixène / Un Marin / Des Seigneurs</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-ariane" src="" alt="Ariane Louis">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Ariane Louis</p>
+              <p class="equipe-card-photo-role">Hermione / Perdita</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== À DÉCOUVRIR AUSSI ==================== -->
+    <section class="section section--alt">
+      <div class="container--narrow">
+        <span class="section-label">À découvrir aussi</span>
+        <h2>Nos autres spectacles</h2>
+        <div class="divider"></div>
+        <div class="btn-group">
+          <a href="le-conte-d-hiver.html" class="btn btn--primary">Le Conte d'hiver</a>
+          <a href="robinson.html" class="btn btn--outline-dark">Robinson Crusoé et Zoé Liberté</a>
+          <a href="aurore.html" class="btn btn--outline-dark">Aurore</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">Regarde il neige</p>
+        <p class="footer-tagline">Compagnie de théâtre musical et poétique, humaniste et ouvert sur l'autre.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Spectacles</p>
+        <nav class="footer-nav">
+          <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+          <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
+          <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+          <a href="aurore.html">Aurore</a>
+          <a href="alice.html">Alice au pays des miroirs</a>
+          <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+          <a href="ambroisie.html">Ambroisie</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer-col-title">La compagnie</p>
+        <nav class="footer-nav">
+          <a href="la-compagnie.html">Présentation</a>
+          <a href="equipe.html">L'équipe</a>
+          <a href="actions.html">Actions culturelles</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Compagnie Regarde il neige</span>
+      <span>Théâtre musical · Jeune public</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    /* Injection des photos membres via les variables */
+    document.addEventListener('DOMContentLoaded', function () {
+      const photos = [
+        { id: 'photo-clement', src: typeof PHOTO_CLEMENT !== 'undefined' ? PHOTO_CLEMENT : '' },
+        { id: 'photo-jonathan', src: typeof PHOTO_JONATHAN !== 'undefined' ? PHOTO_JONATHAN : '' },
+        { id: 'photo-armance', src: typeof PHOTO_ARMANCE !== 'undefined' ? PHOTO_ARMANCE : '' },
+        { id: 'photo-mathieu', src: typeof PHOTO_MATHIEU !== 'undefined' ? PHOTO_MATHIEU : '' },
+        { id: 'photo-aurelien', src: typeof PHOTO_AURELIEN !== 'undefined' ? PHOTO_AURELIEN : '' },
+        { id: 'photo-ariane', src: typeof PHOTO_ARIANE !== 'undefined' ? PHOTO_ARIANE : '' },
+      ];
+      photos.forEach(({ id, src }) => {
+        if (!src) return;
+        const img = document.getElementById(id);
+        if (!img) return;
+        img.src = src;
+        const wrap = img.closest('.equipe-card-photo-wrap');
+        if (wrap) {
+          const ph = wrap.querySelector('.equipe-card-photo-placeholder');
+          if (ph) ph.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

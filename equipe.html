@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script>
+    /* ============================================================
+       IMAGES — Modifiez ces variables pour changer les images
+       ============================================================ */
+    const PAGE_HERO_IMAGE = "assets/images/hero-equipe-a-remplacer.jpg";
+    const PAGE_HERO_ALT   = "L'équipe artistique de la compagnie Regarde il neige";
+
+    /* Photos membres — plus lisibles */
+    const PHOTO_GAELLE         = "assets/images/gaelle-hispard.avif";
+    const PHOTO_MATHIEU        = "assets/images/mathieu-gerhardt.avif";
+    const PHOTO_MARC           = "assets/images/marc-beaudin.avif";
+    const PHOTO_CLEMENT        = "assets/images/clement-ballet.avif";
+    const PHOTO_FRANCOIS       = "assets/images/francois-berard.avif";
+    const PHOTO_JEREMY         = "assets/images/jeremy-branger.avif";
+    const PHOTO_SARAH          = "assets/images/sarah-cillaire.avif";
+    const PHOTO_MARGAUX        = "assets/images/margaux-conduzorgues.avif";
+    const PHOTO_CECILE         = "assets/images/cecile-elias.avif";
+    const PHOTO_JONATHAN       = "assets/images/jonathan-fried.avif";
+    const PHOTO_ARMANCE        = "assets/images/armance-galpin.avif";
+    const PHOTO_AURELIEN       = "assets/images/aurelien-houver.avif";
+    const PHOTO_GABRIELLE      = "assets/images/gabrielle-laurens.avif";
+    const PHOTO_ARIANE         = "assets/images/ariane-louis.avif";
+    const PHOTO_VERONIKA       = "assets/images/veronika-ovchinnikova.avif";
+    const PHOTO_EMMANUEL       = "assets/images/emmanuel-vacarisas.avif";
+    const PHOTO_JAMES          = "assets/images/james-groguelin.avif";
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'équipe — Regarde il neige</title>
+  <meta name="description" content="Comédiens, musiciens, scénographes et illustratrices : découvrez les artistes qui composent la compagnie Regarde il neige depuis 2014.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Regarde il neige<span>Compagnie de théâtre musical</span></a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="la-compagnie.html">La compagnie</a>
+        <div class="nav-dropdown">
+          <a href="index.html#spectacles" aria-haspopup="true">Spectacles</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="le-conte-d-hiver.html" role="menuitem">Le Conte d'hiver</a>
+            <a href="mathis-andersen.html" role="menuitem">Mathis Andersen - Monde monde</a>
+            <a href="robinson.html" role="menuitem">Robinson Crusoé et Zoé Liberté</a>
+            <a href="aurore.html" role="menuitem">Aurore</a>
+            <a href="alice.html" role="menuitem">Alice au pays des miroirs</a>
+            <a href="remi-do-et-gagaboum.html" role="menuitem">Rémi Do et Gagaboum</a>
+            <a href="ambroisie.html" role="menuitem">Ambroisie</a>
+          </div>
+        </div>
+        <a href="actions.html">Actions</a>
+        <a href="equipe.html" class="active">Équipe</a>
+      </nav>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <span class="mobile-nav-label">Navigation</span>
+    <a href="la-compagnie.html">La compagnie</a>
+    <span class="mobile-nav-label">Spectacles</span>
+    <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+    <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
+    <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+    <a href="aurore.html">Aurore</a>
+    <a href="alice.html">Alice au pays des miroirs</a>
+    <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+    <a href="ambroisie.html">Ambroisie</a>
+    <span class="mobile-nav-label">Découvrir</span>
+    <a href="actions.html">Actions culturelles</a>
+    <a href="equipe.html">L'équipe</a>
+  </nav>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="page-hero page-hero--short" aria-labelledby="page-title">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-pretitle">Portraits</span>
+        <h1 class="hero-title" id="page-title">L'équipe</h1>
+        <p class="hero-subtitle">Les artistes qui donnent vie à nos spectacles depuis 2014.</p>
+      </div>
+    </section>
+
+    <!-- ==================== FONDATEURS ==================== -->
+    <section class="section" aria-labelledby="fondateurs-title">
+      <div class="container">
+        <span class="section-label">À la tête de la compagnie</span>
+        <h2 id="fondateurs-title" class="section-title">Gaëlle Hispard & Mathieu Gerhardt</h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--color-border); border: 1px solid var(--color-border); margin-bottom: var(--space-lg);">
+
+          <!-- Gaëlle -->
+          <div style="background: var(--color-bg); display: flex; gap: 2rem; align-items: flex-start; padding: 2rem;">
+            <div style="flex-shrink: 0; width: 140px; aspect-ratio: 3/4; overflow: hidden; background: var(--color-bg-dark);">
+              <img id="photo-gaelle" src="" alt="Gaëlle Hispard" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(15%);">
+            </div>
+            <div>
+              <h3 style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; margin-bottom: 0.4rem;">Gaëlle Hispard</h3>
+              <p style="font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 0.8rem;">Metteure en scène · Autrice · Compositrice · Comédienne · Musicienne</p>
+              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.7;">Co-fondatrice de la compagnie en 2014. Gaëlle signe la mise en scène de l'ensemble des créations et compose les musiques et chansons originales avec Mathieu Gerhardt.</p>
+            </div>
+          </div>
+
+          <!-- Mathieu -->
+          <div style="background: var(--color-bg); display: flex; gap: 2rem; align-items: flex-start; padding: 2rem;">
+            <div style="flex-shrink: 0; width: 140px; aspect-ratio: 3/4; overflow: hidden; background: var(--color-bg-dark);">
+              <img id="photo-mathieu" src="" alt="Mathieu Gerhardt" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(15%);">
+            </div>
+            <div>
+              <h3 style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; margin-bottom: 0.4rem;">Mathieu Gerhardt</h3>
+              <p style="font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 0.8rem;">Dramaturge · Auteur · Compositeur · Comédien · Musicien</p>
+              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.7;">Co-fondateur de la compagnie en 2014. Mathieu assure la dramaturgie et co-écrit les textes et musiques de toutes les créations de la compagnie.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ==================== COMÉDIENS ==================== -->
+        <span class="section-label">Comédien·nes & musicien·nes</span>
+        <h2 class="section-title mt-sm">Interprètes</h2>
+
+        <div class="equipe-grid--photos" role="list" aria-label="Interprètes de la compagnie">
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-marc" src="" alt="Marc Beaudin" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Marc Beaudin</p>
+              <p class="equipe-card-photo-role">Conseiller artistique, co-metteur en scène</p>
+              <p class="equipe-card-photo-shows">Aurore · Alice · Rémi Do · Le Conte d'hiver</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-margaux" src="" alt="Margaux Conduzorgues" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Margaux Conduzorgues</p>
+              <p class="equipe-card-photo-role">Comédienne</p>
+              <p class="equipe-card-photo-shows">Aurore · Alice</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <div class="equipe-card-photo-placeholder">◊</div>
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Charlotte Gallas</p>
+              <p class="equipe-card-photo-role">Comédienne</p>
+              <p class="equipe-card-photo-shows">Aurore</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <div class="equipe-card-photo-placeholder">◊</div>
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Louise Ferry</p>
+              <p class="equipe-card-photo-role">Comédienne, musicienne</p>
+              <p class="equipe-card-photo-shows">Aurore · Rémi Do et Gagaboum</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-emmanuel" src="" alt="Emmanuel Vacarisas" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Emmanuel Vacarisas</p>
+              <p class="equipe-card-photo-role">Comédien</p>
+              <p class="equipe-card-photo-shows">Ambroisie · Aurore · Alice</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-francois" src="" alt="François Bérard" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">François Bérard</p>
+              <p class="equipe-card-photo-role">Comédien</p>
+              <p class="equipe-card-photo-shows">Aurore · Alice</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-aurelien" src="" alt="Aurélien Houver" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Aurélien Houver</p>
+              <p class="equipe-card-photo-role">Comédien, musicien</p>
+              <p class="equipe-card-photo-shows">Aurore · Alice · Le Conte d'hiver</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-veronika" src="" alt="Véronika Ovchinnikova" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Véronika Ovchinnikova</p>
+              <p class="equipe-card-photo-role">Comédienne</p>
+              <p class="equipe-card-photo-shows">Ambroisie · Aurore</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <div class="equipe-card-photo-placeholder">◊</div>
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Quentin Gouraud</p>
+              <p class="equipe-card-photo-role">Comédien, musicien</p>
+              <p class="equipe-card-photo-shows">Aurore · Alice</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-gabrielle" src="" alt="Gabrielle Laurens" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Gabrielle Laurens</p>
+              <p class="equipe-card-photo-role">Comédienne</p>
+              <p class="equipe-card-photo-shows">Aurore</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-cecile" src="" alt="Cécile Elias" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Cécile Elias</p>
+              <p class="equipe-card-photo-role">Comédienne</p>
+              <p class="equipe-card-photo-shows">Alice</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-sarah" src="" alt="Sarah Cillaire" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Sarah Cillaire</p>
+              <p class="equipe-card-photo-role">Comédienne</p>
+              <p class="equipe-card-photo-shows">Ambroisie · Aurore</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-ariane" src="" alt="Ariane Louis" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Ariane Louis</p>
+              <p class="equipe-card-photo-role">Comédienne, musicienne</p>
+              <p class="equipe-card-photo-shows">Rémi Do · Robinson · Le Conte d'hiver</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-jeremy" src="" alt="Jérémy Branger" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Jérémy Branger</p>
+              <p class="equipe-card-photo-role">Comédien, musicien</p>
+              <p class="equipe-card-photo-shows">Rémi Do et Gagaboum</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-clement" src="" alt="Clément Ballet" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Clément Ballet</p>
+              <p class="equipe-card-photo-role">Comédien, musicien</p>
+              <p class="equipe-card-photo-shows">Robinson · Le Conte d'hiver</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <div class="equipe-card-photo-placeholder">◊</div>
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Noémie Zard</p>
+              <p class="equipe-card-photo-role">Comédienne</p>
+              <p class="equipe-card-photo-shows">Robinson Crusoé et Zoé Liberté</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <div class="equipe-card-photo-placeholder">◊</div>
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Roman Tedeschi</p>
+              <p class="equipe-card-photo-role">Comédien, musicien</p>
+              <p class="equipe-card-photo-shows">Robinson Crusoé et Zoé Liberté</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <div class="equipe-card-photo-placeholder">◊</div>
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Camille Henry</p>
+              <p class="equipe-card-photo-role">Comédienne</p>
+              <p class="equipe-card-photo-shows">Robinson Crusoé et Zoé Liberté</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-armance" src="" alt="Armance Galpin" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Armance Galpin</p>
+              <p class="equipe-card-photo-role">Comédienne</p>
+              <p class="equipe-card-photo-shows">Le Conte d'hiver</p>
+            </div>
+          </article>
+
+          <article class="equipe-card--photo" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-jonathan" src="" alt="Jonathan Fried" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Jonathan Fried</p>
+              <p class="equipe-card-photo-role">Comédien</p>
+              <p class="equipe-card-photo-shows">Le Conte d'hiver</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ==================== TECHNIQUE ==================== -->
+        <div class="mt-lg">
+          <span class="section-label">Équipe technique & artistique</span>
+          <h2 class="section-title">Créateurs</h2>
+
+          <div class="equipe-grid--photos" role="list" aria-label="Équipe technique">
+
+            <article class="equipe-card--photo" role="listitem">
+              <div class="equipe-card-photo-wrap">
+                <div class="equipe-card-photo-placeholder">◊</div>
+              </div>
+              <div class="equipe-card-photo-body">
+                <p class="equipe-card-photo-name">Simon Poupard</p>
+                <p class="equipe-card-photo-role">Créateur sonore</p>
+                <p class="equipe-card-photo-shows">Aurore · Alice · Rémi Do · Robinson · Le Conte d'hiver</p>
+              </div>
+            </article>
+
+            <article class="equipe-card--photo" role="listitem">
+              <div class="equipe-card-photo-wrap">
+                <img id="photo-james" src="" alt="James Groguelin" loading="lazy">
+              </div>
+              <div class="equipe-card-photo-body">
+                <p class="equipe-card-photo-name">James Groguelin</p>
+                <p class="equipe-card-photo-role">Créateur lumière</p>
+                <p class="equipe-card-photo-shows">Ambroisie · Aurore</p>
+              </div>
+            </article>
+
+            <article class="equipe-card--photo" role="listitem">
+              <div class="equipe-card-photo-wrap">
+                <div class="equipe-card-photo-placeholder">◊</div>
+              </div>
+              <div class="equipe-card-photo-body">
+                <p class="equipe-card-photo-name">Cassandre Boy</p>
+                <p class="equipe-card-photo-role">Scénographe</p>
+                <p class="equipe-card-photo-shows">Aurore · Alice · Robinson</p>
+              </div>
+            </article>
+
+            <article class="equipe-card--photo" role="listitem">
+              <div class="equipe-card-photo-wrap">
+                <div class="equipe-card-photo-placeholder">◊</div>
+              </div>
+              <div class="equipe-card-photo-body">
+                <p class="equipe-card-photo-name">Jean-Marie Granghaud</p>
+                <p class="equipe-card-photo-role">Scénographe</p>
+                <p class="equipe-card-photo-shows">Rémi Do et Gagaboum</p>
+              </div>
+            </article>
+
+            <article class="equipe-card--photo" role="listitem">
+              <div class="equipe-card-photo-wrap">
+                <div class="equipe-card-photo-placeholder">◊</div>
+              </div>
+              <div class="equipe-card-photo-body">
+                <p class="equipe-card-photo-name">Éloïse Scherrer</p>
+                <p class="equipe-card-photo-role">Illustratrice</p>
+                <p class="equipe-card-photo-shows">Ambroisie · Aurore · Alice · Rémi Do · Robinson</p>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand">Regarde il neige</p>
+        <p class="footer-tagline">Compagnie de théâtre musical et poétique, humaniste et ouvert sur l'autre.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Spectacles</p>
+        <nav class="footer-nav">
+          <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+          <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
+          <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+          <a href="aurore.html">Aurore</a>
+          <a href="alice.html">Alice au pays des miroirs</a>
+          <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+          <a href="ambroisie.html">Ambroisie</a>
+        </nav>
+      </div>
+      <div>
+        <p class="footer-col-title">La compagnie</p>
+        <nav class="footer-nav">
+          <a href="la-compagnie.html">Présentation</a>
+          <a href="equipe.html">L'équipe</a>
+          <a href="actions.html">Actions culturelles</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Compagnie Regarde il neige</span>
+      <span>Théâtre musical · Jeune public</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    /* Injection des photos membres via les variables */
+    document.addEventListener('DOMContentLoaded', function () {
+      const photos = [
+        { id: 'photo-gaelle',    src: typeof PHOTO_GAELLE    !== 'undefined' ? PHOTO_GAELLE    : '' },
+        { id: 'photo-mathieu',   src: typeof PHOTO_MATHIEU   !== 'undefined' ? PHOTO_MATHIEU   : '' },
+        { id: 'photo-marc',      src: typeof PHOTO_MARC      !== 'undefined' ? PHOTO_MARC      : '' },
+        { id: 'photo-clement',   src: typeof PHOTO_CLEMENT   !== 'undefined' ? PHOTO_CLEMENT   : '' },
+        { id: 'photo-francois',  src: typeof PHOTO_FRANCOIS  !== 'undefined' ? PHOTO_FRANCOIS  : '' },
+        { id: 'photo-jeremy',    src: typeof PHOTO_JEREMY    !== 'undefined' ? PHOTO_JEREMY    : '' },
+        { id: 'photo-sarah',     src: typeof PHOTO_SARAH     !== 'undefined' ? PHOTO_SARAH     : '' },
+        { id: 'photo-margaux',   src: typeof PHOTO_MARGAUX   !== 'undefined' ? PHOTO_MARGAUX   : '' },
+        { id: 'photo-cecile',    src: typeof PHOTO_CECILE    !== 'undefined' ? PHOTO_CECILE    : '' },
+        { id: 'photo-jonathan',  src: typeof PHOTO_JONATHAN  !== 'undefined' ? PHOTO_JONATHAN  : '' },
+        { id: 'photo-armance',   src: typeof PHOTO_ARMANCE   !== 'undefined' ? PHOTO_ARMANCE   : '' },
+        { id: 'photo-aurelien',  src: typeof PHOTO_AURELIEN  !== 'undefined' ? PHOTO_AURELIEN  : '' },
+        { id: 'photo-gabrielle', src: typeof PHOTO_GABRIELLE !== 'undefined' ? PHOTO_GABRIELLE : '' },
+        { id: 'photo-ariane',    src: typeof PHOTO_ARIANE    !== 'undefined' ? PHOTO_ARIANE    : '' },
+        { id: 'photo-veronika',  src: typeof PHOTO_VERONIKA  !== 'undefined' ? PHOTO_VERONIKA  : '' },
+        { id: 'photo-emmanuel',  src: typeof PHOTO_EMMANUEL  !== 'undefined' ? PHOTO_EMMANUEL  : '' },
+        { id: 'photo-james',     src: typeof PHOTO_JAMES     !== 'undefined' ? PHOTO_JAMES     : '' },
+      ];
+      photos.forEach(({ id, src }) => {
+        if (!src) return;
+        const img = document.getElementById(id);
+        if (!img) return;
+        img.src = src;
+        /* Masquer le placeholder si présent dans le même wrapper */
+        const wrap = img.closest('.equipe-card-photo-wrap');
+        if (wrap) {
+          const ph = wrap.querySelector('.equipe-card-photo-placeholder');
+          if (ph) ph.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

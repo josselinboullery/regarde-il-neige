@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script>
+    /* ============================================================
+       IMAGES — Modifiez ces variables pour changer les images
+       ============================================================ */
+    const PAGE_HERO_IMAGE = "assets/images/alice_au_pays_des_miroirs.avif";
+    const PAGE_HERO_ALT   = "Alice au pays des miroirs, spectacle musical";
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alice au pays des miroirs · Regarde il neige</title>
+  <meta name="description" content="Alice au pays des miroirs : spectacle musical librement inspiré de Lewis Carroll, par la compagnie Regarde il neige. Un hymne à l'imagination pour les petits et grands.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Regarde il neige<span>Compagnie de théâtre musical</span></a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="la-compagnie.html">La compagnie</a>
+        <div class="nav-dropdown">
+          <a href="index.html#spectacles" class="active" aria-haspopup="true">Spectacles</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="le-conte-d-hiver.html" role="menuitem">Le Conte d'hiver</a>
+            <a href="mathis-andersen.html" role="menuitem">Mathis Andersen - Monde monde</a>
+            <a href="robinson.html" role="menuitem">Robinson Crusoé et Zoé Liberté</a>
+            <a href="aurore.html" role="menuitem">Aurore</a>
+            <a href="alice.html" role="menuitem">Alice au pays des miroirs</a>
+            <a href="remi-do-et-gagaboum.html" role="menuitem">Rémi Do et Gagaboum</a>
+            <a href="ambroisie.html" role="menuitem">Ambroisie</a>
+          </div>
+        </div>
+        <a href="actions.html">Actions</a>
+        <a href="equipe.html">Équipe</a>
+      </nav>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <span class="mobile-nav-label">Navigation</span>
+    <a href="la-compagnie.html">La compagnie</a>
+    <span class="mobile-nav-label">Spectacles</span>
+    <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+    <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
+    <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+    <a href="aurore.html">Aurore</a>
+    <a href="alice.html">Alice au pays des miroirs</a>
+    <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+    <a href="ambroisie.html">Ambroisie</a>
+    <span class="mobile-nav-label">Découvrir</span>
+    <a href="actions.html">Actions culturelles</a>
+    <a href="equipe.html">L'équipe</a>
+  </nav>
+
+  <main>
+
+    <section class="page-hero" aria-labelledby="spectacle-title">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-pretitle">Spectacle musical · À partir de 4 ans</span>
+        <h1 class="hero-title" id="spectacle-title">Alice au pays<br>des miroirs</h1>
+        <p class="hero-subtitle">Librement inspiré de Lewis Carroll — un hymne à l'imagination</p>
+        <div class="hero-meta">
+          <span class="hero-meta-item"><strong>Durée</strong> 55 minutes</span>
+          <span class="hero-meta-item"><strong>Public</strong> À partir de 4 ans</span>
+          <span class="hero-meta-item"><strong>Distribution</strong> 4 comédien·nes</span>
+        </div>
+        <div class="btn-group">
+          <a href="#dates" class="btn btn--primary">Dates à venir</a>
+          <a href="https://www.youtube.com/watch?v=P7WNKsYdpv0&t=60s" target="_blank" rel="noopener" class="btn btn--outline">▶ Bande-annonce</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="spectacle-strip" role="complementary">
+      <div class="spectacle-strip-inner">
+        <div class="strip-item"><span class="strip-item-label">Type</span><span class="strip-item-value">Spectacle musical</span></div>
+        <div class="strip-item"><span class="strip-item-label">Public</span><span class="strip-item-value">À partir de 4 ans</span></div>
+        <div class="strip-item"><span class="strip-item-label">Durée</span><span class="strip-item-value">55 minutes</span></div>
+        <div class="strip-item"><span class="strip-item-label">Distribution</span><span class="strip-item-value">4 comédien·nes</span></div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container--narrow">
+        <span class="section-label">Le spectacle</span>
+        <p class="intro-text">Bizarre… Alors qu'Alice se regarde dans son miroir, son reflet lui parle et puis s'enfuit ! Lancée à sa poursuite, Alice traverse le miroir et découvre un monde magique et extraordinaire.</p>
+        <div class="divider"></div>
+        <div class="body-text">
+          <p>Elle va y rencontrer, entre autres, un lapin pressé, une chenille philosophe, un chat espiègle — mais saura-t-elle retrouver son reflet ?</p>
+          <p>Rythmé de chansons entraînantes interprétées en live, ce spectacle musical revisite l'univers extravagant de Lewis Carroll avec modernité, humour et poésie, dans un hymne à l'imagination.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="presse-title">
+      <div class="container">
+        <span class="section-label">Revue de presse</span>
+        <h2 id="presse-title" class="section-title">La presse en parle</h2>
+        <div class="presse-list">
+
+          <blockquote class="presse-item">
+            <p class="presse-quote">« Cette adaptation moderne, enlevée, joueuse de l'œuvre de Lewis Carroll fait la part belle à l'espace imaginaire, propre à l'enfant… Une version qui sait jouer avec humour des situations absurdes et des jeux de mots, tout en conservant l'esprit de l'auteur. »</p>
+            <footer class="presse-source">Françoise Sabatier-Morel — <cite>Télérama Sortir</cite></footer>
+          </blockquote>
+
+          <blockquote class="presse-item">
+            <p class="presse-quote">« Drôle, malin, ce spectacle musical, ponctué de chansons pop aux textes mordants, va bien au-delà de la simple rencontre d'Alice avec des personnages loufoques. »</p>
+            <footer class="presse-source">Pauline Conradsson — <cite>Le Parisien</cite></footer>
+          </blockquote>
+
+          <blockquote class="presse-item">
+            <p class="presse-quote">« Le jeu est extrêmement juste et s'entrecoupe d'une partition jouée live à la guitare. L'ensemble est une ode à l'imagination qui vise à faire dézoomer les jeunes gens. Une pièce parfaite, ultra intelligente, très bien écrite. »</p>
+            <footer class="presse-source">Amélie Blaustein-Niddam — <cite>Toute la Culture</cite></footer>
+          </blockquote>
+
+          <blockquote class="presse-item">
+            <p class="presse-quote">« Ne ratez pas cette adaptation inventive et drôle, aux jeux de mots savoureux. Accompagnée d'un excellent guitariste en live, cette Alice moderne réussit à garder l'esprit de l'auteur avec justesse. »</p>
+            <footer class="presse-source">Muriel Desvaux — <cite>La Muse</cite></footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="dates" aria-labelledby="dates-title">
+      <div class="container">
+        <span class="section-label">Tournée</span>
+        <h2 id="dates-title" class="section-title">Dates à venir</h2>
+        <p style="color: var(--color-text-muted); font-size: 0.9rem; font-style: italic;">Les prochaines dates seront annoncées prochainement. Pour toute demande de programmation, contactez la compagnie.</p>
+
+        <div class="mt-lg">
+          <h3 style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; margin-bottom: var(--space-sm);">Dates passées</h3>
+          <div class="dates-past-list" role="list">
+            <div class="date-past-item" role="listitem"><span class="date-past-year">2025</span><span class="date-past-venue">Le Quai des Arts</span><span class="date-past-city">Vibraye</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">2024</span><span class="date-past-venue">Tribunal de Paris</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">2023</span><span class="date-past-venue">Festival Scène Éphémère – Parc Sainte-Périne</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">2023</span><span class="date-past-venue">Centre National du Costume de Scène</span><span class="date-past-city">Moulins</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">2022–23</span><span class="date-past-venue">Essaïon Théâtre</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">2022</span><span class="date-past-venue">Royale Factory</span><span class="date-past-city">Versailles</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">2022</span><span class="date-past-venue">Le Vent se lève</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">2021</span><span class="date-past-venue">Théâtre de Verdure du Jardin Shakespeare</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">2020</span><span class="date-past-venue">Théâtre de La Garenne</span><span class="date-past-city">La Garenne-Colombes</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">2019</span><span class="date-past-venue">Festival Bords de Scène</span><span class="date-past-city">Commercy</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">2018</span><span class="date-past-venue">Essaïon Théâtre (création)</span><span class="date-past-city">Paris</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="equipe-title">
+      <div class="container">
+        <span class="section-label">Distribution</span>
+        <h2 id="equipe-title" class="section-title">Équipe artistique</h2>
+        <div class="equipe-spectacle" style="max-width: 640px;">
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Texte et musiques</div><div class="equipe-spectacle-value">Gaëlle Hispard et Mathieu Gerhardt</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Mise en scène</div><div class="equipe-spectacle-value">Gaëlle Hispard</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Avec</div><div class="equipe-spectacle-value">Cécile Elias ou Margaux Conduzorgues · Victoria Ribeiro ou Gaëlle Hispard · François Bérard ou Aurélien Houver · Mathieu Gerhardt ou Quentin Gouraud</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Conseiller artistique</div><div class="equipe-spectacle-value">Marc Beaudin</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Création lumière & vidéo</div><div class="equipe-spectacle-value">Marinette Buchy</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Création sonore</div><div class="equipe-spectacle-value">Simon Poupard</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Scénographie & costumes</div><div class="equipe-spectacle-value">Cassandre Boy et Camille Allain Dulondel</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Illustration</div><div class="equipe-spectacle-value">Éloïse Scherrer</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container--narrow">
+        <span class="section-label">À découvrir aussi</span>
+        <h2>Nos autres spectacles</h2>
+        <div class="divider"></div>
+        <div class="btn-group">
+          <a href="aurore.html" class="btn btn--primary">Aurore</a>
+          <a href="robinson.html" class="btn btn--outline-dark">Robinson Crusoé et Zoé Liberté</a>
+          <a href="remi-do-et-gagaboum.html" class="btn btn--outline-dark">Rémi Do et Gagaboum</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div><p class="footer-brand">Regarde il neige</p><p class="footer-tagline">Compagnie de théâtre musical et poétique, humaniste et ouvert sur l'autre.</p></div>
+      <div>
+        <p class="footer-col-title">Spectacles</p>
+        <nav class="footer-nav">
+          <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+          <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
+          <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+          <a href="aurore.html">Aurore</a>
+          <a href="alice.html">Alice au pays des miroirs</a>
+          <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+          <a href="ambroisie.html">Ambroisie</a>
+        </nav>
+      </div>
+      <div><p class="footer-col-title">La compagnie</p><nav class="footer-nav"><a href="la-compagnie.html">Présentation</a><a href="equipe.html">L'équipe</a><a href="actions.html">Actions culturelles</a></nav></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Compagnie Regarde il neige</span><span>Théâtre musical · Jeune public</span></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
