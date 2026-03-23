@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <script>
-    /* ============================================================
-       IMAGES — Modifiez ces variables pour changer les images
-       ============================================================ */
-    const PAGE_HERO_IMAGE = "assets/images/mathis_andersen.avif";
-    const PAGE_HERO_ALT = "Mathis Andersen - Monde monde";
-
-    /* Photos membres — pour la distribution */
-    const PHOTO_CLEMENT = "assets/images/clement-ballet.avif";
-    const PHOTO_JONATHAN = "assets/images/jonathan-fried.avif";
-    const PHOTO_ARMANCE = "assets/images/armance-galpin.avif";
-    const PHOTO_MATHIEU = "assets/images/mathieu-gerhardt.avif";
-    const PHOTO_AURELIEN = "assets/images/aurelien-houver.avif";
-    const PHOTO_ARIANE = "assets/images/ariane-louis.avif";
+    const PAGE_HERO_IMAGE = "assets/images/TOP_mathis_andersen.avif";
+    const PAGE_HERO_ALT   = "Mathis Andersen — Monde Monde, concert";
   </script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mathis Andersen - Monde monde — Regarde il neige</title>
-  <meta name="description"
-    content="Découvrez 'Monde monde', le concert de Mathis Andersen. Un voyage musical en solo, duo ou trio, mis en scène par Gaëlle Hispard.">
+  <title>Mathis Andersen — Monde Monde · Regarde il neige</title>
+  <meta name="description" content="Mathis Andersen — Monde Monde. Un concert humaniste et poétique, voyage sonore singulier au cœur de notre imaginaire. Tout public.">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
   <header class="site-header" role="banner">
     <div class="header-inner">
       <a href="index.html" class="site-logo">Regarde il neige<span>Compagnie de théâtre musical</span></a>
       <nav class="site-nav" aria-label="Navigation principale">
-        <a href="la-compagnie.html">La compagnie</a>
         <div class="nav-dropdown">
-          <a href="index.html#spectacles" aria-haspopup="true" class="active">Spectacles</a>
+          <a href="la-compagnie.html" aria-haspopup="true">La compagnie</a>
           <div class="nav-dropdown-menu" role="menu">
-            <a href="le-conte-d-hiver.html" role="menuitem">Le Conte d'hiver</a>
-            <a href="mathis-andersen.html" role="menuitem">Mathis Andersen - Monde monde</a>
+            <a href="la-compagnie.html" role="menuitem">Présentation</a>
+            <a href="equipe.html" role="menuitem">L'équipe</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="index.html#spectacles-jeune" aria-haspopup="true">Jeune public</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="kinder-jardin-songs.html" role="menuitem">Kinder Jardin Songs</a>
             <a href="robinson.html" role="menuitem">Robinson Crusoé et Zoé Liberté</a>
-            <a href="aurore.html" role="menuitem">Aurore</a>
-            <a href="alice.html" role="menuitem">Alice au pays des miroirs</a>
             <a href="remi-do-et-gagaboum.html" role="menuitem">Rémi Do et Gagaboum</a>
+            <a href="alice.html" role="menuitem">Alice au pays des miroirs</a>
+            <a href="aurore.html" role="menuitem">Aurore</a>
             <a href="ambroisie.html" role="menuitem">Ambroisie</a>
           </div>
         </div>
-        <a href="actions.html">Actions</a>
-        <a href="equipe.html">Équipe</a>
+        <div class="nav-dropdown">
+          <a href="index.html#spectacles-tout" class="active" aria-haspopup="true">Tout public</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="le-conte-d-hiver.html" role="menuitem">Le Conte d'hiver — Shakespeare</a>
+            <a href="mathis-andersen.html" role="menuitem">Mathis Andersen — Monde Monde</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="actions.html" aria-haspopup="true">Actions</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="ateliers-et-stages.html" role="menuitem">Ateliers &amp; stages</a>
+            <a href="dessine-moi-une-chanson.html" role="menuitem">Dessine-moi une chanson</a>
+            <a href="eveil-musical.html" role="menuitem">Éveil musical</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
       </nav>
+      <div class="header-social">
+        <a href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank" rel="noopener noreferrer">Insta</a>
+        <a href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer">FB</a>
+      </div>
       <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
         <span></span><span></span><span></span>
       </button>
@@ -55,19 +64,25 @@
   </header>
 
   <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
-    <span class="mobile-nav-label">Navigation</span>
-    <a href="la-compagnie.html">La compagnie</a>
-    <span class="mobile-nav-label">Spectacles</span>
-    <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
-    <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
-    <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
-    <a href="aurore.html">Aurore</a>
-    <a href="alice.html">Alice au pays des miroirs</a>
-    <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
-    <a href="ambroisie.html">Ambroisie</a>
-    <span class="mobile-nav-label">Découvrir</span>
-    <a href="actions.html">Actions culturelles</a>
+    <span class="mobile-nav-label">La compagnie</span>
+    <a href="la-compagnie.html">Présentation</a>
     <a href="equipe.html">L'équipe</a>
+    <span class="mobile-nav-label">Jeune public</span>
+    <a href="kinder-jardin-songs.html">Kinder Jardin Songs</a>
+    <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+    <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+    <a href="alice.html">Alice au pays des miroirs</a>
+    <a href="aurore.html">Aurore</a>
+    <a href="ambroisie.html">Ambroisie</a>
+    <span class="mobile-nav-label">Tout public</span>
+    <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+    <a href="mathis-andersen.html">Mathis Andersen — Monde Monde</a>
+    <span class="mobile-nav-label">Actions</span>
+    <a href="ateliers-et-stages.html">Ateliers &amp; stages</a>
+    <a href="dessine-moi-une-chanson.html">Dessine-moi une chanson</a>
+    <a href="eveil-musical.html">Éveil musical</a>
+    <span class="mobile-nav-label">Contact</span>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <main>
@@ -76,139 +91,90 @@
       <div class="hero-bg"></div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <span class="hero-pretitle">Concert</span>
-        <h1 class="hero-title" id="spectacle-title">Mathis Andersen<br>Monde monde</h1>
-        <p class="hero-subtitle">Un voyage sonore singulier — sonorités humanistes et poétiques</p>
+        <span class="hero-pretitle">Concert · Tout public</span>
+        <h1 class="hero-title" id="spectacle-title">Mathis Andersen</h1>
+        <p class="hero-subtitle">Monde Monde</p>
         <div class="hero-meta">
-          <span class="hero-meta-item"><strong>Âge</strong> Tout public</span>
-          <span class="hero-meta-item"><strong>Durée</strong> 90 minutes</span>
-          <span class="hero-meta-item"><strong>Format</strong> Solo / Duo / Trio</span>
+          <span class="hero-meta-item"><strong>Durée</strong> 1h à 1h15</span>
+          <span class="hero-meta-item"><strong>Public</strong> Tout public</span>
+          <span class="hero-meta-item"><strong>Format</strong> Solo / interprète</span>
         </div>
         <div class="btn-group">
-          <a href="#" class="btn btn--primary">Télécharger le dossier</a>
+          <a href="#dates" class="btn btn--primary">Dates à venir</a>
+          <a href="assets/dossiers/Dossier de presse Mathis Andersen 2026.pdf" download class="btn btn--outline">↓ Télécharger le dossier</a>
         </div>
       </div>
     </section>
 
-    <!-- ==================== INFOS STRIP ==================== -->
     <div class="spectacle-strip" role="complementary">
       <div class="spectacle-strip-inner">
-        <div class="strip-item"><span class="strip-item-label">Type</span><span class="strip-item-value">Concert</span></div>
-        <div class="strip-item"><span class="strip-item-label">Âge</span><span class="strip-item-value">Tout public</span></div>
-        <div class="strip-item"><span class="strip-item-label">Durée</span><span class="strip-item-value">90 minutes</span></div>
-        <div class="strip-item"><span class="strip-item-label">Format</span><span class="strip-item-value">Solo / Duo / Trio</span></div>
+        <div class="strip-item"><span class="strip-item-label">Type</span><span class="strip-item-value">Concert tout public</span></div>
+        <div class="strip-item"><span class="strip-item-label">Public</span><span class="strip-item-value">Tout public</span></div>
+        <div class="strip-item"><span class="strip-item-label">Durée</span><span class="strip-item-value">1h à 1h15</span></div>
+        <div class="strip-item"><span class="strip-item-label">Format</span><span class="strip-item-value">Solo</span></div>
       </div>
     </div>
 
-    <!-- ==================== CONTENU ==================== -->
     <section class="section">
       <div class="container--narrow">
-        <span class="section-label">Le spectacle</span>
-        <h2 class="section-title">Un voyage musical</h2>
+        <span class="section-label">Le concert</span>
+        <p class="intro-text">Un concert humaniste et poétique, voyage sonore singulier au cœur de notre imaginaire — qui chaque soir interroge notre rapport à l'humain.</p>
+        <div class="divider"></div>
         <div class="body-text">
-          <p>Mathis Andersen nous invite à travers "Monde monde" dans un univers musical singulier. Ce concert, qui peut être interprété en solo, duo ou trio, explore des sonorités humanistes et poétiques, chères à la compagnie Regarde il neige.</p>
-          <p>Sous le regard complice de Gaëlle Hispard à la mise en scène, Mathis déploie un récit sonore où chaque note interroge notre rapport au monde et à l'imaginaire.</p>
+          <p>Mathis Andersen, interprète attachant et singulier, nous entraîne dans un voyage musical intime. Avec sa guitare et sa voix, il tisse des paysages sonores où coexistent la mélancolie douce et le feu vif.</p>
+          <p><em>Monde Monde</em> est un concert solo qui convoque les grands thèmes de l'humanité — l'amour, la perte, l'errance, l'espoir — avec une sincérité désarmante et un sens aigu de la poésie.</p>
         </div>
       </div>
     </section>
 
-    <!-- ==================== ÉQUIPE ARTISTIQUE ==================== -->
-    <section class="section section--alt">
+    <section class="section section--alt" aria-label="Photos du concert">
       <div class="container">
-        <span class="section-label">En coulisses</span>
-        <h2 class="section-title">Équipe de création</h2>
-        <div class="equipe-spectacle" style="max-width: 640px;">
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Mise en scène</div><div class="equipe-spectacle-value">Gaëlle Hispard</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Adaptation & Dramaturgie</div><div class="equipe-spectacle-value">Gaëlle Hispard & Mathieu Gerhardt</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Création musicale</div><div class="equipe-spectacle-value">Mathieu Gerhardt</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Conseil artistique</div><div class="equipe-spectacle-value">Marc Beaudin</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Conseil dramaturgique</div><div class="equipe-spectacle-value">Jonathan Fried</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Création sonore</div><div class="equipe-spectacle-value">Simon Poupard</div></div>
+        <span class="section-label">En images</span>
+        <h2 class="section-title">Photos du concert</h2>
+        <div class="carousel" role="region" aria-label="Galerie photos Mathis Andersen">
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="assets/images/mathis_andersen1.avif" alt="Mathis Andersen, photo 1" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/mathis_andersen2.avif" alt="Mathis Andersen, photo 2" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/mathis_andersen3.avif" alt="Mathis Andersen, photo 3" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/mathis_andersen4.avif" alt="Mathis Andersen, photo 4" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/mathis_andersen5.avif" alt="Mathis Andersen, photo 5" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/mathis_andersen6.avif" alt="Mathis Andersen, photo 6" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/mathis_andersen7.avif" alt="Mathis Andersen, photo 7" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/mathis_andersen8.avif" alt="Mathis Andersen, photo 8" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/mathis_andersen9.avif" alt="Mathis Andersen, photo 9" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/mathis_andersen10.avif" alt="Mathis Andersen, photo 10" loading="lazy"></div>
+          </div>
+          <button class="carousel-btn carousel-btn--prev" aria-label="Photo précédente">‹</button>
+          <button class="carousel-btn carousel-btn--next" aria-label="Photo suivante">›</button>
+          <div class="carousel-dots"></div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== DISTRIBUTION ==================== -->
-    <section class="section">
+    <section class="section" id="dates" aria-labelledby="dates-ma-title">
       <div class="container">
-        <span class="section-label">Sur scène</span>
-        <h2 class="section-title">Distribution</h2>
-
-        <div class="equipe-grid--photos">
-
-          <article class="equipe-card--photo">
-            <div class="equipe-card-photo-wrap">
-              <img id="photo-clement" src="" alt="Clément Ballet">
-            </div>
-            <div class="equipe-card-photo-body">
-              <p class="equipe-card-photo-name">Clément Ballet</p>
-              <p class="equipe-card-photo-role">Léonte / Le Berger</p>
-            </div>
-          </article>
-
-          <article class="equipe-card--photo">
-            <div class="equipe-card-photo-wrap">
-              <img id="photo-jonathan" src="" alt="Jonathan Fried">
-            </div>
-            <div class="equipe-card-photo-body">
-              <p class="equipe-card-photo-name">Jonathan Fried</p>
-              <p class="equipe-card-photo-role">Camillo / Antigonus / Des Seigneurs</p>
-            </div>
-          </article>
-
-          <article class="equipe-card--photo">
-            <div class="equipe-card-photo-wrap">
-              <img id="photo-armance" src="" alt="Armance Galpin">
-            </div>
-            <div class="equipe-card-photo-body">
-              <p class="equipe-card-photo-name">Armance Galpin</p>
-              <p class="equipe-card-photo-role">Paulina / Mamillius / Florizel</p>
-            </div>
-          </article>
-
-          <article class="equipe-card--photo">
-            <div class="equipe-card-photo-wrap">
-              <img id="photo-mathieu" src="" alt="Mathieu Gerhardt">
-            </div>
-            <div class="equipe-card-photo-body">
-              <p class="equipe-card-photo-name">Mathieu Gerhardt</p>
-              <p class="equipe-card-photo-role">Le Temps / Le Clown / Des Seigneurs</p>
-            </div>
-          </article>
-
-          <article class="equipe-card--photo">
-            <div class="equipe-card-photo-wrap">
-              <img id="photo-aurelien" src="" alt="Aurélien Houver">
-            </div>
-            <div class="equipe-card-photo-body">
-              <p class="equipe-card-photo-name">Aurélien Houver</p>
-              <p class="equipe-card-photo-role">Polixène / Un Marin / Des Seigneurs</p>
-            </div>
-          </article>
-
-          <article class="equipe-card--photo">
-            <div class="equipe-card-photo-wrap">
-              <img id="photo-ariane" src="" alt="Ariane Louis">
-            </div>
-            <div class="equipe-card-photo-body">
-              <p class="equipe-card-photo-name">Ariane Louis</p>
-              <p class="equipe-card-photo-role">Hermione / Perdita</p>
-            </div>
-          </article>
-
+        <span class="section-label">Tournée</span>
+        <h2 id="dates-ma-title" class="section-title">Dates à venir</h2>
+        <p style="color:var(--color-text-muted);font-size:.9rem;font-style:italic;">Les prochaines dates seront annoncées prochainement.</p>
+        <div class="mt-lg">
+          <h3 style="font-family:var(--font-serif);font-size:1.4rem;font-weight:400;margin-bottom:var(--space-sm);">Dates passées</h3>
+          <div class="dates-past-list" role="list">
+            <div class="date-past-item" role="listitem"><span class="date-past-year">Janv.–mars 2026</span><span class="date-past-venue">Essaïon Théâtre</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">Oct.–déc. 2025</span><span class="date-past-venue">Café de la Danse</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">Juil. 2025</span><span class="date-past-venue">Festival Beauregard</span><span class="date-past-city">Normandie</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">Mai 2025</span><span class="date-past-venue">La Maroquinerie</span><span class="date-past-city">Paris</span></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== À DÉCOUVRIR AUSSI ==================== -->
     <section class="section section--alt">
       <div class="container--narrow">
         <span class="section-label">À découvrir aussi</span>
-        <h2>Nos autres spectacles</h2>
-        <div class="divider"></div>
+        <h2>Nos autres créations</h2>
         <div class="btn-group">
           <a href="le-conte-d-hiver.html" class="btn btn--primary">Le Conte d'hiver</a>
-          <a href="robinson.html" class="btn btn--outline-dark">Robinson Crusoé et Zoé Liberté</a>
+          <a href="alice.html" class="btn btn--outline-dark">Alice au pays des miroirs</a>
           <a href="aurore.html" class="btn btn--outline-dark">Aurore</a>
         </div>
       </div>
@@ -220,16 +186,21 @@
     <div class="footer-inner">
       <div>
         <p class="footer-brand">Regarde il neige</p>
-        <p class="footer-tagline">Compagnie de théâtre musical et poétique, humaniste et ouvert sur l'autre.</p>
+        <p class="footer-tagline">Un théâtre musical poétique et humain — Gaëlle Hispard &amp; Mathieu Gerhardt.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
       </div>
       <div>
         <p class="footer-col-title">Spectacles</p>
         <nav class="footer-nav">
           <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
-          <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
-          <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
-          <a href="aurore.html">Aurore</a>
+          <a href="mathis-andersen.html">Mathis Andersen</a>
           <a href="alice.html">Alice au pays des miroirs</a>
+          <a href="aurore.html">Aurore</a>
+          <a href="robinson.html">Robinson Crusoé</a>
           <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
           <a href="ambroisie.html">Ambroisie</a>
         </nav>
@@ -240,41 +211,13 @@
           <a href="la-compagnie.html">Présentation</a>
           <a href="equipe.html">L'équipe</a>
           <a href="actions.html">Actions culturelles</a>
+          <a href="contact.html">Contact</a>
         </nav>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 Compagnie Regarde il neige</span>
-      <span>Théâtre musical · Jeune public</span>
-    </div>
+    <div class="footer-bottom"><span>© 2026 Compagnie Regarde il neige</span><span>Théâtre musical · Jeune public</span></div>
   </footer>
 
   <script src="main.js"></script>
-  <script>
-    /* Injection des photos membres via les variables */
-    document.addEventListener('DOMContentLoaded', function () {
-      const photos = [
-        { id: 'photo-clement', src: typeof PHOTO_CLEMENT !== 'undefined' ? PHOTO_CLEMENT : '' },
-        { id: 'photo-jonathan', src: typeof PHOTO_JONATHAN !== 'undefined' ? PHOTO_JONATHAN : '' },
-        { id: 'photo-armance', src: typeof PHOTO_ARMANCE !== 'undefined' ? PHOTO_ARMANCE : '' },
-        { id: 'photo-mathieu', src: typeof PHOTO_MATHIEU !== 'undefined' ? PHOTO_MATHIEU : '' },
-        { id: 'photo-aurelien', src: typeof PHOTO_AURELIEN !== 'undefined' ? PHOTO_AURELIEN : '' },
-        { id: 'photo-ariane', src: typeof PHOTO_ARIANE !== 'undefined' ? PHOTO_ARIANE : '' },
-      ];
-      photos.forEach(({ id, src }) => {
-        if (!src) return;
-        const img = document.getElementById(id);
-        if (!img) return;
-        img.src = src;
-        const wrap = img.closest('.equipe-card-photo-wrap');
-        if (wrap) {
-          const ph = wrap.querySelector('.equipe-card-photo-placeholder');
-          if (ph) ph.style.display = 'none';
-        }
-      });
-    });
-  </script>
-
 </body>
-
 </html>

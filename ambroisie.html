@@ -2,17 +2,13 @@
 <html lang="fr">
 <head>
   <script>
-    /* ============================================================
-       IMAGES — Modifiez ces variables pour changer les images
-       ============================================================ */
-    const PAGE_HERO_IMAGE = "assets/images/hero-ambroisie-a-remplacer.jpg";
-    const PAGE_HERO_ALT   = "Ambroisie, spectacle musical jeune public";
+    const PAGE_HERO_IMAGE = "assets/images/TOP_ambroisie.avif";
+    const PAGE_HERO_ALT   = "Ambroisie — spectacle musical jeune public";
   </script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ambroisie · Regarde il neige</title>
-  <meta name="description" content="Ambroisie — spectacle musical jeune public à partir de 5 ans par la compagnie Regarde il neige. Les personnages de Perrault s'invitent dans la chambre d'une petite fille en quête d'identité.">
+  <meta name="description" content="Ambroisie, 9 ans, découvre que ses parents doivent l'envoyer en Argentine chez un mystérieux inconnu. Les personnages de Perrault s'invitent dans sa chambre. Spectacle musical à partir de 5 ans.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,22 +17,46 @@
     <div class="header-inner">
       <a href="index.html" class="site-logo">Regarde il neige<span>Compagnie de théâtre musical</span></a>
       <nav class="site-nav" aria-label="Navigation principale">
-        <a href="la-compagnie.html">La compagnie</a>
         <div class="nav-dropdown">
-          <a href="index.html#spectacles" class="active" aria-haspopup="true">Spectacles</a>
+          <a href="la-compagnie.html" aria-haspopup="true">La compagnie</a>
           <div class="nav-dropdown-menu" role="menu">
-            <a href="le-conte-d-hiver.html" role="menuitem">Le Conte d'hiver</a>
-            <a href="mathis-andersen.html" role="menuitem">Mathis Andersen - Monde monde</a>
+            <a href="la-compagnie.html" role="menuitem">Présentation</a>
+            <a href="equipe.html" role="menuitem">L'équipe</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="index.html#spectacles-jeune" class="active" aria-haspopup="true">Jeune public</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="kinder-jardin-songs.html" role="menuitem">Kinder Jardin Songs</a>
             <a href="robinson.html" role="menuitem">Robinson Crusoé et Zoé Liberté</a>
-            <a href="aurore.html" role="menuitem">Aurore</a>
-            <a href="alice.html" role="menuitem">Alice au pays des miroirs</a>
             <a href="remi-do-et-gagaboum.html" role="menuitem">Rémi Do et Gagaboum</a>
+            <a href="alice.html" role="menuitem">Alice au pays des miroirs</a>
+            <a href="aurore.html" role="menuitem">Aurore</a>
             <a href="ambroisie.html" role="menuitem">Ambroisie</a>
           </div>
         </div>
-        <a href="actions.html">Actions</a>
-        <a href="equipe.html">Équipe</a>
+        <div class="nav-dropdown">
+          <a href="index.html#spectacles-tout" aria-haspopup="true">Tout public</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="le-conte-d-hiver.html" role="menuitem">Le Conte d'hiver — Shakespeare</a>
+            <a href="mathis-andersen.html" role="menuitem">Mathis Andersen — Monde Monde</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="actions.html" aria-haspopup="true">Actions</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="ateliers-et-stages.html" role="menuitem">Ateliers &amp; stages</a>
+            <a href="dessine-moi-une-chanson.html" role="menuitem">Dessine-moi une chanson</a>
+            <a href="eveil-musical.html" role="menuitem">Éveil musical</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
       </nav>
+      <div class="header-social">
+        <a href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank" rel="noopener noreferrer">Insta</a>
+        <a href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer">FB</a>
+      </div>
       <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
         <span></span><span></span><span></span>
       </button>
@@ -44,19 +64,25 @@
   </header>
 
   <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
-    <span class="mobile-nav-label">Navigation</span>
-    <a href="la-compagnie.html">La compagnie</a>
-    <span class="mobile-nav-label">Spectacles</span>
-    <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
-    <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
-    <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
-    <a href="aurore.html">Aurore</a>
-    <a href="alice.html">Alice au pays des miroirs</a>
-    <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
-    <a href="ambroisie.html">Ambroisie</a>
-    <span class="mobile-nav-label">Découvrir</span>
-    <a href="actions.html">Actions culturelles</a>
+    <span class="mobile-nav-label">La compagnie</span>
+    <a href="la-compagnie.html">Présentation</a>
     <a href="equipe.html">L'équipe</a>
+    <span class="mobile-nav-label">Jeune public</span>
+    <a href="kinder-jardin-songs.html">Kinder Jardin Songs</a>
+    <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+    <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+    <a href="alice.html">Alice au pays des miroirs</a>
+    <a href="aurore.html">Aurore</a>
+    <a href="ambroisie.html">Ambroisie</a>
+    <span class="mobile-nav-label">Tout public</span>
+    <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+    <a href="mathis-andersen.html">Mathis Andersen — Monde Monde</a>
+    <span class="mobile-nav-label">Actions</span>
+    <a href="ateliers-et-stages.html">Ateliers &amp; stages</a>
+    <a href="dessine-moi-une-chanson.html">Dessine-moi une chanson</a>
+    <a href="eveil-musical.html">Éveil musical</a>
+    <span class="mobile-nav-label">Contact</span>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <main>
@@ -65,13 +91,17 @@
       <div class="hero-bg"></div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <span class="hero-pretitle">Premier spectacle de la compagnie · À partir de 5 ans</span>
+        <span class="hero-pretitle">Spectacle musical · À partir de 5 ans</span>
         <h1 class="hero-title" id="spectacle-title">Ambroisie</h1>
-        <p class="hero-subtitle">Spectacle musical — les personnages de Perrault s'invitent dans la chambre d'une petite fille</p>
+        <p class="hero-subtitle">Quand les personnages de Perrault s'invitent dans la chambre d'une enfant</p>
         <div class="hero-meta">
-          <span class="hero-meta-item"><strong>Durée</strong> 55 minutes</span>
+          <span class="hero-meta-item"><strong>Durée</strong> 40 minutes</span>
           <span class="hero-meta-item"><strong>Public</strong> À partir de 5 ans</span>
-          <span class="hero-meta-item"><strong>Distribution</strong> 4 comédien·nes</span>
+          <span class="hero-meta-item"><strong>Distribution</strong> 2 comédien·nes</span>
+        </div>
+        <div class="btn-group">
+          <a href="#dates" class="btn btn--primary">Dates à venir</a>
+          <a href="assets/dossiers/Dossier Ambroisie.pdf" download class="btn btn--outline">↓ Télécharger le dossier</a>
         </div>
       </div>
     </section>
@@ -80,72 +110,66 @@
       <div class="spectacle-strip-inner">
         <div class="strip-item"><span class="strip-item-label">Type</span><span class="strip-item-value">Spectacle musical</span></div>
         <div class="strip-item"><span class="strip-item-label">Public</span><span class="strip-item-value">À partir de 5 ans</span></div>
-        <div class="strip-item"><span class="strip-item-label">Durée</span><span class="strip-item-value">55 minutes</span></div>
-        <div class="strip-item"><span class="strip-item-label">Distribution</span><span class="strip-item-value">4 comédien·nes</span></div>
+        <div class="strip-item"><span class="strip-item-label">Durée</span><span class="strip-item-value">40 minutes</span></div>
+        <div class="strip-item"><span class="strip-item-label">Distribution</span><span class="strip-item-value">2 comédien·nes</span></div>
       </div>
     </div>
 
     <section class="section">
       <div class="container--narrow">
         <span class="section-label">Le spectacle</span>
-        <p class="intro-text">Ambroisie, 9 ans, découvre que ses parents doivent l'envoyer en Argentine, chez un mystérieux inconnu aux grosses jambes. Mais Ambroisie n'est pas du genre à se laisser faire.</p>
+        <p class="intro-text">Ambroisie, 9 ans, découvre que ses parents doivent l'envoyer en Argentine chez un mystérieux inconnu. Les personnages de Perrault s'invitent dans sa chambre…</p>
         <div class="divider"></div>
         <div class="body-text">
-          <p>C'est alors que des personnages des contes de Perrault s'invitent dans sa chambre : Le Loup, Le Chat Botté, La Belle au Bois dormant… Ils semblent tous être liés au mystérieux inconnu. Détiendraient-ils la clé de son histoire ?</p>
-          <p>Aux sons du piano, de la guitare électrique, de l'accordéon, du charango et de la scie musicale, Ambroisie nous embarque dans un univers onirique et décalé.</p>
+          <p>Ambroisie, 9 ans, découvre que ses parents doivent l'envoyer en Argentine chez un mystérieux inconnu. Elle ne peut pas leur en vouloir — mais dans sa chambre, les personnages de Perrault débarquent sans prévenir : le Petit Chaperon Rouge, Cendrillon, Le Chat Botté… Chacun lui enseigne quelque chose sur la vie, la famille, et le courage de partir.</p>
+          <p>Un spectacle intime et poétique, qui parle avec tendresse des grandes émotions des petits.</p>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" aria-labelledby="presse-title">
+    <section class="section section--alt" aria-label="Photos du spectacle">
       <div class="container">
-        <span class="section-label">Revue de presse</span>
-        <h2 id="presse-title" class="section-title">La presse en parle</h2>
-        <div class="presse-list">
-
-          <blockquote class="presse-item">
-            <p class="presse-quote">« Par un tourbillon diapré et rythmé de chansons au charme irrépressible, le public est emporté au cœur du foisonnant imaginaire des contes de fées. À la fois hymne à l'enfance et quête identitaire, Ambroisie charme par la fraîcheur et la pertinence de son propos. »</p>
-            <footer class="presse-source">Dominika Waszkiewicz — <cite>Un fauteuil pour l'orchestre</cite></footer>
-          </blockquote>
-
-          <blockquote class="presse-item">
-            <p class="presse-quote">« Un divertissement intelligent pour les enfants à partir de six ans et beaucoup plus, car les adultes se régalent avec les répliques décalées du texte. "Ambroisie" est une histoire bien construite au dénouement imprévisible. Un formidable spectacle jeune public. »</p>
-            <footer class="presse-source">Nicolas Arnstam — <cite>Froggy's Delight</cite></footer>
-          </blockquote>
-
-          <blockquote class="presse-item">
-            <p class="presse-quote">« Le spectacle est émaillé de chansons malicieuses, qui font intervenir guitare électrique, charango ou scie musicale et ajoutent au caractère attachant des personnages. On passe du rire au frisson, avec des détours par un burlesque qui sait rester dans le bon goût. »</p>
-            <footer class="presse-source">Geoffrey Nabavian — <cite>Toute la Culture</cite></footer>
-          </blockquote>
-
+        <span class="section-label">En images</span>
+        <h2 class="section-title">Photos du spectacle</h2>
+        <div class="carousel" role="region" aria-label="Galerie photos Ambroisie">
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="assets/images/ambroisie1.avif" alt="Ambroisie, photo 1" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/ambroisie2.avif" alt="Ambroisie, photo 2" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/ambroisie3.avif" alt="Ambroisie, photo 3" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/ambroisie4.avif" alt="Ambroisie, photo 4" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/ambroisie5.avif" alt="Ambroisie, photo 5" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/ambroisie6.avif" alt="Ambroisie, photo 6" loading="lazy"></div>
+          </div>
+          <button class="carousel-btn carousel-btn--prev" aria-label="Photo précédente">‹</button>
+          <button class="carousel-btn carousel-btn--next" aria-label="Photo suivante">›</button>
+          <div class="carousel-dots"></div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="dates-title">
+    <section class="section" id="dates" aria-labelledby="dates-amb-title">
       <div class="container">
         <span class="section-label">Tournée</span>
-        <h2 id="dates-title" class="section-title">Dates passées</h2>
-        <div class="dates-past-list" role="list">
-          <div class="date-past-item" role="listitem"><span class="date-past-year">2017</span><span class="date-past-venue">Domaine des Hellandes</span><span class="date-past-city">Angerville-l'Orcher</span></div>
-          <div class="date-past-item" role="listitem"><span class="date-past-year">2016</span><span class="date-past-venue">Maison des Épinettes</span><span class="date-past-city">Issy-les-Moulineaux</span></div>
-          <div class="date-past-item" role="listitem"><span class="date-past-year">2015</span><span class="date-past-venue">Domaine des Hellandes</span><span class="date-past-city">Angerville-l'Orcher</span></div>
-          <div class="date-past-item" role="listitem"><span class="date-past-year">2014–15</span><span class="date-past-venue">Essaïon Théâtre (création)</span><span class="date-past-city">Paris</span></div>
+        <h2 id="dates-amb-title" class="section-title">Dates à venir</h2>
+        <p style="color:var(--color-text-muted);font-size:.9rem;font-style:italic;">Les prochaines dates seront annoncées prochainement.</p>
+        <div class="mt-lg">
+          <h3 style="font-family:var(--font-serif);font-size:1.4rem;font-weight:400;margin-bottom:var(--space-sm);">Dates passées</h3>
+          <div class="dates-past-list" role="list">
+            <div class="date-past-item" role="listitem"><span class="date-past-year">Déc. 2024–janv. 2025</span><span class="date-past-venue">École Victor Hugo (projet résidence)</span><span class="date-past-city">Saint-Ouen</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">Oct.–nov. 2024</span><span class="date-past-venue">Essaïon Théâtre (création)</span><span class="date-past-city">Paris</span></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" aria-labelledby="equipe-title">
+    <section class="section section--alt" aria-labelledby="equipe-amb-title">
       <div class="container">
         <span class="section-label">Distribution</span>
-        <h2 id="equipe-title" class="section-title">Équipe artistique</h2>
-        <div class="equipe-spectacle" style="max-width: 640px;">
+        <h2 id="equipe-amb-title" class="section-title">Équipe artistique</h2>
+        <div class="equipe-spectacle" style="max-width:640px;">
           <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Texte et musiques</div><div class="equipe-spectacle-value">Gaëlle Hispard et Mathieu Gerhardt</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Mise en scène</div><div class="equipe-spectacle-value">Gabrielle Laurens</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Avec</div><div class="equipe-spectacle-value">Sarah Cillaire ou Leilani Lemmet · James Groguelin ou Véronika Ovchinnikova · Mathieu Gerhardt · Gaëlle Hispard</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Scénographie</div><div class="equipe-spectacle-value">Myrtille Pichon</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Création lumière</div><div class="equipe-spectacle-value">James Groguelin</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Illustration</div><div class="equipe-spectacle-value">Éloïse Scherrer</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Mise en scène</div><div class="equipe-spectacle-value">Gaëlle Hispard</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Avec</div><div class="equipe-spectacle-value">Gaëlle Hispard · Mathieu Gerhardt</div></div>
         </div>
       </div>
     </section>
@@ -153,12 +177,11 @@
     <section class="section">
       <div class="container--narrow">
         <span class="section-label">À découvrir aussi</span>
-        <h2>Nos spectacles en tournée</h2>
-        <div class="divider"></div>
+        <h2>Nos autres spectacles</h2>
         <div class="btn-group">
-          <a href="robinson.html" class="btn btn--primary">Robinson Crusoé et Zoé Liberté</a>
-          <a href="aurore.html" class="btn btn--outline-dark">Aurore</a>
+          <a href="aurore.html" class="btn btn--primary">Aurore</a>
           <a href="alice.html" class="btn btn--outline-dark">Alice au pays des miroirs</a>
+          <a href="robinson.html" class="btn btn--outline-dark">Robinson Crusoé</a>
         </div>
       </div>
     </section>
@@ -167,20 +190,36 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
-      <div><p class="footer-brand">Regarde il neige</p><p class="footer-tagline">Compagnie de théâtre musical et poétique, humaniste et ouvert sur l'autre.</p></div>
+      <div>
+        <p class="footer-brand">Regarde il neige</p>
+        <p class="footer-tagline">Un théâtre musical poétique et humain — Gaëlle Hispard &amp; Mathieu Gerhardt.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+      </div>
       <div>
         <p class="footer-col-title">Spectacles</p>
         <nav class="footer-nav">
           <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
-          <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
-          <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
-          <a href="aurore.html">Aurore</a>
+          <a href="mathis-andersen.html">Mathis Andersen</a>
           <a href="alice.html">Alice au pays des miroirs</a>
+          <a href="aurore.html">Aurore</a>
+          <a href="robinson.html">Robinson Crusoé</a>
           <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
           <a href="ambroisie.html">Ambroisie</a>
         </nav>
       </div>
-      <div><p class="footer-col-title">La compagnie</p><nav class="footer-nav"><a href="la-compagnie.html">Présentation</a><a href="equipe.html">L'équipe</a><a href="actions.html">Actions culturelles</a></nav></div>
+      <div>
+        <p class="footer-col-title">La compagnie</p>
+        <nav class="footer-nav">
+          <a href="la-compagnie.html">Présentation</a>
+          <a href="equipe.html">L'équipe</a>
+          <a href="actions.html">Actions culturelles</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </div>
     <div class="footer-bottom"><span>© 2026 Compagnie Regarde il neige</span><span>Théâtre musical · Jeune public</span></div>
   </footer>

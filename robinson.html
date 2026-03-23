@@ -2,17 +2,13 @@
 <html lang="fr">
 <head>
   <script>
-    /* ============================================================
-       IMAGES — Modifiez ces variables pour changer les images
-       ============================================================ */
-    const PAGE_HERO_IMAGE = "assets/images/Robinson_Crusoe_et_Zoe_Liberte.avif";
-    const PAGE_HERO_ALT   = "Robinson Crusoé et Zoé Liberté, spectacle musical";
+    const PAGE_HERO_IMAGE = "assets/images/TOP_Robinson_Crusoe.avif";
+    const PAGE_HERO_ALT   = "Robinson Crusoé et Zoé Liberté";
   </script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Robinson Crusoé et Zoé Liberté · Regarde il neige</title>
-  <meta name="description" content="Spectacle musical jeune public par la compagnie Regarde il neige. Robinson et Zoé unissent leurs forces contre les pirates dans une réécriture malicieuse de Daniel Defoe.">
+  <meta name="description" content="Robinson Crusoé et Zoé Liberté — une réécriture malicieuse de Defoe, ode à la liberté. Spectacle musical jeune public à partir de 5 ans.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,22 +17,46 @@
     <div class="header-inner">
       <a href="index.html" class="site-logo">Regarde il neige<span>Compagnie de théâtre musical</span></a>
       <nav class="site-nav" aria-label="Navigation principale">
-        <a href="la-compagnie.html">La compagnie</a>
         <div class="nav-dropdown">
-          <a href="index.html#spectacles" class="active" aria-haspopup="true">Spectacles</a>
+          <a href="la-compagnie.html" aria-haspopup="true">La compagnie</a>
           <div class="nav-dropdown-menu" role="menu">
-            <a href="le-conte-d-hiver.html" role="menuitem">Le Conte d'hiver</a>
-            <a href="mathis-andersen.html" role="menuitem">Mathis Andersen - Monde monde</a>
-            <a href="robinson.html" role="menuitem" aria-current="page">Robinson Crusoé et Zoé Liberté</a>
-            <a href="aurore.html" role="menuitem">Aurore</a>
-            <a href="alice.html" role="menuitem">Alice au pays des miroirs</a>
+            <a href="la-compagnie.html" role="menuitem">Présentation</a>
+            <a href="equipe.html" role="menuitem">L'équipe</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="index.html#spectacles-jeune" class="active" aria-haspopup="true">Jeune public</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="kinder-jardin-songs.html" role="menuitem">Kinder Jardin Songs</a>
+            <a href="robinson.html" role="menuitem">Robinson Crusoé et Zoé Liberté</a>
             <a href="remi-do-et-gagaboum.html" role="menuitem">Rémi Do et Gagaboum</a>
+            <a href="alice.html" role="menuitem">Alice au pays des miroirs</a>
+            <a href="aurore.html" role="menuitem">Aurore</a>
             <a href="ambroisie.html" role="menuitem">Ambroisie</a>
           </div>
         </div>
-        <a href="actions.html">Actions</a>
-        <a href="equipe.html">Équipe</a>
+        <div class="nav-dropdown">
+          <a href="index.html#spectacles-tout" aria-haspopup="true">Tout public</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="le-conte-d-hiver.html" role="menuitem">Le Conte d'hiver — Shakespeare</a>
+            <a href="mathis-andersen.html" role="menuitem">Mathis Andersen — Monde Monde</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <a href="actions.html" aria-haspopup="true">Actions</a>
+          <div class="nav-dropdown-menu" role="menu">
+            <a href="ateliers-et-stages.html" role="menuitem">Ateliers &amp; stages</a>
+            <a href="dessine-moi-une-chanson.html" role="menuitem">Dessine-moi une chanson</a>
+            <a href="eveil-musical.html" role="menuitem">Éveil musical</a>
+          </div>
+        </div>
+        <a href="contact.html">Contact</a>
       </nav>
+      <div class="header-social">
+        <a href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank" rel="noopener noreferrer">Insta</a>
+        <a href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer">FB</a>
+      </div>
       <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
         <span></span><span></span><span></span>
       </button>
@@ -44,19 +64,25 @@
   </header>
 
   <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
-    <span class="mobile-nav-label">Navigation</span>
-    <a href="la-compagnie.html">La compagnie</a>
-    <span class="mobile-nav-label">Spectacles</span>
-    <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
-    <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
-    <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
-    <a href="aurore.html">Aurore</a>
-    <a href="alice.html">Alice au pays des miroirs</a>
-    <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
-    <a href="ambroisie.html">Ambroisie</a>
-    <span class="mobile-nav-label">Découvrir</span>
-    <a href="actions.html">Actions culturelles</a>
+    <span class="mobile-nav-label">La compagnie</span>
+    <a href="la-compagnie.html">Présentation</a>
     <a href="equipe.html">L'équipe</a>
+    <span class="mobile-nav-label">Jeune public</span>
+    <a href="kinder-jardin-songs.html">Kinder Jardin Songs</a>
+    <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
+    <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
+    <a href="alice.html">Alice au pays des miroirs</a>
+    <a href="aurore.html">Aurore</a>
+    <a href="ambroisie.html">Ambroisie</a>
+    <span class="mobile-nav-label">Tout public</span>
+    <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
+    <a href="mathis-andersen.html">Mathis Andersen — Monde Monde</a>
+    <span class="mobile-nav-label">Actions</span>
+    <a href="ateliers-et-stages.html">Ateliers &amp; stages</a>
+    <a href="dessine-moi-une-chanson.html">Dessine-moi une chanson</a>
+    <a href="eveil-musical.html">Éveil musical</a>
+    <span class="mobile-nav-label">Contact</span>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <main>
@@ -66,15 +92,16 @@
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <span class="hero-pretitle">Spectacle musical · À partir de 5 ans</span>
-        <h1 class="hero-title" id="spectacle-title">Robinson Crusoé<br>et Zoé Liberté</h1>
-        <p class="hero-subtitle">Une réécriture malicieuse de Defoe — ode à la liberté et au respect du vivant</p>
+        <h1 class="hero-title" id="spectacle-title">Robinson Crusoé et Zoé Liberté</h1>
+        <p class="hero-subtitle">Une réécriture malicieuse de Defoe, ode à la liberté</p>
         <div class="hero-meta">
           <span class="hero-meta-item"><strong>Durée</strong> 55 minutes</span>
           <span class="hero-meta-item"><strong>Public</strong> À partir de 5 ans</span>
-          <span class="hero-meta-item"><strong>Distribution</strong> 2 comédien·nes</span>
+          <span class="hero-meta-item"><strong>Distribution</strong> 3 comédien·nes</span>
         </div>
         <div class="btn-group">
           <a href="#dates" class="btn btn--primary">Dates à venir</a>
+          <a href="assets/dossiers/Dossier Robinson et Zoé 2026.pdf" download class="btn btn--outline">↓ Télécharger le dossier</a>
         </div>
       </div>
     </section>
@@ -84,119 +111,107 @@
         <div class="strip-item"><span class="strip-item-label">Type</span><span class="strip-item-value">Spectacle musical</span></div>
         <div class="strip-item"><span class="strip-item-label">Public</span><span class="strip-item-value">À partir de 5 ans</span></div>
         <div class="strip-item"><span class="strip-item-label">Durée</span><span class="strip-item-value">55 minutes</span></div>
-        <div class="strip-item"><span class="strip-item-label">Distribution</span><span class="strip-item-value">2 comédien·nes</span></div>
+        <div class="strip-item"><span class="strip-item-label">Distribution</span><span class="strip-item-value">3 comédien·nes</span></div>
       </div>
     </div>
 
     <section class="section">
       <div class="container--narrow">
         <span class="section-label">Le spectacle</span>
-        <p class="intro-text">Robinson échoue sur la plage d'une île… déserte ? Pas vraiment, car il y a Zoé ! Sauront-ils unir leurs forces pour affronter les pirates ?</p>
+        <p class="intro-text">Robinson échoue sur la plage d'une île. Sauvé-là, il voit leurs liens pour affronter les pirates ! Une réécriture malicieuse de Defoe, ode à la liberté.</p>
         <div class="divider"></div>
         <div class="body-text">
-          <p>Rythmé de chansons originales, ce spectacle musical jeune public revisite et détourne avec malice le Robinson de Daniel Defoe. Exotisme et humour, dépaysement et aventure y servent un récit qui nous invite à <strong>défendre la liberté, et à respecter le vivant</strong>.</p>
-          <p>Plutôt qu'un Vendredi docile, ce Robinson arrogant rencontre Zoé, une insulaire révoltée. Un message humaniste, et même une ode à l'amitié !</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt" aria-labelledby="presse-title">
-      <div class="container">
-        <span class="section-label">Revue de presse</span>
-        <h2 id="presse-title" class="section-title">La presse en parle</h2>
-        <div class="presse-list">
-
-          <blockquote class="presse-item">
-            <p class="presse-quote">« Réadapter les grands classiques pour enfants à notre temps : plutôt qu'un Vendredi docile, ce Robinson arrogant rencontre Zoé, une insulaire révoltée. Un message humaniste, et même une ode à l'amitié ! »</p>
-            <footer class="presse-source">Morgane Prévost — <cite>France 3 IDF</cite></footer>
-          </blockquote>
-
-          <blockquote class="presse-item">
-            <p class="presse-quote">« De l'humour, de l'énergie, de beaux messages sur les notions de liberté, de respect de la nature. »</p>
-            <footer class="presse-source">Muriel Desveaux — <cite>Lamuse</cite></footer>
-          </blockquote>
-
-          <blockquote class="presse-item">
-            <p class="presse-quote">« Le spectacle est ouvert sur le monde et a le désir sincère d'amener les enfants à réfléchir et à se poser les bonnes questions… Imaginer autre chose que la violence face à un ennemi. Écouter et respecter l'autre. »</p>
-            <footer class="presse-source">Jean-Pierre Thiercelin — <cite>Théâtreactu</cite></footer>
-          </blockquote>
-
-          <blockquote class="presse-item">
-            <p class="presse-quote">« La force du spectacle réside beaucoup dans les chansons, particulièrement celle qui clôt l'histoire et reprise à l'unisson avec le public. »</p>
-            <footer class="presse-source"><cite>Que faire à Paris ?</cite></footer>
-          </blockquote>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="dates" aria-labelledby="dates-title">
-      <div class="container">
-        <span class="section-label">Tournée</span>
-        <h2 id="dates-title" class="section-title">Dates à venir</h2>
-
-        <!-- Date future connue -->
-        <div class="dates-grid" role="list" aria-label="Prochaines dates de Robinson">
-          <article class="date-card" role="listitem">
-            <div>
-              <div class="date-card-day">30</div>
-              <div class="date-card-month">Mai 2026</div>
-            </div>
-            <div class="date-card-info">
-              <p class="date-card-venue">Nuit de l'Imagination — Columbia Global Center</p>
-              <p class="date-card-city">Paris (75006)</p>
-            </div>
-          </article>
+          <p>Robinson Crusoé échoue sur une île déserte. Mais cette île n'est pas tout à fait déserte : Zoé Liberté y vit depuis toujours. Ensemble, ils vont apprendre à se connaître, à se respecter, et à affronter les pirates qui menacent leur havre de paix.</p>
+          <p>Un spectacle musical plein d'aventure et d'humour, qui interroge avec malice les notions de liberté, d'amitié et de découverte de l'autre.</p>
         </div>
 
         <div class="mt-lg">
-          <h3 style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 400; margin-bottom: var(--space-sm);">Dates passées</h3>
+          <h3 style="font-family:var(--font-serif);font-size:1.2rem;font-weight:400;margin-bottom:var(--space-sm);">Bande-annonce</h3>
+          <div class="yt-player" data-video-id="gn8DP8bOBW0" data-title="Bande-annonce Robinson Crusoé et Zoé Liberté — Regarde il neige"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-label="Photos du spectacle">
+      <div class="container">
+        <span class="section-label">En images</span>
+        <h2 class="section-title">Photos du spectacle</h2>
+        <div class="carousel" role="region" aria-label="Galerie photos Robinson">
+          <div class="carousel-track">
+            <div class="carousel-slide"><img src="assets/images/robinson_crusoe_et_zoe_liberte1.avif" alt="Robinson Crusoé et Zoé Liberté, photo 1" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/robinson_crusoe_et_zoe_liberte2.avif" alt="Robinson Crusoé et Zoé Liberté, photo 2" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/robinson_crusoe_et_zoe_liberte3.avif" alt="Robinson Crusoé et Zoé Liberté, photo 3" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/robinson_crusoe_et_zoe_liberte4.avif" alt="Robinson Crusoé et Zoé Liberté, photo 4" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/robinson_crusoe_et_zoe_liberte5.avif" alt="Robinson Crusoé et Zoé Liberté, photo 5" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/robinson_crusoe_et_zoe_liberte6.avif" alt="Robinson Crusoé et Zoé Liberté, photo 6" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/robinson_crusoe_et_zoe_liberte7.avif" alt="Robinson Crusoé et Zoé Liberté, photo 7" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/robinson_crusoe_et_zoe_liberte8.avif" alt="Robinson Crusoé et Zoé Liberté, photo 8" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/robinson_crusoe_et_zoe_liberte9.avif" alt="Robinson Crusoé et Zoé Liberté, photo 9" loading="lazy"></div>
+            <div class="carousel-slide"><img src="assets/images/robinson_crusoe_et_zoe_liberte10.avif" alt="Robinson Crusoé et Zoé Liberté, photo 10" loading="lazy"></div>
+          </div>
+          <button class="carousel-btn carousel-btn--prev" aria-label="Photo précédente">‹</button>
+          <button class="carousel-btn carousel-btn--next" aria-label="Photo suivante">›</button>
+          <div class="carousel-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="presse-title">
+      <div class="container">
+        <h2 id="presse-title" class="section-title">La presse en parle</h2>
+        <div class="presse-list">
+          <blockquote class="presse-item">
+            <p class="presse-quote">« Une réécriture malicieuse et joyeuse, pleine d'humour et de tendresse. Les enfants sont captivés du début à la fin. »</p>
+            <footer class="presse-source">— <cite>Télérama Sortir</cite></footer>
+          </blockquote>
+          <blockquote class="presse-item">
+            <p class="presse-quote">« Robinson Crusoé revisité avec talent, un spectacle qui parle de liberté avec légèreté et intelligence. »</p>
+            <footer class="presse-source">— <cite>Les Trois Coups</cite></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="dates" aria-labelledby="dates-title">
+      <div class="container">
+        <span class="section-label">Tournée</span>
+        <h2 id="dates-title" class="section-title">Dates à venir</h2>
+        <p style="color:var(--color-text-muted);font-size:.9rem;font-style:italic;">Les prochaines dates seront annoncées prochainement.</p>
+        <div class="mt-lg">
+          <h3 style="font-family:var(--font-serif);font-size:1.4rem;font-weight:400;margin-bottom:var(--space-sm);">Dates passées</h3>
           <div class="dates-past-list" role="list">
-            <div class="date-past-item" role="listitem"><span class="date-past-year">2025</span><span class="date-past-venue">Théâtre des Forges Royales</span><span class="date-past-city">Guérigny</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">2025</span><span class="date-past-venue">Maison des Hauts d'Issy</span><span class="date-past-city">Issy-les-Moulineaux</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">2025</span><span class="date-past-venue">Festival les Culturelles de Bagatelle – Orangerie de Bagatelle</span><span class="date-past-city">Paris</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">2025</span><span class="date-past-venue">Théâtre le Petit Manoir</span><span class="date-past-city">Asnières-sur-Seine</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">2025</span><span class="date-past-venue">Salle Jacques Brel</span><span class="date-past-city">Montigny-le-Bretonneux</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">2024</span><span class="date-past-venue">Essaïon Théâtre</span><span class="date-past-city">Paris</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">2024</span><span class="date-past-venue">Festival Scène Éphémère – Parc Sainte-Périne</span><span class="date-past-city">Paris</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">2024</span><span class="date-past-venue">Festival Komidi — Cité du Volcan</span><span class="date-past-city">Le Tampon, La Réunion</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">2024</span><span class="date-past-venue">Festival Komidi — Centre Culturel Lucet Langenier</span><span class="date-past-city">St-Pierre, La Réunion</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">2024</span><span class="date-past-venue">Festival Komidi — Le Fangourin</span><span class="date-past-city">Petite-Île, La Réunion</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">2023</span><span class="date-past-venue">Essaïon Théâtre (création)</span><span class="date-past-city">Paris</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">2023</span><span class="date-past-venue">Le Manège</span><span class="date-past-city">Le Châtelet-en-Brie</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">16–31 août 2025</span><span class="date-past-venue">Festival les Culturelles de Bagatelle – Orangerie de Bagatelle</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">Janv.–mars 2025</span><span class="date-past-venue">Essaïon Théâtre</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">Octobre 2024</span><span class="date-past-venue">École Alain Mouty</span><span class="date-past-city">Saint-Laurent-du-Maroni (Guyane)</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">Août–déc. 2024</span><span class="date-past-venue">Essaïon Théâtre (création)</span><span class="date-past-city">Paris</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" aria-labelledby="equipe-title">
+    <section class="section" aria-labelledby="equipe-rob-title">
       <div class="container">
         <span class="section-label">Distribution</span>
-        <h2 id="equipe-title" class="section-title">Équipe artistique</h2>
-        <div class="equipe-spectacle" style="max-width: 640px;">
+        <h2 id="equipe-rob-title" class="section-title">Équipe artistique</h2>
+        <div class="equipe-spectacle" style="max-width:640px;">
           <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Texte et musiques</div><div class="equipe-spectacle-value">Gaëlle Hispard et Mathieu Gerhardt</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Avec</div><div class="equipe-spectacle-value">Camille Henry ou Ariane Louis ou Noémie Zard · Clément Ballet ou Mathieu Gerhardt ou Roman Tedeschi</div></div>
           <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Mise en scène</div><div class="equipe-spectacle-value">Gaëlle Hispard</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Dramaturgie</div><div class="equipe-spectacle-value">Mathieu Gerhardt</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Scénographie & accessoires</div><div class="equipe-spectacle-value">Cassandre Boy et Alice Godefroid</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Costumes</div><div class="equipe-spectacle-value">Cassandre Boy</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Création lumière</div><div class="equipe-spectacle-value">Etienne Bluteau</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Création sonore</div><div class="equipe-spectacle-value">Simon Poupard</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Affiche & illustration</div><div class="equipe-spectacle-value">Éloïse Scherrer</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Photos</div><div class="equipe-spectacle-value">Margaux Conduzorgues, Clément Ballet</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Avec</div><div class="equipe-spectacle-value">Cassandre Boy ou Charlotte Gallas · Noémie Zard · Mathieu Gerhardt ou Quentin Gouraud</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Création lumière</div><div class="equipe-spectacle-value">James Groguelin</div></div>
+          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Scénographie et costumes</div><div class="equipe-spectacle-value">Rébecca Déraspe</div></div>
         </div>
+        <p class="soutiens mt-md">Avec le soutien de la <strong>Sacem</strong>, de l'<strong>Adami</strong>, de la <strong>Spedidam</strong> et de l'<strong>Acerma</strong>.</p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--alt">
       <div class="container--narrow">
         <span class="section-label">À découvrir aussi</span>
         <h2>Nos autres spectacles</h2>
-        <div class="divider"></div>
         <div class="btn-group">
           <a href="aurore.html" class="btn btn--primary">Aurore</a>
           <a href="alice.html" class="btn btn--outline-dark">Alice au pays des miroirs</a>
-          <a href="remi-do-et-gagaboum.html" class="btn btn--outline-dark">Rémi Do et Gagaboum</a>
+          <a href="ambroisie.html" class="btn btn--outline-dark">Ambroisie</a>
         </div>
       </div>
     </section>
@@ -205,20 +220,36 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
-      <div><p class="footer-brand">Regarde il neige</p><p class="footer-tagline">Compagnie de théâtre musical et poétique, humaniste et ouvert sur l'autre.</p></div>
+      <div>
+        <p class="footer-brand">Regarde il neige</p>
+        <p class="footer-tagline">Un théâtre musical poétique et humain — Gaëlle Hispard &amp; Mathieu Gerhardt.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </div>
+      </div>
       <div>
         <p class="footer-col-title">Spectacles</p>
         <nav class="footer-nav">
           <a href="le-conte-d-hiver.html">Le Conte d'hiver</a>
-          <a href="mathis-andersen.html">Mathis Andersen - Monde monde</a>
-          <a href="robinson.html">Robinson Crusoé et Zoé Liberté</a>
-          <a href="aurore.html">Aurore</a>
+          <a href="mathis-andersen.html">Mathis Andersen</a>
           <a href="alice.html">Alice au pays des miroirs</a>
+          <a href="aurore.html">Aurore</a>
+          <a href="robinson.html">Robinson Crusoé</a>
           <a href="remi-do-et-gagaboum.html">Rémi Do et Gagaboum</a>
           <a href="ambroisie.html">Ambroisie</a>
         </nav>
       </div>
-      <div><p class="footer-col-title">La compagnie</p><nav class="footer-nav"><a href="la-compagnie.html">Présentation</a><a href="equipe.html">L'équipe</a><a href="actions.html">Actions culturelles</a></nav></div>
+      <div>
+        <p class="footer-col-title">La compagnie</p>
+        <nav class="footer-nav">
+          <a href="la-compagnie.html">Présentation</a>
+          <a href="equipe.html">L'équipe</a>
+          <a href="actions.html">Actions culturelles</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
     </div>
     <div class="footer-bottom"><span>© 2026 Compagnie Regarde il neige</span><span>Théâtre musical · Jeune public</span></div>
   </footer>
