@@ -13,6 +13,7 @@
     const PHOTO_MATHIEU        = "assets/images/Mathieu Gerhardt.avif";
     const PHOTO_MARC           = "assets/images/Marc Beaudin.avif";
     const PHOTO_CLEMENT        = "assets/images/Clément Ballet.avif";
+    const PHOTO_CHARLOTTE      = "assets/images/Charlotte Gallas.avif";
     const PHOTO_FRANCOIS       = "assets/images/François Bérard.avif";
     const PHOTO_JEREMY         = "assets/images/Jérémy Branger.avif";
     const PHOTO_SARAH          = "assets/images/Sarah Cillaire.avif";
@@ -26,6 +27,16 @@
     const PHOTO_VERONIKA       = "assets/images/Véronika Ovchinnikova.avif";
     const PHOTO_EMMANUEL       = "assets/images/Emmanuel Vacarisas.avif";
     const PHOTO_JAMES          = "assets/images/James Groguelin.avif";
+    const PHOTO_LOUISE         = "assets/images/Louise Ferry.avif";
+    const PHOTO_QUENTIN        = "assets/images/Quentin Gouraud.avif";
+    const PHOTO_NOEMIE         = "assets/images/Noémie Zard.avif";
+    const PHOTO_ROMAN          = "assets/images/Roman Tedeschi.avif";
+    const PHOTO_CAMILLE        = "assets/images/Camille Henry.avif";
+    const PHOTO_SIMON          = "assets/images/Simon Poupard.avif";
+    const PHOTO_CASSANDRE      = "assets/images/Cassandre Boy.avif";
+    const PHOTO_JEAN_MARIE     = "assets/images/Jean-Marie Granghaud.avif";
+    const PHOTO_ELOISE         = "assets/images/Eloise Scherrer.avif";
+
   </script>
 
   <meta charset="UTF-8">
@@ -75,10 +86,10 @@
         </div>
         <a href="contact.html">Contact</a>
       </nav>
-      <div class="header-social">
-        <a href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank" rel="noopener noreferrer">Insta</a>
-        <a href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer">YouTube</a>
-        <a href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer">FB</a>
+      <div class="header-social" aria-label="Nos r?seaux sociaux">
+        <a class="social-link--instagram" href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span class="visually-hidden">Instagram</span></a>
+        <a class="social-link--youtube" href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><span class="visually-hidden">YouTube</span></a>
+        <a class="social-link--facebook" href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span class="visually-hidden">Facebook</span></a>
       </div>      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
         <span></span><span></span><span></span>
       </button>
@@ -122,32 +133,32 @@
     <!-- ==================== FONDATEURS ==================== -->
     <section class="section" aria-labelledby="fondateurs-title">
       <div class="container">
-        <span class="section-label">À la tête de la compagnie</span>
+        <span class="section-label">Direction artistique</span>
         <h2 id="fondateurs-title" class="section-title">Gaëlle Hispard & Mathieu Gerhardt</h2>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--color-border); border: 1px solid var(--color-border); margin-bottom: var(--space-lg);">
+        <div class="equipe-leads-grid equipe-bio-group">
 
           <!-- Gaëlle -->
-          <div style="background: var(--color-bg); display: flex; gap: 2rem; align-items: flex-start; padding: 2rem;">
-            <div style="flex-shrink: 0; width: 140px; aspect-ratio: 3/4; overflow: hidden; background: var(--color-bg-dark);">
+          <div class="equipe-lead-card js-bio-card" data-bio-key="gaelle">
+            <div class="equipe-lead-media">
               <img id="photo-gaelle" src="" alt="Gaëlle Hispard" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(15%);">
             </div>
-            <div>
+            <div class="equipe-lead-body">
               <h3 style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; margin-bottom: 0.4rem;">Gaëlle Hispard</h3>
               <p style="font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 0.8rem;">Metteure en scène · Autrice · Compositrice · Comédienne · Musicienne</p>
-              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.7;">Co-fondatrice de la compagnie en 2014. Gaëlle signe la mise en scène de l'ensemble des créations et compose les musiques et chansons originales avec Mathieu Gerhardt.</p>
+              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.7;">Co-fondatrice de la compagnie, Gaëlle est metteure en scène, auteure, compositrice et comédienne pour le théâtre. Elle mêle dans son travail plusieurs formes artistiques : théâtre, musique, danse et vidéo.</p>
             </div>
           </div>
 
           <!-- Mathieu -->
-          <div style="background: var(--color-bg); display: flex; gap: 2rem; align-items: flex-start; padding: 2rem;">
-            <div style="flex-shrink: 0; width: 140px; aspect-ratio: 3/4; overflow: hidden; background: var(--color-bg-dark);">
+          <div class="equipe-lead-card js-bio-card" data-bio-key="mathieu">
+            <div class="equipe-lead-media">
               <img id="photo-mathieu" src="" alt="Mathieu Gerhardt" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(15%);">
             </div>
-            <div>
+            <div class="equipe-lead-body">
               <h3 style="font-family: var(--font-serif); font-size: 1.5rem; font-weight: 400; margin-bottom: 0.4rem;">Mathieu Gerhardt</h3>
               <p style="font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 0.8rem;">Dramaturge · Auteur · Compositeur · Comédien · Musicien</p>
-              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.7;">Co-fondateur de la compagnie en 2014. Mathieu assure la dramaturgie et co-écrit les textes et musiques de toutes les créations de la compagnie.</p>
+              <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.7;">Co-fondateur de la compagnie, Mathieu est un auteur-compositeur, chanteur, guitariste et comédien franco-allemand qui aime mêler les langues et faire dialoguer les cultures. Dans son travail, écriture et performance sont intimement liées.</p>
             </div>
           </div>
 
@@ -157,20 +168,10 @@
         <span class="section-label">Comédien·nes & musicien·nes</span>
         <h2 class="section-title mt-sm">Interprètes</h2>
 
-        <div class="equipe-grid--photos" role="list" aria-label="Interprètes de la compagnie">
+        <div class="equipe-grid--photos equipe-bio-group" role="list" aria-label="Interprètes de la compagnie">
 
-          <article class="equipe-card--photo" role="listitem">
-            <div class="equipe-card-photo-wrap">
-              <img id="photo-marc" src="" alt="Marc Beaudin" loading="lazy">
-            </div>
-            <div class="equipe-card-photo-body">
-              <p class="equipe-card-photo-name">Marc Beaudin</p>
-              <p class="equipe-card-photo-role">Conseiller artistique, co-metteur en scène</p>
-              <p class="equipe-card-photo-shows">Aurore · Alice · Rémi Do · Le Conte d'hiver</p>
-            </div>
-          </article>
-
-          <article class="equipe-card--photo" role="listitem">
+          
+          <article class="equipe-card--photo js-bio-card" data-bio-key="margaux" role="listitem">
             <div class="equipe-card-photo-wrap">
               <img id="photo-margaux" src="" alt="Margaux Conduzorgues" loading="lazy">
             </div>
@@ -183,7 +184,7 @@
 
           <article class="equipe-card--photo" role="listitem">
             <div class="equipe-card-photo-wrap">
-              <div class="equipe-card-photo-placeholder">◊</div>
+              <img id="photo-charlotte" src="" alt="Charlotte Gallas" loading="lazy">
             </div>
             <div class="equipe-card-photo-body">
               <p class="equipe-card-photo-name">Charlotte Gallas</p>
@@ -192,9 +193,9 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="louise" role="listitem">
             <div class="equipe-card-photo-wrap">
-              <div class="equipe-card-photo-placeholder">◊</div>
+              <img id="photo-louise" src="" alt="Louise Ferry" loading="lazy">
             </div>
             <div class="equipe-card-photo-body">
               <p class="equipe-card-photo-name">Louise Ferry</p>
@@ -203,7 +204,7 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="emmanuel" role="listitem">
             <div class="equipe-card-photo-wrap">
               <img id="photo-emmanuel" src="" alt="Emmanuel Vacarisas" loading="lazy">
             </div>
@@ -214,7 +215,7 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="francois" role="listitem">
             <div class="equipe-card-photo-wrap">
               <img id="photo-francois" src="" alt="François Bérard" loading="lazy">
             </div>
@@ -225,7 +226,7 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="aurelien" role="listitem">
             <div class="equipe-card-photo-wrap">
               <img id="photo-aurelien" src="" alt="Aurélien Houver" loading="lazy">
             </div>
@@ -236,7 +237,7 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="veronika" role="listitem">
             <div class="equipe-card-photo-wrap">
               <img id="photo-veronika" src="" alt="Véronika Ovchinnikova" loading="lazy">
             </div>
@@ -247,9 +248,9 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="quentin" role="listitem">
             <div class="equipe-card-photo-wrap">
-              <div class="equipe-card-photo-placeholder">◊</div>
+              <img id="photo-quentin" src="" alt="Quentin Gouraud" loading="lazy">
             </div>
             <div class="equipe-card-photo-body">
               <p class="equipe-card-photo-name">Quentin Gouraud</p>
@@ -258,7 +259,7 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="gabrielle" role="listitem">
             <div class="equipe-card-photo-wrap">
               <img id="photo-gabrielle" src="" alt="Gabrielle Laurens" loading="lazy">
             </div>
@@ -291,7 +292,7 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="ariane" role="listitem">
             <div class="equipe-card-photo-wrap">
               <img id="photo-ariane" src="" alt="Ariane Louis" loading="lazy">
             </div>
@@ -302,7 +303,7 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="jeremy" role="listitem">
             <div class="equipe-card-photo-wrap">
               <img id="photo-jeremy" src="" alt="Jérémy Branger" loading="lazy">
             </div>
@@ -313,7 +314,7 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="clement" role="listitem">
             <div class="equipe-card-photo-wrap">
               <img id="photo-clement" src="" alt="Clément Ballet" loading="lazy">
             </div>
@@ -324,9 +325,9 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="noemie" role="listitem">
             <div class="equipe-card-photo-wrap">
-              <div class="equipe-card-photo-placeholder">◊</div>
+              <img id="photo-noemie" src="" alt="Noémie Zard" loading="lazy">
             </div>
             <div class="equipe-card-photo-body">
               <p class="equipe-card-photo-name">Noémie Zard</p>
@@ -335,9 +336,9 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="roman" role="listitem">
             <div class="equipe-card-photo-wrap">
-              <div class="equipe-card-photo-placeholder">◊</div>
+              <img id="photo-roman" src="" alt="Roman Tedeschi" loading="lazy">
             </div>
             <div class="equipe-card-photo-body">
               <p class="equipe-card-photo-name">Roman Tedeschi</p>
@@ -346,9 +347,9 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="camille" role="listitem">
             <div class="equipe-card-photo-wrap">
-              <div class="equipe-card-photo-placeholder">◊</div>
+              <img id="photo-camille" src="" alt="Camille Henry" loading="lazy">
             </div>
             <div class="equipe-card-photo-body">
               <p class="equipe-card-photo-name">Camille Henry</p>
@@ -357,7 +358,7 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="armance" role="listitem">
             <div class="equipe-card-photo-wrap">
               <img id="photo-armance" src="" alt="Armance Galpin" loading="lazy">
             </div>
@@ -368,7 +369,7 @@
             </div>
           </article>
 
-          <article class="equipe-card--photo" role="listitem">
+          <article class="equipe-card--photo js-bio-card" data-bio-key="jonathan" role="listitem">
             <div class="equipe-card-photo-wrap">
               <img id="photo-jonathan" src="" alt="Jonathan Fried" loading="lazy">
             </div>
@@ -386,11 +387,23 @@
           <span class="section-label">Équipe technique & artistique</span>
           <h2 class="section-title">Créateurs</h2>
 
-          <div class="equipe-grid--photos" role="list" aria-label="Équipe technique">
+          <div class="equipe-grid--photos equipe-bio-group" role="list" aria-label="Équipe technique">
 
-            <article class="equipe-card--photo" role="listitem">
+            <article class="equipe-card--photo js-bio-card" data-bio-key="marc" role="listitem">
+            <div class="equipe-card-photo-wrap">
+              <img id="photo-marc" src="" alt="Marc Beaudin" loading="lazy">
+            </div>
+            <div class="equipe-card-photo-body">
+              <p class="equipe-card-photo-name">Marc Beaudin</p>
+              <p class="equipe-card-photo-role">Conseiller artistique, co-metteur en scène</p>
+              <p class="equipe-card-photo-shows">Aurore · Alice · Rémi Do · Le Conte d'hiver</p>
+            </div>
+          </article>
+
+
+            <article class="equipe-card--photo js-bio-card" data-bio-key="simon" role="listitem">
               <div class="equipe-card-photo-wrap">
-                <div class="equipe-card-photo-placeholder">◊</div>
+                <img id="photo-simon" src="" alt="Simon Poupard" loading="lazy">
               </div>
               <div class="equipe-card-photo-body">
                 <p class="equipe-card-photo-name">Simon Poupard</p>
@@ -412,7 +425,7 @@
 
             <article class="equipe-card--photo" role="listitem">
               <div class="equipe-card-photo-wrap">
-                <div class="equipe-card-photo-placeholder">◊</div>
+                <img id="photo-cassandre" src="" alt="Cassandre Boy" loading="lazy">
               </div>
               <div class="equipe-card-photo-body">
                 <p class="equipe-card-photo-name">Cassandre Boy</p>
@@ -423,7 +436,7 @@
 
             <article class="equipe-card--photo" role="listitem">
               <div class="equipe-card-photo-wrap">
-                <div class="equipe-card-photo-placeholder">◊</div>
+                <img id="photo-jean-marie" src="" alt="Jean-Marie Granghaud" loading="lazy">
               </div>
               <div class="equipe-card-photo-body">
                 <p class="equipe-card-photo-name">Jean-Marie Granghaud</p>
@@ -434,7 +447,7 @@
 
             <article class="equipe-card--photo" role="listitem">
               <div class="equipe-card-photo-wrap">
-                <div class="equipe-card-photo-placeholder">◊</div>
+                <img id="photo-eloise" src="" alt="Éloïse Scherrer" loading="lazy">
               </div>
               <div class="equipe-card-photo-body">
                 <p class="equipe-card-photo-name">Éloïse Scherrer</p>
@@ -496,6 +509,7 @@
         { id: 'photo-mathieu',   src: typeof PHOTO_MATHIEU   !== 'undefined' ? PHOTO_MATHIEU   : '' },
         { id: 'photo-marc',      src: typeof PHOTO_MARC      !== 'undefined' ? PHOTO_MARC      : '' },
         { id: 'photo-clement',   src: typeof PHOTO_CLEMENT   !== 'undefined' ? PHOTO_CLEMENT   : '' },
+        { id: 'photo-charlotte', src: typeof PHOTO_CHARLOTTE !== 'undefined' ? PHOTO_CHARLOTTE : '' },
         { id: 'photo-francois',  src: typeof PHOTO_FRANCOIS  !== 'undefined' ? PHOTO_FRANCOIS  : '' },
         { id: 'photo-jeremy',    src: typeof PHOTO_JEREMY    !== 'undefined' ? PHOTO_JEREMY    : '' },
         { id: 'photo-sarah',     src: typeof PHOTO_SARAH     !== 'undefined' ? PHOTO_SARAH     : '' },
@@ -508,6 +522,15 @@
         { id: 'photo-ariane',    src: typeof PHOTO_ARIANE    !== 'undefined' ? PHOTO_ARIANE    : '' },
         { id: 'photo-veronika',  src: typeof PHOTO_VERONIKA  !== 'undefined' ? PHOTO_VERONIKA  : '' },
         { id: 'photo-emmanuel',  src: typeof PHOTO_EMMANUEL  !== 'undefined' ? PHOTO_EMMANUEL  : '' },
+        { id: 'photo-louise',    src: typeof PHOTO_LOUISE    !== 'undefined' ? PHOTO_LOUISE    : '' },
+        { id: 'photo-quentin',   src: typeof PHOTO_QUENTIN   !== 'undefined' ? PHOTO_QUENTIN   : '' },
+        { id: 'photo-noemie',    src: typeof PHOTO_NOEMIE    !== 'undefined' ? PHOTO_NOEMIE    : '' },
+        { id: 'photo-roman',     src: typeof PHOTO_ROMAN     !== 'undefined' ? PHOTO_ROMAN     : '' },
+        { id: 'photo-camille',   src: typeof PHOTO_CAMILLE   !== 'undefined' ? PHOTO_CAMILLE   : '' },
+        { id: 'photo-simon',     src: typeof PHOTO_SIMON     !== 'undefined' ? PHOTO_SIMON     : '' },
+        { id: 'photo-cassandre', src: typeof PHOTO_CASSANDRE !== 'undefined' ? PHOTO_CASSANDRE : '' },
+        { id: 'photo-jean-marie',src: typeof PHOTO_JEAN_MARIE !== 'undefined' ? PHOTO_JEAN_MARIE : '' },
+        { id: 'photo-eloise',    src: typeof PHOTO_ELOISE    !== 'undefined' ? PHOTO_ELOISE    : '' },
         { id: 'photo-james',     src: typeof PHOTO_JAMES     !== 'undefined' ? PHOTO_JAMES     : '' },
       ];
       photos.forEach(({ id, src }) => {
@@ -521,6 +544,382 @@
           const ph = wrap.querySelector('.equipe-card-photo-placeholder');
           if (ph) ph.style.display = 'none';
         }
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const bios = {
+        gaelle: [
+          `Formée au conservatoire de Saint-Cloud en piano, accordéon et chant, et à la peinture à l'atelier Adeline Briard, elle obtient un Master de recherche Arts du spectacle - Cinéma et théâtre (2010) et un Master pro Mise en scène et dramaturgie (2011) à l'Université Paris Ouest-Nanterre.`,
+          `Elle fait son stage de fin d'études au Théâtre de la Ville avec Emmanuel Demarcy-Mota pour Rhinocéros et collabore en assistanat à la mise en scène sur La réunification des deux Corées de Joël Pommerat.`,
+          `En 2012, elle met en scène Novecento (BMK Nanterre), Monotropsis Odorata (L'Agora, Évry). Depuis 2015, elle co-écrit et met en scène des spectacles musicaux jeune public avec Mathieu Gerhardt pour la Cie Regarde il neige : Ambroisie (2015), Aurore - La Belle au Bois ne s'endort pas (2016), Alice au pays des miroirs (2018), Rémi Do et Gagaboum (2019) et Robinson Crusoé... Zoé Liberté ! (2021).`,
+          `Elle joue dans Percevaus, mis en scène par Sarah Cillaire, Appartement, mis en scène par Véronique Gallet et Philippe Levexier, ainsi que dans La caravane des Lucioles de Roman Tedeschi.`,
+          `Depuis 2012, elle met en scène avec Véronique Gallet un spectacle par an avec un groupe de jeunes en situation précaire pour le Festival Toi, Moi & Co organisé par l'Acerma.`,
+          `Depuis 2019, elle crée Les visages de l'emprise, fruit d'un travail de recherche pour l'Acerma sur la question des emprises avec un groupe de jeunes en situation précaire.`,
+          `Pour l'université de Middlebury College aux États-Unis, elle met en scène avec Marc Beaudin : Pourvu qu'il pleuve de Sonia Ristic, Taïga d'Aurianne Abécassis, Une fin de Sébastien David, Les Échos de la Forêt de Mathilde Souchaud, Salle des Fêtes de Baptiste Amann et Pour Maëlle d'Ahmad Hamdan. Elle y dirige également un atelier de théâtre d'improvisation.`,
+          `Elle compose aussi la musique pour plusieurs créations théâtrales et joue dans différents projets musicaux, notamment Les Damoiselles, Cassiopée A, Maghar et Mathis Andersen.`
+        ],
+        mathieu: [
+          `Né à Düsseldorf, il quitte l'Allemagne à 18 ans pour étudier à Montpellier, puis à Paris.`,
+          `Il obtient un Master in Management, option management de la culture, à l'ESCP et un Diplôme d'Études Musicales en Musiques Actuelles et Amplifiées au Conservatoire du Val de Bièvre.`,
+          `Il commence sa carrière musicale avec son projet Lucien Maguelone et le trio Bam ! Carousel, entre folk-rock franco-irlandaise et burkinabé.`,
+          `Il est ensuite membre du trio Cassiopée A, lance en 2015 son projet solo Maghar avec lequel il publie l'EP Dérivé et l'album Toupie, et collabore avec Moussa Koita et Pierre-Michel Sivadier.`,
+          `En 2014, il crée avec Gaëlle Hispard la compagnie Regarde il neige. Auteur, compositeur, guitariste et directeur musical, il y crée Ambroisie, Aurore - La Belle au bois ne s'endort pas, Alice au pays des miroirs, Rémi Do et Gagaboum et Robinson Crusoé et Zoé Liberté.`,
+          `Depuis 2017, il est compositeur et musicien live pour la troupe du festival Toi, Moi & Co, composée de jeunes de tous horizons, dont certains viennent tout juste d'arriver en France.`,
+          `Il signe également les créations musicales du Bon, la brute et l'indifférent et de Chasseurs-cueilleurs de Philibert Adamon, dans lesquelles il est aussi comédien.`,
+          `Il anime régulièrement des ateliers de création musicale et théâtrale, notamment un atelier d'écriture de chansons à Middlebury College dans le Vermont. Son premier EP en tant que Mathis Andersen, Monde Monde, paraît en mai 2024.`
+        ],
+        marc: [
+          `Formé entre Montréal, la France et l'Italie, il explore le monde autant par le voyage que par le théâtre, en tant que comédien et metteur en scène.`,
+          `Il obtient un Master pro mise en scène et dramaturgie de l'université Paris-Ouest Nanterre-la Défense.`,
+          `Il crée à Paris la Compagnie Épaulé-Jeté et met en scène Les soleils pâles de Marc-Antoine Cyr en coproduction avec La Commune - CDN d'Aubervilliers, avant de travailler sur Holiday Inn - Nuits d'accalmie de Sonia Ristic puis Gens du pays.`,
+          `Depuis 2015, il dirige le théâtre français de la Middlebury College Summer School dans le Vermont aux États-Unis.`
+        ],
+        clement: [
+          `Clément Ballet est comédien, metteur en scène, musicien et échassier, originaire des Landes.`,
+          `Avant de monter à Paris, il pratique le saxophone alto, les échasses et la tauromachie. Dans la capitale, il se forme auprès de Philippe Perrussel, Laurent Stocker, Éric Lacascade, Clara Pirali, Catherine Epars et d'autres artistes.`,
+          `Il intègre le Conservatoire du XIe puis le CRR de Boulogne-Billancourt et complète sa formation par différents stages, notamment au Théâtre National de Bretagne, à l'INSAS de Bruxelles et à la Manufacture de Lausanne.`,
+          `Il a joué dans une vingtaine de pièces, au cinéma dans des réalisations de Jordi Perino, Morgan Simon et Antoine Pérez, et signe aussi des mises en scène.`,
+          `Il travaille avec la compagnie Regarde il neige depuis 2022, en créant le rôle de Robinson dans Robinson Crusoé et Zoé Liberté.`
+        ],
+        francois: [
+          `François Bérard est un acteur français né à Paris.`,
+          `Formé au Cours Simon puis au Studio d'Asnières (ESCA), il commence sa carrière sur scène dans plusieurs pièces classiques et contemporaines, notamment Le Misanthrope de Molière.`,
+          `Il joue également dans des spectacles comme Volpone de Ben Jonson ou 4211 km au théâtre Marigny.`,
+          `Parallèlement, il apparaît au cinéma dans des comédies populaires telles que À bras ouverts et Coexister.`,
+          `On le retrouve aussi dans plusieurs séries télévisées comme Camping Paradis, Plus belle la vie, Le Négociateur, Demain nous appartient et Scènes de ménages.`,
+          `Acteur polyvalent, il travaille sur scène, pour la télévision, le cinéma et le doublage.`
+        ],
+        jeremy: [
+          `Jérémy Branger naît en 1989 à Versailles. Il est comédien, musicien et escrimeur.`,
+          `Après plusieurs années d'ateliers théâtraux, d'improvisation et de représentations à l'APPTSV de Plaisir, il intègre en 2012 la compagnie du Mystère Bouffe en tant que comédien-musicien pour La cour des Miracles, mis en scène par Lisa Labbé.`,
+          `Au sein de cette compagnie spécialisée dans la commedia dell'arte, il se forme au jeu masqué, aux chants polyphoniques et aux acrobaties. En parallèle, il apprend l'escrime théâtrale auprès de Florence Leguy.`,
+          `Il est engagé comme comédien escrimeur sur Gueules cassées, obtient le rôle de d'Artagnan dans La cavalcade de d'Artagnan, puis rencontre Patrick Alluin qui le met en scène dans Le Baladin du monde occidental pour Avignon 2018.`,
+          `Musicien autodidacte et multi-instrumentiste, il joue et chante pour ses pièces et fait partie du groupe La Famiglia Rubinetti depuis 2014, en région parisienne et en Europe.`,
+          `Il participe ensuite à différents projets, dont Notre Dame de Paris avec la compagnie anglaise TNT, puis rejoint la compagnie Piloucha comme bruiteur, conteur et musicien pour Frimousse contre vents et galères.`
+        ],
+        margaux: [
+          `Margaux Conduzorgues a grandi à Montpellier.`,
+          `À 18 ans, elle monte à Paris pour intégrer les cours d'art dramatique Claude Mathieu, où elle est notamment dirigée par Jean Bellorini et Georges Werler.`,
+          `Depuis sa sortie en 2011, elle joue dans de nombreux spectacles classiques et contemporains.`,
+          `Son désir de mise en scène se concrétise en 2015 avec L'Odeur de la ville mouillée, adapté du recueil de nouvelles de Marie Causse, créé au théâtre de Belleville en janvier 2016.`,
+          `Elle joue ensuite notamment dans Pacamambo de Wajdi Mouawad et Stop The Tempo !, tout en donnant des cours de théâtre et en concevant des spectacles pour des événements privés.`,
+          `Elle crée aussi sa compagnie Mille Juillet et imagine L'Échantillothèque, créé à Paris puis au festival Off d'Avignon 2017 avant d'être repris au Lavoir Moderne Parisien.`,
+          `En 2021, elle écrit son premier spectacle, Mon Âme au Diable, dont elle signe ensuite la mise en scène.`,
+          `Cœur gros est sa deuxième écriture dramatique, un seul-en-scène initié par David Olivier Fischer, dont elle signe également la mise en scène.`
+        ],
+        louise: [
+          `Formée au Cours Florent où elle travaille avec Jerzy Klesyk et Volodia Serre, Louise Ferry fait ses débuts en tant que comédienne sous la direction d'Adrien Popineau dans Burn Baby Burn de C. Lacroix, aux festivals d'Avignon et d'Aurillac.`,
+          `En 2022, elle participe à une adaptation du Songe d'une nuit d'été par Mario Gonzalez et Rafael Bianciotto au centre culturel L'Athénée.`,
+          `Elle travaille également sous la direction d'Alexandre Horréard dans Feu Rouge, créé à Gare au Théâtre puis à la Comédie Nation, ainsi que dans La petite dans la forêt profonde de Philippe Minyana, créée au Bouffon Théâtre.`
+        ],
+        jonathan: [
+          `Jonathan Fried est un comédien professionnel qui vit et travaille à New York. Après avoir obtenu son diplôme à l'Université Brown, il débute à New York dans 1951 d'Anne Bogart au New York Theatre Workshop, suivi de No Plays, No Poetry, lauréat d'un prix OBIE.`,
+          `Il devient ensuite membre de deux compagnies résidentes récompensées par un Tony Award : Trinity Repertory Company et l'American Repertory Theater à Harvard, où il interprète de nombreux premiers rôles, avec une prédilection pour Shakespeare et les classiques contemporains américains.`,
+          `Sa carrière new-yorkaise le conduit aussi au Public Theater, au Signature Theater et au Theater for a New Audience, dans des productions de Shakespeare, Middleton, Tchekhov et John Guare.`,
+          `En 2010, il passe une année avec The Bridge Project, dirigé par Sam Mendes, pour La Tempête et Comme il vous plaira, créées au BAM de New York puis en tournée en Asie, en Europe et au Old Vic de Londres, avec une étape parisienne au Théâtre Marigny.`,
+          `Il joue également dans plusieurs grands théâtres régionaux américains comme le Yale Repertory Theater, le Williamstown Theater Festival, Arena Stage, A.C.T., le Humana Festival et le Shakespeare Festival de Washington.`,
+          `Au cinéma et à la télévision, il participe à des productions variées, dont le film BAPS avec Halle Berry.`,
+          `Parallèlement, il enseigne depuis plus de 35 ans à la Bread Loaf Graduate School of English du Middlebury College, comme artiste invité et membre du corps professoral.`,
+          `Il y a créé deux cours originaux, Shakespeare Performance et Solo Performance, pour transmettre les outils du jeu d'acteur à des professeurs d'anglais et de théâtre.`
+        ],
+        armance: [
+          `Armance Galpin commence sa formation professionnelle au sein de l'école de la compagnie Le Vélo Volé puis suit le training professionnel de Jean-Philippe Daguerre et Charlotte Matzneff, ainsi que divers stages menés par le Collectif du Libre acteur.`,
+          `En parallèle, elle travaille avec plusieurs compagnies et joue notamment dans La Mastication des morts, L'Avare et L'Authentique histoire du Grand Méchant loup.`,
+          `Avec sa compagnie Le Hasard du Paon, elle met en scène son premier projet, La Maladie de la Famille M., puis poursuit ses recherches en assistant Manon Montel et Barbara Lamballais sur d'autres créations.`,
+          `Dernièrement, elle joue dans Les Téméraires mis en scène par Charlotte Matzneff et dans Les Quatre sœurs March avec Aurélien Houver.`,
+          `Prochainement, elle jouera dans Fun, écrit et mis en scène par Aurélien Houver.`
+        ],
+        quentin: [
+          `Bercé par les disques de son père, mêlant jazz, chanson française et humour de scène, Quentin Gouraud s'intéresse très tôt au jazz et au théâtre.`,
+          `Guitariste autodidacte, il monte un groupe de funk au lycée, ce qui lui permet d'expérimenter la scène et la composition pendant plusieurs années.`,
+          `En 2005, il intègre la troupe Nutella Sunrise et joue, arrange puis compose la musique de plusieurs spectacles.`,
+          `Il poursuit ensuite la composition et le jeu pour d'autres créations tout en intégrant l'école de jazz de Didier Lockwood en 2011.`,
+          `Compositeur pour l'image, guitariste et pianiste dans des formations de rock, d'electro pop, de jazz et de funk, il se consacre également depuis 2017 à l'accompagnement du théâtre improvisé avec la LIP, Paris Impro, les Bonnets M et le collectif Vibration.`
+        ],
+        camille: [
+          `Camille Henry commence son parcours artistique par la pratique de l'improvisation.`,
+          `Forte de cette expérience, elle intègre le Studio Alain de Bock pour une formation de comédienne théâtre et cinéma, avec une spécialisation en clown.`,
+          `Elle fonde en 2020 la compagnie Feris afin de mettre en scène une pièce d'Agatha Christie en version originale.`,
+          `Elle met en scène le Cabaret la Bête Noire depuis 2023 et devient en parallèle guide conférencière.`
+        ],
+        aurelien: [
+          `Aurélien Houver se forme au jeu d'acteur d'abord auprès de Gaëtan Peau puis au conservatoire du VIIe arrondissement de Paris avec Daniel Berlioux.`,
+          `En 2016, il est diplômé d'un Master de Lettres Modernes à l'université Paris III - Sorbonne Nouvelle.`,
+          `À partir de 2017, il travaille avec différentes compagnies sur des spectacles tout public et jeune public.`,
+          `En parallèle au jeu, il pratique la mise en scène, la musique et l'écriture.`,
+          `Son premier texte théâtral, Genius Loci, ouvre le festival Jeunes Textes en Liberté en janvier 2016, mis en espace par Eugen Jebeleanu.`,
+          `En 2018, il fonde avec Victoria Ribeiro la Compagnie du Taxaudier et y interprète le premier projet, le seul-en-scène Vipère au poing adapté du roman d'Hervé Bazin.`,
+          `En 2022, il met en scène La Nuit des rois de Shakespeare et joue notamment sous la direction de Jean-Luc Revol dans Le Chevalier et la Dame. En 2023, il signe la co-mise en scène des Quatre Sœurs March.`,
+          `Depuis 2019, Aurélien est aussi professeur de théâtre dans des ateliers pour adultes amateurs.`
+        ],
+        gabrielle: [
+          `Comédienne, chanteuse et metteuse en scène, Gabrielle Laurens a joué dans Coups de foudre, Aurore et Tougwongka.`,
+          `Issue du Master de mise en scène et dramaturgie de Nanterre, elle a été l'une des assistantes à la mise en scène de Laurent Pelly à la Comédie-Française pour L'Opéra de quat'sous.`,
+          `Elle a monté une dizaine de spectacles entre créations collectives et pièces d'auteurs, notamment Shakespeare, Goldoni et Ribes.`,
+          `Elle a récemment mis en scène trois spectacles jeune public : Ambroisie, Nomi-Nomi et Cycles.`
+        ],
+        ariane: [
+          `Ariane Louis s'est formée dans les conservatoires municipaux de la ville de Paris.`,
+          `En 2015, elle décroche son premier rôle dans Rétro-Sexuel, un spectacle autour de l'exclusion des personnes séropositives qui tourne dans le sud de la France.`,
+          `En 2019, elle rejoint la compagnie Les Insurgés pour une reprise de rôle sur Martyr, puis participe au festival d'Avignon avec Petite, dont elle est également l'autrice.`,
+          `En 2020, elle est invitée à rejoindre la compagnie Bicyclette et participe à toutes leurs créations, de la comédie grand public au drame plus intime.`,
+          `En 2024, elle monte sa pièce familiale Le Pays des Glaces, texte lauréat des E.A.T Jeunesse, dans laquelle elle joue, chante et danse.`,
+          `En parallèle, elle rejoint la compagnie Regarde il neige pour Rémi Do et Gagaboum puis Robinson Crusoé et Zoé Liberté, mêlant sur scène ses deux passions : musique et théâtre.`,
+          `Depuis 2021, Ariane est également batteuse dans le groupe de garage punk Acid Gras et poursuit en parallèle ses projets d'écriture.`
+        ],
+        veronika: [
+          `Véronika Ovchinnikova naît au Kazakhstan dans une famille russophone. Elle sort du Conservatoire National d'art dramatique d'Almaty avec un premier prix à l'unanimité, et se forme aussi à la musique.`,
+          `Elle intègre la troupe permanente du Deutsche Theater Almaty, où elle joue dans de nombreuses créations, en russe et en allemand.`,
+          `Parallèlement, elle écrit et anime une émission télé hebdomadaire sur une chaîne nationale kazakhe.`,
+          `Elle poursuit ensuite ses études théâtrales à Paris, approfondit sa formation avec plusieurs stages, se forme au jeu caméra avec Jack Waltzer et au clown avec François Robbe.`,
+          `Elle tourne dans des courts métrages et des séries télévisées comme Engrenages, Napoléon - la première campagne de Russie ou Killing Eve.`,
+          `Elle est aussi l'autrice de deux spectacles jeune public : La petite maison et Le pêcheur et le poisson.`
+        ],
+        emmanuel: [
+          `Emmanuel Vacarisas s'est formé au Cours Périmony, puis à l'AICOM en tant qu'artiste de comédie musicale. Il est également titulaire d'une licence professionnelle d'encadrement d'ateliers de pratique théâtrale.`,
+          `Après avoir joué dans diverses pièces, il se tourne vers la comédie musicale et participe notamment à la tournée d'Un Violon sur le toit et à une nouvelle production des Misérables à Lausanne.`,
+          `On l'a vu aussi dans Coups de Foudre au Vingtième Théâtre, dans plusieurs spectacles au festival d'Avignon, et dans différentes mises en scène qu'il signe lui-même.`,
+          `Il a travaillé régulièrement en Suisse avec la compagnie Evaprod, jouant notamment dans Et si on allait à l'Opéra ?, Jekyll & Hyde et le spectacle jeune public Touwongka.`,
+          `Depuis 2014, il travaille avec la compagnie Regarde il neige pour Ambroisie, Aurore - La Belle au bois ne s'endort pas, et Alice au pays des miroirs.`,
+          `En 2018 naît la Compagnie du 33e étage, créée par des élèves et anciens élèves de ses cours, au sein de laquelle il met en scène plusieurs projets comme Jean et Béatrice, Trahisons, Fugueuses et Le Moche.`,
+          `Il a co-mis en scène et joué dans Le Mariage forcé de Molière à l'Essaïon en 2025, avec une reprise prévue entre novembre 2026 et janvier 2027.`,
+          `Passionné de transmission, il anime depuis plus de vingt ans des ateliers théâtre pour amateurs et a également enseigné à de futurs professionnels à l'AICOM.`
+        ],
+        noemie: [
+          `Noémie Zard commence sa formation théâtrale auprès de Pascal Seguin en 2009, puis suit le cursus d'art dramatique du conservatoire du Xe arrondissement de Paris jusqu'en 2018, tout en se formant au chant.`,
+          `Depuis 2018, elle joue dans plusieurs spectacles pour enfants comme La Rivière à l'Envers, Fais pas ci, fais pas chat, Robinson Crusoé et Zoé Liberté ou Poucette.`,
+          `Elle se produit actuellement dans L'École des femmes de Molière au Théo Théâtre, après y avoir joué Lysistrata et présenté Dénis douillets, un spectacle qu'elle a écrit et mis en scène.`,
+          `On la retrouve également dans les visites théâtralisées de la compagnie Ankréation, notamment au Château de Monte-Cristo et à Marly-le-Roi, ainsi qu'au sein de la compagnie des Sculpteurs de rêves, créatrice de spectacles immersifs.`,
+          `Elle a aussi inventé un jukebox humain dans lequel elle chante pour divers festivals et événements.`
+        ],
+        simon: [
+          `Simon Poupard, né le 16 novembre 1985, vit à Saint-Mandé. Il est monteur son et sound designer.`,
+          `Après un baccalauréat scientifique en sciences de l'ingénieur, il se forme aux métiers du son à l'ESRA, section ISTS.`,
+          `Passionné de musique, il développe très tôt un intérêt pour le spectacle vivant et le cinéma. Il fait ses premières expériences au sein de compagnies amateurs en tant que comédien et technicien, tout en participant à de nombreux projets audiovisuels.`,
+          `Attiré par les dimensions techniques et créatives du son, il s'oriente plus spécifiquement vers la création sonore liée à l'image. Il travaille aujourd'hui principalement pour le cinéma et les séries, en tant que monteur son et sound designer.`,
+          `Parallèlement, il continue de s'investir dans le spectacle vivant, notamment avec la compagnie Regarde il neige, le Théâtre de l'Esquif et le Mime Tuga.`,
+          `Il s'est aussi occupé de la diffusion musicale du groupe festif Les Gars dans l'Coin pendant toutes leurs années de concerts.`
+        ]
+      };
+
+      const cards = Array.from(document.querySelectorAll('.js-bio-card[data-bio-key]'));
+      const photoCards = Array.from(document.querySelectorAll('.equipe-card--photo'));
+      const getCardName = (card) => {
+        const nameNode = card.querySelector('.equipe-card-photo-name, h3');
+        return nameNode ? nameNode.textContent.trim() : '';
+      };
+      const normalizeName = (value) =>
+        value
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase();
+      const getCardBody = (card) => card.querySelector('.equipe-card-photo-body, .equipe-lead-body');
+      const getCardRole = (card) => {
+        const roleNode = card.querySelector('.equipe-card-photo-role') || card.querySelector('.equipe-lead-body > p');
+        return roleNode ? roleNode.textContent.trim() : '';
+      };
+      const getCardShows = (card) => {
+        const showsNode = card.querySelector('.equipe-card-photo-shows');
+        if (!showsNode) return [];
+        return showsNode.textContent
+          .split(/·|Â·/)
+          .map((item) => item.trim())
+          .filter(Boolean);
+      };
+      const getCardImage = (card) => card.querySelector('img');
+      const groups = Array.from(document.querySelectorAll('.equipe-bio-group'));
+      const groupPanels = new Map();
+
+      document.querySelectorAll('.equipe-grid--photos.equipe-bio-group').forEach((group) => {
+        const sortedCards = Array.from(group.querySelectorAll(':scope > .equipe-card--photo')).sort((cardA, cardB) =>
+          normalizeName(getCardName(cardA)).localeCompare(normalizeName(getCardName(cardB)), 'fr')
+        );
+
+        sortedCards.forEach((card) => {
+          group.appendChild(card);
+        });
+      });
+
+      groups.forEach((group, index) => {
+        const panel = document.createElement('div');
+        panel.className = 'equipe-bio-panel';
+        panel.hidden = true;
+        panel.id = `equipe-bio-panel-${index + 1}`;
+        panel.setAttribute('role', 'region');
+        panel.setAttribute('aria-live', 'polite');
+        group.appendChild(panel);
+        groupPanels.set(group, panel);
+      });
+
+      const placePanelNearCard = (group, card, panel) => {
+        const groupCards = Array.from(group.querySelectorAll('.equipe-card--photo, .equipe-lead-card'));
+        const clickedIndex = groupCards.indexOf(card);
+
+        if (clickedIndex === -1) {
+          group.appendChild(panel);
+          return;
+        }
+
+        const clickedTop = card.offsetTop;
+        let insertionTarget = card;
+
+        for (let index = clickedIndex + 1; index < groupCards.length; index += 1) {
+          const candidate = groupCards[index];
+          if (Math.abs(candidate.offsetTop - clickedTop) > 4) break;
+          insertionTarget = candidate;
+        }
+
+        if (insertionTarget.nextSibling) {
+          group.insertBefore(panel, insertionTarget.nextSibling);
+        } else {
+          group.appendChild(panel);
+        }
+      };
+
+      const closeAll = () => {
+        cards.forEach((card) => {
+          card.classList.remove('is-bio-active');
+          const button = card.querySelector('.bio-toggle');
+          if (button) button.setAttribute('aria-expanded', 'false');
+        });
+
+        groupPanels.forEach((panel) => {
+          panel.hidden = true;
+          panel.innerHTML = '';
+        });
+      };
+
+      const fillPanel = (panel, card, paragraphs) => {
+        const image = getCardImage(card);
+        const name = getCardName(card);
+        const role = getCardRole(card);
+        const shows = getCardShows(card).flatMap((item) =>
+          item
+            .split(/\s*(?:\u00B7|\u2022|\u00C2\u00B7)\s*/)
+            .map((part) => part.trim())
+            .filter(Boolean)
+        );
+
+        const inner = document.createElement('div');
+        inner.className = 'equipe-bio-panel-inner';
+
+        if (image) {
+          const media = document.createElement('div');
+          media.className = 'equipe-bio-panel-media';
+
+          const panelImage = document.createElement('img');
+          panelImage.src = image.currentSrc || image.src;
+          panelImage.alt = image.alt || name;
+          panelImage.loading = 'lazy';
+
+          media.appendChild(panelImage);
+          inner.appendChild(media);
+        }
+
+        const content = document.createElement('div');
+        content.className = 'equipe-bio-panel-content';
+
+        const head = document.createElement('div');
+        head.className = 'equipe-bio-panel-head';
+
+        const titleWrap = document.createElement('div');
+
+        const title = document.createElement('h3');
+        title.className = 'equipe-bio-panel-title';
+        title.textContent = name;
+        titleWrap.appendChild(title);
+
+        if (role) {
+          const roleNode = document.createElement('p');
+          roleNode.className = 'equipe-bio-panel-role';
+          roleNode.textContent = role;
+          titleWrap.appendChild(roleNode);
+        }
+
+        head.appendChild(titleWrap);
+
+        const closeButton = document.createElement('button');
+        closeButton.type = 'button';
+        closeButton.className = 'equipe-bio-panel-close';
+        closeButton.textContent = 'Fermer';
+        closeButton.addEventListener('click', closeAll);
+        head.appendChild(closeButton);
+
+        content.appendChild(head);
+
+        if (shows.length) {
+          const tags = document.createElement('div');
+          tags.className = 'equipe-bio-tags';
+
+          shows.forEach((show) => {
+            const tag = document.createElement('span');
+            tag.className = 'equipe-bio-tag';
+            tag.textContent = show;
+            tags.appendChild(tag);
+          });
+
+          content.appendChild(tags);
+        }
+
+        paragraphs.forEach((text) => {
+          const paragraph = document.createElement('p');
+          paragraph.textContent = text;
+          content.appendChild(paragraph);
+        });
+
+        inner.appendChild(content);
+        panel.appendChild(inner);
+      };
+
+      cards.forEach((card) => {
+        const key = card.dataset.bioKey;
+        const paragraphs = bios[key];
+        const body = getCardBody(card);
+        const group = card.closest('.equipe-bio-group');
+        const panel = groupPanels.get(group);
+
+        if (!paragraphs || !body || !panel) return;
+
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'bio-toggle';
+        button.textContent = 'Biographie';
+        button.setAttribute('aria-expanded', 'false');
+        button.setAttribute('aria-controls', panel.id);
+
+        button.addEventListener('click', () => {
+          const isAlreadyOpen = card.classList.contains('is-bio-active');
+
+          closeAll();
+          if (isAlreadyOpen) return;
+
+          card.classList.add('is-bio-active');
+          button.setAttribute('aria-expanded', 'true');
+          placePanelNearCard(group, card, panel);
+          fillPanel(panel, card, paragraphs);
+          panel.hidden = false;
+          panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+
+        body.appendChild(button);
+      });
+
+      photoCards.forEach((card) => {
+        const body = getCardBody(card);
+        if (!body || body.querySelector('.bio-toggle')) return;
+
+        const ghostButton = document.createElement('span');
+        ghostButton.className = 'bio-toggle bio-toggle--ghost';
+        ghostButton.textContent = 'Biographie';
+        ghostButton.setAttribute('aria-hidden', 'true');
+        body.appendChild(ghostButton);
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') closeAll();
       });
     });
   </script>

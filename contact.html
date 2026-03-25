@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact · Regarde il neige</title>
   <meta name="description"
-    content="Contactez la compagnie Regarde il neige pour toute demande de programmation, partenariat ou renseignement.">
+    content="Contactez la compagnie Regarde il neige pour la direction artistique, la diffusion, la newsletter et les informations de programmation.">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -51,11 +51,10 @@
         </div>
         <a href="contact.html" class="active">Contact</a>
       </nav>
-      <div class="header-social">
-        <a href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank"
-          rel="noopener noreferrer">Insta</a>
-        <a href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer">YouTube</a>
-        <a href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer">FB</a>
+      <div class="header-social" aria-label="Nos réseaux sociaux">
+        <a class="social-link--instagram" href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span class="visually-hidden">Instagram</span></a>
+        <a class="social-link--youtube" href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><span class="visually-hidden">YouTube</span></a>
+        <a class="social-link--facebook" href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span class="visually-hidden">Facebook</span></a>
       </div>
       <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
         <span></span><span></span><span></span>
@@ -87,90 +86,80 @@
 
   <main>
 
-    <section class="page-hero page-hero--short" aria-labelledby="page-title" style="min-height:38vh;">
-      <div class="hero-overlay" style="background:var(--color-blue);"></div>
+    <section class="page-hero page-hero--short" aria-labelledby="page-title" style="min-height: 38vh;">
+      <div class="hero-overlay" style="background: var(--color-blue);"></div>
       <div class="hero-content">
         <h1 class="hero-title" id="page-title">Contact</h1>
-        <p class="hero-subtitle">Programmation, partenariats, renseignements</p>
+        <p class="hero-subtitle">Direction artistique, diffusion, newsletter et partenaires</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-xl);" class="responsive-grid-2">
+        <div class="contact-layout">
 
-          <!-- Contact infos -->
-          <div>
-            <span class="section-label">Nous écrire</span>
-            <h2 class="section-title" style="font-size:clamp(1.3rem,3vw,2rem);">Compagnie Regarde il neige</h2>
-
-            <div class="contact-block" style="margin-top:var(--space-md);">
-              <h3 style="font-family:var(--font-text);font-weight:600;font-size:1rem;margin-bottom:.5rem;">Gaëlle
-                Hispard &amp; Mathieu Gerhardt</h3>
-              <p style="margin-bottom:.4rem;">Co-directeurs artistiques</p>
-              <p>
-                <a href="mailto:regardeilneige@gmail.com"
-                  style="color:var(--color-blue);font-weight:600;">regardeilneige@gmail.com</a>
-              </p>
-            </div>
-
-            <div class="contact-block" style="margin-top:var(--space-md);">
-              <h3 style="font-family:var(--font-text);font-weight:600;font-size:1rem;margin-bottom:.5rem;">Diffusion
-                &amp; programmation</h3>
-              <p>
-                <a href="mailto:regardeilneige@gmail.com" style="color:var(--color-blue);">regardeilneige@gmail.com</a>
-              </p>
-            </div>
-
-            <div class="contact-block" style="margin-top:var(--space-md);">
-              <h3 style="font-family:var(--font-text);font-weight:600;font-size:1rem;margin-bottom:.5rem;">Adresse</h3>
-              <address style="font-style:normal;color:var(--color-text-muted);line-height:1.7;">
-                Compagnie Regarde il neige<br>
-                Paris, Île-de-France
-              </address>
-            </div>
-
-            <div class="contact-block" style="margin-top:var(--space-md);">
-              <h3 style="font-family:var(--font-text);font-weight:600;font-size:1rem;margin-bottom:.75rem;">Réseaux
-                sociaux</h3>
-              <div style="display:flex;gap:.75rem;flex-wrap:wrap;">
-                <a href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank"
-                  rel="noopener noreferrer" class="btn btn--outline-dark"
-                  style="font-size:.85rem;padding:.4rem .9rem;">Instagram</a>
-                <a href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer"
-                  class="btn btn--outline-dark" style="font-size:.85rem;padding:.4rem .9rem;">YouTube</a>
-                <a href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer"
-                  class="btn btn--outline-dark" style="font-size:.85rem;padding:.4rem .9rem;">Facebook</a>
+          <aside class="contact-sidebar">
+            <article class="contact-card contact-card--accent">
+              <span class="section-label">Newsletter</span>
+              <h2 class="contact-card-title">Rester en lien avec la compagnie</h2>
+              <p class="contact-card-text">Recevez les actualités, les dates de tournée et les nouvelles créations de Regarde il neige en écrivant à la compagnie.</p>
+              <div class="btn-group mt-md">
+                <a href="mailto:regardeilneige@gmail.com?subject=Inscription%20%C3%A0%20la%20newsletter" class="btn btn--primary">S'inscrire à la newsletter</a>
               </div>
-            </div>
-          </div>
+            </article>
 
-          <!-- Partenaires -->
-          <div>
-            <span class="section-label">Ils nous soutiennent</span>
-            <h2 class="section-title" style="font-size:clamp(1.3rem,3vw,2rem);">Partenaires &amp; soutiens</h2>
+            <article class="contact-card">
+              <span class="section-label">Nous joindre</span>
+              <div class="contact-stack">
+                <div class="contact-person">
+                  <p class="contact-person-role">Direction artistique</p>
+                  <p class="contact-person-name">Gaëlle Hispard et Mathieu Gerhardt</p>
+                  <p class="contact-person-detail">06 63 64 28 12 / 06 50 66 03 61</p>
+                  <p class="contact-person-detail"><a class="contact-link" href="mailto:regardeilneige@gmail.com">regardeilneige@gmail.com</a></p>
+                </div>
+                <div class="contact-person">
+                  <p class="contact-person-role">Diffusion</p>
+                  <p class="contact-person-name">Gaëlle Hispard</p>
+                  <p class="contact-person-detail"><a class="contact-link" href="mailto:regardeilneige@gmail.com">regardeilneige@gmail.com</a></p>
+                </div>
+              </div>
+            </article>
 
-            <div style="margin-top:var(--space-md);">
-              <h3 style="font-family:var(--font-text);font-weight:600;font-size:1rem;margin-bottom:.75rem;">Soutiens
-                institutionnels</h3>
-              <ul style="list-style:none;padding:0;line-height:2;color:var(--color-text-muted);">
-                <li>Arcadi Île-de-France</li>
-                <li>SACEM</li>
-                <li>ADAMI</li>
-                <li>SPEDIDAM</li>
-              </ul>
-            </div>
+            <article class="contact-card">
+              <span class="section-label">Association</span>
+              <p class="contact-person-name">Regarde il neige</p>
+              <p class="contact-person-detail">150 avenue Gabriel Péri<br>93400 Saint-Ouen-sur-Seine<br>France</p>
+              <div class="contact-mini-grid mt-md">
+                <div class="contact-card">
+                  <p class="contact-person-role">Présidente</p>
+                  <p class="contact-person-name">Isadora Gueguen</p>
+                </div>
+                <div class="contact-card">
+                  <p class="contact-person-role">Trésorier</p>
+                  <p class="contact-person-name">Adrien Massari</p>
+                </div>
+              </div>
+            </article>
+          </aside>
 
-            <div style="margin-top:var(--space-md);">
-              <h3 style="font-family:var(--font-text);font-weight:600;font-size:1rem;margin-bottom:.75rem;">Partenaires
-              </h3>
-              <ul style="list-style:none;padding:0;line-height:2;color:var(--color-text-muted);">
-                <li>ACERMA — Association pour la Communication, l’Espace et la Réinsertion des Malades Addictifs</li>
-                <li>Essaïon Théâtre (Paris)</li>
-                <li>Festival les Culturelles de Bagatelle</li>
-                <li>Théâtre de Verdure du Jardin Shakespeare (Paris)</li>
-              </ul>
-            </div>
+          <div class="contact-main">
+            <section class="contact-logo-section" aria-labelledby="contact-partenaires-title">
+              <span class="section-label">Nos partenaires</span>
+              <h2 class="section-title" id="contact-partenaires-title">Partenaires</h2>
+              <div class="contact-logo-grid" id="contact-partners-grid"></div>
+            </section>
+
+            <section class="contact-logo-section" aria-labelledby="contact-soutiens-title">
+              <span class="section-label">Ils nous ont soutenus</span>
+              <h2 class="section-title" id="contact-soutiens-title">Soutiens</h2>
+              <div class="contact-logo-grid" id="contact-support-grid"></div>
+            </section>
+
+            <section class="contact-logo-section" aria-labelledby="contact-prog-title">
+              <span class="section-label">Ils ont programmé nos spectacles</span>
+              <h2 class="section-title" id="contact-prog-title">Programmation</h2>
+              <div class="contact-logo-grid" id="contact-programmed-grid"></div>
+            </section>
           </div>
 
         </div>
@@ -218,6 +207,92 @@
   </footer>
 
   <script src="main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = {
+        partners: [
+          { name: "Toi Moi & Co - Acerma (Association pour la Communication, l'Espace et la Réinsertion des Malades Addictifs)", logo: "CONTACT (1).avif" },
+          { name: "Compagnie 50 Hirondelles", logo: "CONTACT (2).avif" },
+          { name: "Compagnie Vacarisas", logo: "CONTACT (3).avif" },
+          { name: "CRL 10", logo: "CONTACT (4).avif" },
+          { name: "Fortunella - Pop Music de la Brie", logo: "CONTACT (5).avif" },
+          { name: "Le Jour de la Lune", logo: "CONTACT (6).avif" }
+        ],
+        support: [
+          { name: "Sacem", logo: "CONTACT (7).avif" },
+          { name: "Adami", logo: "CONTACT (8).avif" },
+          { name: "CNM", logo: "CONTACT (9).avif" },
+          { name: "Région Île de France", logo: "CONTACT (10).avif" }
+        ],
+        programmed: [
+          { name: "Essaïon Théâtre", logo: "CONTACT (11).avif" },
+          { name: "Aktéon Théâtre", logo: "CONTACT (12).avif" },
+          { name: "Théâtre Le Petit Manoir - Asnières-sur-Sein", logo: "CONTACT (13).avif" },
+          { name: "Les Culturelles de Bagatelle (Paris)", logo: "CONTACT (14).avif" },
+          { name: "Théâtre Douze (Paris)", logo: "CONTACT (15).avif" },
+          { name: "Atelier Barbara (Limeil-Brévannes)", logo: "CONTACT (16).avif" },
+          { name: "Les 3 Pierrots (Saint-Cloud)", logo: "CONTACT (17).avif" },
+          { name: "L'Odéon (Marseille)", logo: "CONTACT (18).avif" },
+          { name: "L'ESCAL (Witry-lès-Reims)", logo: "CONTACT (19).avif" },
+          { name: "La Royale Factory (Versailles)", logo: "CONTACT (20).avif" },
+          { name: "Le CNCS (Moulins)", logo: "CONTACT (21).avif" },
+          { name: "Komidi (La Réunion)", logo: "CONTACT (22).avif" },
+          { name: "La Cité du Volcan (Le Tampon)", logo: "CONTACT (23).avif" },
+          { name: "Le Fangourin (Petite-Île)", logo: "CONTACT (24).avif" },
+          { name: "Salle Jacques Brel (Montigny-le-Bretonneux)", logo: "CONTACT (25).avif" },
+          { name: "Théâtre des Forges Royales (Guérigny)", logo: "CONTACT (26).avif" },
+          { name: "Festival-on-the-Green (Middlebury, Vermont)", logo: "CONTACT (27).avif" },
+          { name: "Festival LNDA (Paris)", logo: "CONTACT (28).avif" },
+          { name: "Festival Scène Éphémère (Paris)", logo: "CONTACT (29).avif" },
+          { name: "Le CLAVIM (Issy-les-Moulineaux)", logo: "CONTACT (30).avif" },
+          { name: "Le Quai des Arts (Vibraye)", logo: "CONTACT (31).avif" },
+          { name: "Espace 89 (Villleneuve-la-Garenne)", logo: "CONTACT (32).avif" },
+          { name: "Le Manège (Le Châtelet-en-Brie)", logo: "CONTACT (33).avif" },
+          { name: "Tribunal Judiciaire de Paris", logo: "CONTACT (34).avif" },
+          { name: "Maternité Les Bluets", logo: "CONTACT (35).avif" },
+          { name: "Université Paris Dauphine", logo: "CONTACT (36).avif" },
+          { name: "Columbia Global Centers Paris", logo: "CONTACT (37).avif" }
+        ]
+      };
+
+      const renderLogoGrid = (targetId, items) => {
+        const container = document.getElementById(targetId);
+        if (!container) return;
+
+        items.forEach((item) => {
+          const card = document.createElement('article');
+          card.className = 'contact-logo-card';
+
+          if (!item.logo) {
+            card.classList.add('contact-logo-card--text');
+          }
+
+          const media = document.createElement('div');
+          media.className = 'contact-logo-media';
+
+          if (item.logo) {
+            const image = document.createElement('img');
+            image.src = `assets/images/${item.logo}`;
+            image.alt = item.name;
+            image.loading = 'lazy';
+            media.appendChild(image);
+          }
+
+          const label = document.createElement('p');
+          label.className = 'contact-logo-name';
+          label.textContent = item.name;
+
+          card.appendChild(media);
+          card.appendChild(label);
+          container.appendChild(card);
+        });
+      };
+
+      renderLogoGrid('contact-partners-grid', sections.partners);
+      renderLogoGrid('contact-support-grid', sections.support);
+      renderLogoGrid('contact-programmed-grid', sections.programmed);
+    });
+  </script>
 </body>
 
 </html>

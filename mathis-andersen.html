@@ -52,10 +52,10 @@
         </div>
         <a href="contact.html">Contact</a>
       </nav>
-      <div class="header-social">
-        <a href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank" rel="noopener noreferrer">Insta</a>
-        <a href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer">YouTube</a>
-        <a href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer">FB</a>
+      <div class="header-social" aria-label="Nos r?seaux sociaux">
+        <a class="social-link--instagram" href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span class="visually-hidden">Instagram</span></a>
+        <a class="social-link--youtube" href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><span class="visually-hidden">YouTube</span></a>
+        <a class="social-link--facebook" href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span class="visually-hidden">Facebook</span></a>
       </div>
       <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
         <span></span><span></span><span></span>
@@ -87,47 +87,57 @@
 
   <main>
 
-    <section class="page-hero" aria-labelledby="spectacle-title">
-      <div class="hero-bg"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <span class="hero-pretitle">Concert · Tout public</span>
-        <h1 class="hero-title" id="spectacle-title">Mathis Andersen</h1>
-        <p class="hero-subtitle">Monde Monde</p>
-        <div class="hero-meta">
-          <span class="hero-meta-item"><strong>Durée</strong> 1h à 1h15</span>
-          <span class="hero-meta-item"><strong>Public</strong> Tout public</span>
-          <span class="hero-meta-item"><strong>Format</strong> Solo / interprète</span>
-        </div>
-        <div class="btn-group">
-          <a href="#dates" class="btn btn--primary">Dates à venir</a>
-          <a href="assets/dossiers/Dossier de presse Mathis Andersen 2026.pdf" download class="btn btn--outline">↓ Télécharger le dossier</a>
-        </div>
+  <section class="page-hero" aria-labelledby="spectacle-title">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-pretitle">Concert · 90 minutes</span>
+      <h1 class="hero-title" id="spectacle-title">Mathis Andersen</h1>
+      <p class="hero-subtitle">Chanson folk imaginaire</p>
+      <div class="hero-meta">
+        <span class="hero-meta-item"><strong>Durée</strong> 90 minutes</span>
+        <span class="hero-meta-item"><strong>Format</strong> Solo</span>
+        <span class="hero-meta-item"><strong>Langues</strong> FR · DE · EN · ES</span>
       </div>
-    </section>
-
-    <div class="spectacle-strip" role="complementary">
-      <div class="spectacle-strip-inner">
-        <div class="strip-item"><span class="strip-item-label">Type</span><span class="strip-item-value">Concert tout public</span></div>
-        <div class="strip-item"><span class="strip-item-label">Public</span><span class="strip-item-value">Tout public</span></div>
-        <div class="strip-item"><span class="strip-item-label">Durée</span><span class="strip-item-value">1h à 1h15</span></div>
-        <div class="strip-item"><span class="strip-item-label">Format</span><span class="strip-item-value">Solo</span></div>
+      <div class="btn-group">
+        <a href="#dates" class="btn btn--primary">Concerts</a>
+        <a href="assets/dossiers/Dossier de presse Mathis Andersen 2026.pdf" download class="btn btn--outline">↓ Télécharger le dossier</a>
       </div>
     </div>
+  </section>
 
-    <section class="section">
-      <div class="container--narrow">
-        <span class="section-label">Le concert</span>
-        <p class="intro-text">Un concert humaniste et poétique, voyage sonore singulier au cœur de notre imaginaire — qui chaque soir interroge notre rapport à l'humain.</p>
-        <div class="divider"></div>
-        <div class="body-text">
-          <p>Mathis Andersen, interprète attachant et singulier, nous entraîne dans un voyage musical intime. Avec sa guitare et sa voix, il tisse des paysages sonores où coexistent la mélancolie douce et le feu vif.</p>
-          <p><em>Monde Monde</em> est un concert solo qui convoque les grands thèmes de l'humanité — l'amour, la perte, l'errance, l'espoir — avec une sincérité désarmante et un sens aigu de la poésie.</p>
-        </div>
+  <div class="spectacle-strip" role="complementary">
+    <div class="spectacle-strip-inner">
+      <div class="strip-item"><span class="strip-item-label">Type</span><span class="strip-item-value">Concert</span></div>
+      <div class="strip-item"><span class="strip-item-label">Durée</span><span class="strip-item-value">90 minutes</span></div>
+      <div class="strip-item"><span class="strip-item-label">Format</span><span class="strip-item-value">Solo</span></div>
+      <div class="strip-item"><span class="strip-item-label">Langues</span><span class="strip-item-value">FR · DE · EN · ES</span></div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container--narrow">
+      <span class="section-label">Le concert</span>
+      <p class="intro-text">Mathis est l'alter ego de Mathieu Gerhardt, auteur-compositeur-interprète, auteur de théâtre et comédien.</p>
+      <div class="divider"></div>
+      <div class="body-text">
+        <p>De double culture franco-allemande, Mathis écrit et chante en français et en allemand, mais aussi en anglais et en espagnol. Il aime faire dialoguer, s'entrechoquer, se croiser les langues et vous donner l'impression que vous avez toujours connu une langue... que pourtant vous ne parlez pas.</p>
+        <p>Dans ses chansons, face à nos lubies et nos vertiges, on peut toujours s'évader : qu'on parte en montgolfière sur un coup de tête, qu'on retrouve un royaume perdu au détour d'un sentier, qu'on s'accroche à des nénuphars phosphorescents, il s'agit de prendre du recul sur le monde pour mieux le ré-enchanter.</p>
+        <p>De ses voyages en Amérique du Sud, Mathis a rapporté un charango, et un goût pour les mélodies bien dessinées et les harmonies vibrantes. Et quand sa guitare électrique prend le relais, l'intensité lyrique d'un son très seventies rencontre des phrasés d'Afrique de l'Ouest.</p>
+        <p>S'il mêle dans ses textes gravité et légèreté dans la lignée d'un Boris Vian ou Arthur H, sa patte musicale folk indé évoque des artistes tels Fëloche ou Babx.</p>
       </div>
-    </section>
+      <div class="mt-lg">
+        <h3 style="font-family:var(--font-serif);font-size:1.2rem;font-weight:400;margin-bottom:var(--space-sm);">Clip montgolfiere</h3>
+        <div class="yt-player" data-video-id="n9xm19flmlA" data-title="Mathis Andersen - Clip montgolfiere"></div>
+      </div>
+      <div class="mt-lg">
+        <h3 style="font-family:var(--font-serif);font-size:1.2rem;font-weight:400;margin-bottom:var(--space-sm);">Live session</h3>
+        <div class="yt-player" data-video-id="N2mSP1gZPzw" data-title="Mathis Andersen - Live session"></div>
+      </div>
+    </div>
+  </section>
 
-    <section class="section section--alt" aria-label="Photos du concert">
+  <section class="section section--alt" aria-label="Photos du concert">
       <div class="container">
         <span class="section-label">En images</span>
         <h2 class="section-title">Photos du concert</h2>
@@ -151,36 +161,40 @@
       </div>
     </section>
 
-    <section class="section" id="dates" aria-labelledby="dates-ma-title">
-      <div class="container">
-        <span class="section-label">Tournée</span>
-        <h2 id="dates-ma-title" class="section-title">Dates à venir</h2>
-        <p style="color:var(--color-text-muted);font-size:.9rem;font-style:italic;">Les prochaines dates seront annoncées prochainement.</p>
-        <div class="mt-lg">
-          <h3 style="font-family:var(--font-serif);font-size:1.4rem;font-weight:400;margin-bottom:var(--space-sm);">Dates passées</h3>
-          <div class="dates-past-list" role="list">
-            <div class="date-past-item" role="listitem"><span class="date-past-year">Janv.–mars 2026</span><span class="date-past-venue">Essaïon Théâtre</span><span class="date-past-city">Paris</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">Oct.–déc. 2025</span><span class="date-past-venue">Café de la Danse</span><span class="date-past-city">Paris</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">Juil. 2025</span><span class="date-past-venue">Festival Beauregard</span><span class="date-past-city">Normandie</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">Mai 2025</span><span class="date-past-venue">La Maroquinerie</span><span class="date-past-city">Paris</span></div>
-          </div>
-        </div>
+  <section class="section section--alt" id="dates" aria-labelledby="dates-mathis-title">
+    <div class="container">
+      <span class="section-label">Tournée</span>
+      <h2 id="dates-mathis-title" class="section-title">Concerts passés</h2>
+      <div class="dates-past-list" role="list">
+            <div class="date-past-item" role="listitem"><span class="date-past-year">3 nov. 2023</span><span class="date-past-venue">Acerma</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">26 mai 2024</span><span class="date-past-venue">Essaïon Théâtre</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">9 juin 2024</span><span class="date-past-venue">Concert-Promenade, Kiosque Serge Reggiani</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">19 juil. 2024</span><span class="date-past-venue">Middlebury School of German</span><span class="date-past-city">États-Unis</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">3 août 2024</span><span class="date-past-venue">Middlebury School of French</span><span class="date-past-city">États-Unis</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">28 août 2024</span><span class="date-past-venue">MA 19, Place Stalingrad</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">13 avril 2025</span><span class="date-past-venue">Théâtre de l'Écho</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">7–8 juin 2025</span><span class="date-past-venue">Rendez-vous au Jardin, Jardin de Bagatelle</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">14 juil. 2025</span><span class="date-past-venue">Middlebury Festival on the Green – Brown Bag</span><span class="date-past-city">États-Unis</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">17 juil. 2025</span><span class="date-past-venue">Middlebury Festival on the Green</span><span class="date-past-city">États-Unis</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">27 août–24 sept. 2025</span><span class="date-past-venue">Essaïon Théâtre</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">13–14 nov. 2025</span><span class="date-past-venue">Théâtre Douze</span><span class="date-past-city">Paris</span></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section section--alt">
-      <div class="container--narrow">
-        <span class="section-label">À découvrir aussi</span>
-        <h2>Nos autres créations</h2>
-        <div class="btn-group">
-          <a href="le-conte-d-hiver.html" class="btn btn--primary">Le Conte d'hiver</a>
-          <a href="alice.html" class="btn btn--outline-dark">Alice au pays des miroirs</a>
-          <a href="aurore.html" class="btn btn--outline-dark">Aurore</a>
-        </div>
+  <section class="section section--alt">
+    <div class="container--narrow">
+      <span class="section-label">À découvrir aussi</span>
+      <h2>Nos autres créations</h2>
+      <div class="btn-group">
+        <a href="le-conte-d-hiver.html" class="btn btn--primary">Le Conte d'hiver</a>
+        <a href="alice.html" class="btn btn--outline-dark">Alice au pays des miroirs</a>
+        <a href="aurore.html" class="btn btn--outline-dark">Aurore</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+</main>
 
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">

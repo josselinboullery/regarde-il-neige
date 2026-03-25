@@ -52,10 +52,10 @@
         </div>
         <a href="contact.html">Contact</a>
       </nav>
-      <div class="header-social">
-        <a href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank" rel="noopener noreferrer">Insta</a>
-        <a href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer">YouTube</a>
-        <a href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer">FB</a>
+      <div class="header-social" aria-label="Nos r?seaux sociaux">
+        <a class="social-link--instagram" href="https://www.instagram.com/compagnie_regarde_il_neige/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><span class="visually-hidden">Instagram</span></a>
+        <a class="social-link--youtube" href="https://www.youtube.com/@regardeilneige" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><span class="visually-hidden">YouTube</span></a>
+        <a class="social-link--facebook" href="https://www.facebook.com/regardeilneige" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><span class="visually-hidden">Facebook</span></a>
       </div>
       <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
         <span></span><span></span><span></span>
@@ -87,52 +87,49 @@
 
   <main>
 
-    <section class="page-hero" aria-labelledby="spectacle-title">
-      <div class="hero-bg"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <span class="hero-pretitle">Spectacle musical · À partir de 5 ans</span>
-        <h1 class="hero-title" id="spectacle-title">Robinson Crusoé et Zoé Liberté</h1>
-        <p class="hero-subtitle">Une réécriture malicieuse de Defoe, ode à la liberté</p>
-        <div class="hero-meta">
-          <span class="hero-meta-item"><strong>Durée</strong> 55 minutes</span>
-          <span class="hero-meta-item"><strong>Public</strong> À partir de 5 ans</span>
-          <span class="hero-meta-item"><strong>Distribution</strong> 3 comédien·nes</span>
-        </div>
-        <div class="btn-group">
-          <a href="#dates" class="btn btn--primary">Dates à venir</a>
-          <a href="assets/dossiers/Dossier Robinson et Zoé 2026.pdf" download class="btn btn--outline">↓ Télécharger le dossier</a>
-        </div>
+  <section class="page-hero" aria-labelledby="spectacle-title">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-pretitle">Spectacle musical · À partir de 5 ans</span>
+      <h1 class="hero-title" id="spectacle-title">Robinson Crusoé et Zoé Liberté</h1>
+      <div class="hero-meta">
+        <span class="hero-meta-item"><strong> </strong>  </span>
+        <span class="hero-meta-item"><strong> </strong>  </span>
+        <span class="hero-meta-item"><strong> </strong>  </span>
       </div>
-    </section>
-
-    <div class="spectacle-strip" role="complementary">
-      <div class="spectacle-strip-inner">
-        <div class="strip-item"><span class="strip-item-label">Type</span><span class="strip-item-value">Spectacle musical</span></div>
-        <div class="strip-item"><span class="strip-item-label">Public</span><span class="strip-item-value">À partir de 5 ans</span></div>
-        <div class="strip-item"><span class="strip-item-label">Durée</span><span class="strip-item-value">55 minutes</span></div>
-        <div class="strip-item"><span class="strip-item-label">Distribution</span><span class="strip-item-value">3 comédien·nes</span></div>
+      <div class="btn-group">
+        <a href="#dates" class="btn btn--primary">Calendrier</a>
+        <a href="assets/dossiers/Dossier Robinson et Zoé 2026.pdf" download class="btn btn--outline">↓ Télécharger le dossier</a>
       </div>
     </div>
+  </section>
 
-    <section class="section">
-      <div class="container--narrow">
-        <span class="section-label">Le spectacle</span>
-        <p class="intro-text">Robinson échoue sur la plage d'une île. Sauvé-là, il voit leurs liens pour affronter les pirates ! Une réécriture malicieuse de Defoe, ode à la liberté.</p>
-        <div class="divider"></div>
-        <div class="body-text">
-          <p>Robinson Crusoé échoue sur une île déserte. Mais cette île n'est pas tout à fait déserte : Zoé Liberté y vit depuis toujours. Ensemble, ils vont apprendre à se connaître, à se respecter, et à affronter les pirates qui menacent leur havre de paix.</p>
-          <p>Un spectacle musical plein d'aventure et d'humour, qui interroge avec malice les notions de liberté, d'amitié et de découverte de l'autre.</p>
-        </div>
+  <div class="spectacle-strip" role="complementary">
+    <div class="spectacle-strip-inner">
+      <div class="strip-item"><span class="strip-item-label">Type</span><span class="strip-item-value">Spectacle musical</span></div>
+      <div class="strip-item"><span class="strip-item-label">Public</span><span class="strip-item-value">À partir de 5 ans</span></div>
+      <div class="strip-item"><span class="strip-item-label">Durée</span><span class="strip-item-value">55 minutes</span></div>
+      <div class="strip-item"><span class="strip-item-label">Distribution</span><span class="strip-item-value">2 comédien·nes</span></div>
+    </div>
+  </div>
 
-        <div class="mt-lg">
-          <h3 style="font-family:var(--font-serif);font-size:1.2rem;font-weight:400;margin-bottom:var(--space-sm);">Bande-annonce</h3>
-          <div class="yt-player" data-video-id="gn8DP8bOBW0" data-title="Bande-annonce Robinson Crusoé et Zoé Liberté — Regarde il neige"></div>
-        </div>
+  <section class="section">
+    <div class="container--narrow">
+      <span class="section-label">Le spectacle</span>
+      <p class="intro-text">Robinson échoue sur la plage d'une île... déserte ? Pas vraiment, car il y a Zoé ! Sauront-ils unir leurs forces pour affronter les pirates ?</p>
+      <div class="divider"></div>
+      <div class="body-text">
+        <p>Rythmé de chansons originales, ce spectacle musical jeune public revisite et détourne avec malice le <em>Robinson</em> de Daniel Defoe. Exotisme et humour, dépaysement et aventure y servent un récit qui nous invite à défendre la liberté, et à respecter le vivant.</p>
       </div>
-    </section>
+      <div class="mt-lg">
+        <h3 style="font-family:var(--font-serif);font-size:1.2rem;font-weight:400;margin-bottom:var(--space-sm);">Bande-annonce</h3>
+        <div class="yt-player" data-video-id="JGaNSsZ3oUw" data-title="Bande-annonce Robinson Crusoé et Zoé Liberté — Regarde il neige"></div>
+      </div>
+    </div>
+  </section>
 
-    <section class="section section--alt" aria-label="Photos du spectacle">
+  <section class="section section--alt" aria-label="Photos du spectacle">
       <div class="container">
         <span class="section-label">En images</span>
         <h2 class="section-title">Photos du spectacle</h2>
@@ -156,67 +153,92 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="presse-title">
-      <div class="container">
-        <h2 id="presse-title" class="section-title">La presse en parle</h2>
-        <div class="presse-list">
-          <blockquote class="presse-item">
-            <p class="presse-quote">« Une réécriture malicieuse et joyeuse, pleine d'humour et de tendresse. Les enfants sont captivés du début à la fin. »</p>
-            <footer class="presse-source">— <cite>Télérama Sortir</cite></footer>
-          </blockquote>
-          <blockquote class="presse-item">
-            <p class="presse-quote">« Robinson Crusoé revisité avec talent, un spectacle qui parle de liberté avec légèreté et intelligence. »</p>
-            <footer class="presse-source">— <cite>Les Trois Coups</cite></footer>
-          </blockquote>
+  <section class="section" aria-labelledby="presse-robinson-title">
+    <div class="container">
+      <h2 id="presse-robinson-title" class="section-title">La presse en parle</h2>
+      <div class="presse-list">
+<blockquote class="presse-item">
+  <p class="presse-quote">« Réadapter les grands classiques pour enfants à notre temps : plutôt qu'un Vendredi docile, ce Robinson arrogant rencontre Zoé, une insulaire révoltée. Un message humaniste, et même une ode à l'amitié ! »</p>
+  <footer class="presse-source">Morgane Prévost — <cite>France 3 IDF</cite></footer>
+</blockquote>
+<blockquote class="presse-item">
+  <p class="presse-quote">« De l'humour, de l'énergie, de beaux messages sur les notions de liberté, de respect de la nature. »</p>
+  <footer class="presse-source">Muriel Desveaux — <cite>Lamuse</cite></footer>
+</blockquote>
+<blockquote class="presse-item">
+  <p class="presse-quote">« Le spectacle est ouvert sur le monde et a le désir sincère d'amener les enfants à réfléchir et à se poser les bonnes questions.(...) Imaginer autre chose que la violence face à un ennemi, écouter et respecter l'autre, prendre le temps de le découvrir et s'accepter mutuellement tout en prenant en compte nos différences... »</p>
+  <footer class="presse-source">Jean-Pierre Thiercelin — <cite>Théâtreactu</cite></footer>
+</blockquote>
+<blockquote class="presse-item">
+  <p class="presse-quote">« La force du spectacle réside beaucoup dans les chansons, particulièrement celle qui clôt l'histoire et reprise à l'unisson avec le public. L'humour des dialogues, les messages sur le respect de la nature et l'importance de se battre pour la liberté sont les autres arguments qui nous poussent à vous conseiller d'applaudir Robinson Crusoé... et Zoé Liberté ! avec vos enfants. »</p>
+  <footer class="presse-source"><cite>Que faire à Paris ?</cite></footer>
+</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="dates" aria-labelledby="dates-robinson-title">
+    <div class="container">
+      <span class="section-label">Tournée</span>
+      <h2 id="dates-robinson-title" class="section-title">Dates à venir</h2>
+      <div class="dates-past-list" role="list">
+            <div class="date-past-item" role="listitem"><span class="date-past-year">30 mai 2026</span><span class="date-past-venue">Nuit de l'Imagination – Columbia Global Center</span><span class="date-past-city">Paris</span></div>
+      </div>
+      <div class="mt-lg">
+        <h3 style="font-family:var(--font-serif);font-size:1.4rem;font-weight:400;margin-bottom:var(--space-sm);">Dates passées</h3>
+        <div class="dates-past-list" role="list">
+            <div class="date-past-item" role="listitem"><span class="date-past-year">1er avril 2023</span><span class="date-past-venue">Le Manège</span><span class="date-past-city">Le Châtelet-en-Brie</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">Août–nov. 2023</span><span class="date-past-venue">Essaïon Théâtre</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">9 déc. 2023</span><span class="date-past-venue">Maternité des Bluets</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">7 fév. 2024</span><span class="date-past-venue">École des Épinettes</span><span class="date-past-city">Issy-les-Moulineaux</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">24–26 avril 2024</span><span class="date-past-venue">Centre Culturel Lucet Langenier – Festival Komidi</span><span class="date-past-city">Saint-Pierre, La Réunion</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">28 avril 2024</span><span class="date-past-venue">Cité du Volcan – Festival Komidi</span><span class="date-past-city">Le Tampon, La Réunion</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">1er mai 2024</span><span class="date-past-venue">Le Fangourin – Festival Komidi</span><span class="date-past-city">Petite-Île, La Réunion</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">11 mai 2024</span><span class="date-past-venue">CCAS EDF</span><span class="date-past-city">La Ville-du-Bois</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">23 juin 2024</span><span class="date-past-venue">Festival Scène Éphémère – Parc Sainte-Périne</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">Sept.–nov. 2024</span><span class="date-past-venue">Essaïon Théâtre</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">14 janv. 2025</span><span class="date-past-venue">Salle Jacques Brel</span><span class="date-past-city">Montigny-le-Bretonneux</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">22–23 mars 2025</span><span class="date-past-venue">Théâtre le Petit Manoir</span><span class="date-past-city">Asnières-sur-Seine</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">13–31 août 2025</span><span class="date-past-venue">Festival les Culturelles de Bagatelle – Orangerie de Bagatelle</span><span class="date-past-city">Paris</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">4 oct. 2025</span><span class="date-past-venue">Maison des Hauts d'Issy</span><span class="date-past-city">Issy-les-Moulineaux</span></div>
+            <div class="date-past-item" role="listitem"><span class="date-past-year">26 nov. 2025</span><span class="date-past-venue">Théâtre des Forges Royales</span><span class="date-past-city">Guérigny</span></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section section--alt" id="dates" aria-labelledby="dates-title">
-      <div class="container">
-        <span class="section-label">Tournée</span>
-        <h2 id="dates-title" class="section-title">Dates à venir</h2>
-        <p style="color:var(--color-text-muted);font-size:.9rem;font-style:italic;">Les prochaines dates seront annoncées prochainement.</p>
-        <div class="mt-lg">
-          <h3 style="font-family:var(--font-serif);font-size:1.4rem;font-weight:400;margin-bottom:var(--space-sm);">Dates passées</h3>
-          <div class="dates-past-list" role="list">
-            <div class="date-past-item" role="listitem"><span class="date-past-year">16–31 août 2025</span><span class="date-past-venue">Festival les Culturelles de Bagatelle – Orangerie de Bagatelle</span><span class="date-past-city">Paris</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">Janv.–mars 2025</span><span class="date-past-venue">Essaïon Théâtre</span><span class="date-past-city">Paris</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">Octobre 2024</span><span class="date-past-venue">École Alain Mouty</span><span class="date-past-city">Saint-Laurent-du-Maroni (Guyane)</span></div>
-            <div class="date-past-item" role="listitem"><span class="date-past-year">Août–déc. 2024</span><span class="date-past-venue">Essaïon Théâtre (création)</span><span class="date-past-city">Paris</span></div>
-          </div>
-        </div>
+  <section class="section" aria-labelledby="equipe-robinson-title">
+    <div class="container">
+      <span class="section-label">Distribution</span>
+      <h2 id="equipe-robinson-title" class="section-title">Équipe artistique</h2>
+      <div class="equipe-spectacle" style="max-width:640px;">
+        <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Texte et musiques</div><div class="equipe-spectacle-value">Gaëlle Hispard et Mathieu Gerhardt</div></div>
+        <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Avec</div><div class="equipe-spectacle-value">Camille Henry ou Ariane Louis ou Noémie Zard<br>Clément Ballet ou Mathieu Gerhardt ou Roman Tedeschi</div></div>
+        <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Mise en scène</div><div class="equipe-spectacle-value">Gaëlle Hispard</div></div>
+        <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Dramaturgie</div><div class="equipe-spectacle-value">Mathieu Gerhardt</div></div>
+        <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Scénographie &amp; accessoires</div><div class="equipe-spectacle-value">Cassandre Boy et Alice Godefroid</div></div>
+        <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Collaboration aux costumes</div><div class="equipe-spectacle-value">Cassandre Boy</div></div>
+        <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Création lumière</div><div class="equipe-spectacle-value">Etienne Bluteau</div></div>
+        <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Création sonore</div><div class="equipe-spectacle-value">Simon Poupard</div></div>
+        <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Affiche</div><div class="equipe-spectacle-value">Éloïse Scherrer</div></div>
+        <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Photos</div><div class="equipe-spectacle-value">Margaux Conduzorgues et Clément Ballet</div></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section" aria-labelledby="equipe-rob-title">
-      <div class="container">
-        <span class="section-label">Distribution</span>
-        <h2 id="equipe-rob-title" class="section-title">Équipe artistique</h2>
-        <div class="equipe-spectacle" style="max-width:640px;">
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Texte et musiques</div><div class="equipe-spectacle-value">Gaëlle Hispard et Mathieu Gerhardt</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Mise en scène</div><div class="equipe-spectacle-value">Gaëlle Hispard</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Avec</div><div class="equipe-spectacle-value">Cassandre Boy ou Charlotte Gallas · Noémie Zard · Mathieu Gerhardt ou Quentin Gouraud</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Création lumière</div><div class="equipe-spectacle-value">James Groguelin</div></div>
-          <div class="equipe-spectacle-row"><div class="equipe-spectacle-label">Scénographie et costumes</div><div class="equipe-spectacle-value">Rébecca Déraspe</div></div>
-        </div>
-        <p class="soutiens mt-md">Avec le soutien de la <strong>Sacem</strong>, de l'<strong>Adami</strong>, de la <strong>Spedidam</strong> et de l'<strong>Acerma</strong>.</p>
+  <section class="section section--alt">
+    <div class="container--narrow">
+      <span class="section-label">À découvrir aussi</span>
+      <h2>Nos autres spectacles</h2>
+      <div class="btn-group">
+        <a href="aurore.html" class="btn btn--primary">Aurore</a>
+        <a href="alice.html" class="btn btn--outline-dark">Alice au pays des miroirs</a>
+        <a href="ambroisie.html" class="btn btn--outline-dark">Ambroisie</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section section--alt">
-      <div class="container--narrow">
-        <span class="section-label">À découvrir aussi</span>
-        <h2>Nos autres spectacles</h2>
-        <div class="btn-group">
-          <a href="aurore.html" class="btn btn--primary">Aurore</a>
-          <a href="alice.html" class="btn btn--outline-dark">Alice au pays des miroirs</a>
-          <a href="ambroisie.html" class="btn btn--outline-dark">Ambroisie</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
+</main>
 
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
