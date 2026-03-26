@@ -7,14 +7,14 @@
 /* --- @font-face Lovelo --- */
 @font-face {
   font-family: 'Lovelo';
-  src: url('assets/fonts/LoveloLineBold.otf') format('opentype');
+  src: url('assets/fonts/lovelo-line-bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Lovelo';
-  src: url('assets/fonts/LoveloLineLight.otf') format('opentype');
+  src: url('assets/fonts/lovelo-line-light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -23,14 +23,14 @@
 /* --- @font-face Glacial Indifference --- */
 @font-face {
   font-family: 'Glacial Indifference';
-  src: url('assets/fonts/GlacialIndifference-Regular.otf') format('opentype');
+  src: url('assets/fonts/glacial-indifference-regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Glacial Indifference';
-  src: url('assets/fonts/GlacialIndifference-Bold.otf') format('opentype');
+  src: url('assets/fonts/glacial-indifference-bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -39,28 +39,28 @@
 /* --- @font-face Futura --- */
 @font-face {
   font-family: 'Futura';
-  src: url('assets/fonts/FuturaBook.otf') format('opentype');
+  src: url('assets/fonts/futura-book.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Futura';
-  src: url('assets/fonts/FuturaMedium.otf') format('opentype');
+  src: url('assets/fonts/futura-medium.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Futura';
-  src: url('assets/fonts/FuturaMediumOblique.otf') format('opentype');
+  src: url('assets/fonts/futura-medium-oblique.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Futura';
-  src: url('assets/fonts/FuturaBold.otf') format('opentype');
+  src: url('assets/fonts/futura-bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
