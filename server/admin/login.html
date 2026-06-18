@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion admin - Regarde il neige</title>
+  <link rel="stylesheet" href="/admin/assets/admin.css">
+</head>
+<body class="admin-login-body">
+  <main class="login-shell">
+    <section class="login-panel" aria-labelledby="login-title">
+      <p class="eyebrow">Back-office</p>
+      <h1 id="login-title">Regarde il neige</h1>
+      <form class="login-form" id="login-form">
+        <label>
+          Identifiant
+          <input name="username" autocomplete="username" required value="admin">
+        </label>
+        <label>
+          Mot de passe
+          <input name="password" type="password" autocomplete="current-password" required autofocus>
+        </label>
+        <button type="submit">Connexion</button>
+        <p class="form-status" id="login-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <script src="/admin/assets/login.js"></script>
+</body>
+</html>

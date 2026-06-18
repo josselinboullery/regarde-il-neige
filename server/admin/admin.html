@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Regarde il neige</title>
+  <link rel="stylesheet" href="/admin/assets/admin.css">
+</head>
+<body class="admin-body">
+  <aside class="admin-sidebar">
+    <a class="admin-brand" href="/admin">
+      <span>Regarde il neige</span>
+      <small>Back-office</small>
+    </a>
+    <nav class="admin-nav" aria-label="Administration">
+      <button class="active" data-panel="dashboard">Tableau</button>
+      <button data-panel="pages">Pages</button>
+      <button data-panel="shows">Spectacles</button>
+      <button data-panel="agenda">Agenda</button>
+      <button data-panel="json">JSON</button>
+      <button data-panel="messages">Messages</button>
+    </nav>
+    <div class="admin-sidebar-footer">
+      <a href="/" target="_blank" rel="noopener">Site public</a>
+      <button id="logout-btn">Deconnexion</button>
+    </div>
+  </aside>
+
+  <main class="admin-main">
+    <header class="admin-topbar">
+      <div>
+        <p class="eyebrow">Contenu</p>
+        <h1 id="panel-title">Tableau</h1>
+      </div>
+      <div class="admin-actions">
+        <a class="button-secondary" href="/admin/preview" target="_blank" rel="noopener">Preview</a>
+        <button id="publish-btn">Publier</button>
+      </div>
+    </header>
+
+    <p class="form-status" id="global-status" role="status"></p>
+
+    <section class="panel active" id="panel-dashboard">
+      <div class="metric-grid" id="metric-grid"></div>
+      <section class="work-surface">
+        <h2>Derniere publication</h2>
+        <dl class="summary-list" id="publish-summary"></dl>
+      </section>
+    </section>
+
+    <section class="panel" id="panel-pages">
+      <div class="split-layout">
+        <section class="work-surface">
+          <div class="surface-header">
+            <h2>Pages</h2>
+            <button class="button-secondary" id="add-page-btn">Ajouter</button>
+          </div>
+          <div class="item-list" id="pages-list"></div>
+        </section>
+        <section class="work-surface">
+          <h2>Edition page</h2>
+          <form class="edit-form" id="page-form"></form>
+        </section>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-shows">
+      <div class="split-layout">
+        <section class="work-surface">
+          <div class="surface-header">
+            <h2>Spectacles</h2>
+            <button class="button-secondary" id="add-show-btn">Ajouter</button>
+          </div>
+          <div class="item-list" id="shows-list"></div>
+        </section>
+        <section class="work-surface">
+          <h2>Edition</h2>
+          <form class="edit-form" id="show-form"></form>
+        </section>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-agenda">
+      <section class="work-surface">
+        <div class="surface-header">
+          <h2>Agenda</h2>
+          <button class="button-secondary" id="add-date-btn">Ajouter une date</button>
+        </div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Spectacle</th>
+                <th>Lieu</th>
+                <th>Ville</th>
+                <th>Statut</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="agenda-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+
+    <section class="panel" id="panel-json">
+      <section class="work-surface">
+        <div class="surface-header">
+          <h2>Source JSON</h2>
+          <button class="button-secondary" id="format-json-btn">Formater</button>
+        </div>
+        <textarea id="json-editor" spellcheck="false"></textarea>
+        <div class="form-row form-row-actions">
+          <button id="save-json-btn">Enregistrer le brouillon</button>
+        </div>
+      </section>
+    </section>
+
+    <section class="panel" id="panel-messages">
+      <section class="work-surface">
+        <h2>Messages du formulaire</h2>
+        <div class="message-list" id="message-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="/admin/assets/admin.js"></script>
+</body>
+</html>

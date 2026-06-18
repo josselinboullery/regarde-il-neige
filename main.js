@@ -28,7 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
       { href: 'dessine-moi-une-chanson.html', label: 'Dessine-moi une chanson' },
       { href: 'eveil-musical.html', label: 'Éveil musical' },
     ],
+    contact: [
+      { href: 'contact.html', label: 'Contact' },
+    ],
   };
+
+  let bindMobileNavLinks = () => {};
 
   function appendMenuItems(container, items, role) {
     items.forEach(item => {
@@ -42,12 +47,83 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  function addMenuItem(section, item) {
+    if (!sharedMenus[section]) return;
+    if (sharedMenus[section].some(existing => existing.href === item.href)) return;
+    sharedMenus[section].push(item);
+  }
+
+  function showSection(category) {
+    return category === 'Tout public' ? 'allPublic' : 'youth';
+  }
+
+  function pageMenuSection(section) {
+    if (section === 'team') return 'company';
+    return section;
+  }
+
+  function applyDynamicPublicContent(content) {
+    (content.pages || []).forEach(page => {
+      if (page.status !== 'published' || page.navVisible === false) return;
+      addMenuItem(pageMenuSection(page.section), {
+        href: page.page || `${page.slug}.html`,
+        label: page.title,
+      });
+    });
+
+    (content.shows || []).forEach(show => {
+      if (show.status !== 'published') return;
+      addMenuItem(showSection(show.category), {
+        href: show.page || `${show.slug}.html`,
+        label: show.title,
+      });
+    });
+  }
+
+  function markActiveLinks() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.site-nav a, .mobile-nav a').forEach(link => {
+      const href = link.getAttribute('href');
+      link.classList.toggle('active', Boolean(href && href === currentPage));
+    });
+  }
+
+  async function loadDynamicMenus() {
+    try {
+      const response = await fetch('/api/public/content', { headers: { Accept: 'application/json' } });
+      if (!response.ok) return;
+      applyDynamicPublicContent(await response.json());
+      normalizeSharedMenus();
+      bindMobileNavLinks();
+      markActiveLinks();
+    } catch {
+      // Le site reste pleinement utilisable en statique si le back-end est absent.
+    }
+  }
+
   function normalizeSharedMenus() {
+    const siteNav = document.querySelector('.site-nav');
+    const contactLink = siteNav?.querySelector(':scope > a[href="contact.html"]');
+    if (siteNav && contactLink && sharedMenus.contact.length > 1) {
+      const dropdown = document.createElement('div');
+      dropdown.className = 'nav-dropdown';
+      const trigger = document.createElement('a');
+      trigger.href = 'contact.html';
+      trigger.setAttribute('aria-haspopup', 'true');
+      trigger.textContent = 'Contact';
+      const menu = document.createElement('div');
+      menu.className = 'nav-dropdown-menu';
+      menu.setAttribute('role', 'menu');
+      dropdown.append(trigger, menu);
+      contactLink.replaceWith(dropdown);
+    }
+
     const desktopMenuMap = {
       'La compagnie': sharedMenus.company,
       'Jeune public': sharedMenus.youth,
       'Tout public': sharedMenus.allPublic,
       'Actions': sharedMenus.actions,
+      'Contact': sharedMenus.contact,
     };
 
     document.querySelectorAll('.site-nav > .nav-dropdown').forEach(dropdown => {
@@ -72,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
       { label: 'Jeune public', items: sharedMenus.youth },
       { label: 'Tout public', items: sharedMenus.allPublic },
       { label: 'Actions', items: sharedMenus.actions },
-      { label: 'Contact', items: [{ href: 'contact.html', label: 'Contact' }] },
+      { label: 'Contact', items: sharedMenus.contact },
     ];
 
     mobileSections.forEach(section => {
@@ -124,6 +200,20 @@ document.addEventListener('DOMContentLoaded', function () {
   const burger = document.querySelector('.burger');
   const mobileNav = document.querySelector('.mobile-nav');
   if (burger && mobileNav) {
+    const closeMobileNav = () => {
+      mobileNav.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    };
+
+    bindMobileNavLinks = () => {
+      mobileNav.querySelectorAll('a').forEach(link => {
+        if (link.dataset.mobileBound) return;
+        link.dataset.mobileBound = 'true';
+        link.addEventListener('click', closeMobileNav);
+      });
+    };
+
     burger.addEventListener('click', () => {
       const isOpen = mobileNav.classList.toggle('open');
       burger.setAttribute('aria-expanded', isOpen);
@@ -131,28 +221,58 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
-    mobileNav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileNav.classList.remove('open');
-        burger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      });
-    });
+    bindMobileNavLinks();
   }
 
   // ----------------------------------------------------------
   // 5. Marquer le lien actif
   // ----------------------------------------------------------
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.site-nav a, .mobile-nav a').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href && href === currentPage) {
-      link.classList.add('active');
-    }
-  });
+  markActiveLinks();
+  loadDynamicMenus();
 
   // ----------------------------------------------------------
-  // 6. Carousels
+  // 6. Formulaire contact back-end
+  // ----------------------------------------------------------
+  const contactForm = document.querySelector('.js-contact-form');
+  if (contactForm) {
+    const status = contactForm.querySelector('.contact-form-status');
+    contactForm.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (status) {
+        status.textContent = 'Envoi en cours...';
+        status.className = 'contact-form-status';
+      }
+
+      const payload = Object.fromEntries(new FormData(contactForm).entries());
+
+      try {
+        const response = await fetch('/api/contact/messages', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await response.json().catch(() => ({}));
+
+        if (!response.ok) {
+          throw new Error(data.error || 'Message non envoye');
+        }
+
+        contactForm.reset();
+        if (status) {
+          status.textContent = 'Message envoye.';
+          status.className = 'contact-form-status contact-form-status--ok';
+        }
+      } catch (error) {
+        if (status) {
+          status.textContent = error.message || 'Message non envoye.';
+          status.className = 'contact-form-status contact-form-status--error';
+        }
+      }
+    });
+  }
+
+  // ----------------------------------------------------------
+  // 7. Carousels
   // ----------------------------------------------------------
   document.querySelectorAll('.carousel').forEach(carousel => {
     const track = carousel.querySelector('.carousel-track');
@@ -201,7 +321,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // ----------------------------------------------------------
-  // 7. Lecteurs YouTube integres
+  // 8. Lecteurs YouTube integres
   // ----------------------------------------------------------
   document.querySelectorAll('.yt-player').forEach(player => {
     const videoId = player.dataset.videoId;

@@ -1,0 +1,8 @@
+node_modules/
+npm-debug.log*
+.env
+server/data/*.json
+server/data/*.jsonl
+server/data/releases/
+!server/data/.gitkeep
+assets/generated/

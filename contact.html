@@ -131,6 +131,34 @@
                 </div>
               </div>
             </article>
+
+            <article class="contact-card contact-form-card">
+              <span class="section-label">Message</span>
+              <form class="contact-form js-contact-form" novalidate>
+                <label>
+                  Nom
+                  <input type="text" name="name" autocomplete="name" required>
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" autocomplete="email" required>
+                </label>
+                <label>
+                  Sujet
+                  <input type="text" name="subject" value="Contact site">
+                </label>
+                <label class="contact-form-wide">
+                  Message
+                  <textarea name="message" rows="6" required></textarea>
+                </label>
+                <label class="form-hp" aria-hidden="true">
+                  Societe
+                  <input type="text" name="company" tabindex="-1" autocomplete="off">
+                </label>
+                <button class="btn btn--outline-dark" type="submit">Envoyer</button>
+                <p class="contact-form-status" role="status"></p>
+              </form>
+            </article>
           </aside>
 
           <div class="contact-main">
